@@ -5,19 +5,43 @@
     <title>Weslo</title>
     <link rel="stylesheet" href="./style/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/libs/fastclick.js"></script>
+    <script src="js/libs/fixed-responsive-nav.js"></script>
+    <script src="js/libs/scroll.js"></script>
   </head>
-  <body>
+  <body id="top">
 
-    <nav class="clearfix">
-      <ul class="clearfix">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div>
+        <a href="#top" id="top_link" data-scroll>
+          <div class="logo">
+            Logo
+          </div>
+        </a>
+
+        <div>
+          <nav class="nav-collapse">
+            <ul>
+              <li class="active">
+                <a href="#about" data-scroll>about</a>
+              </li>
+              <li>
+                <a href="#features" data-scroll>features</a>
+              </li>
+              <li>
+                <a href="#kickstarter" data-scroll>kickstarter</a>
+              </li>
+              <li>
+                <a href="#beta" data-scroll>beta</a>
+              </li>
+              <li>
+                <a href="#contact" data-scroll>contact</a>
+              </li>
+            </ul>
+          </nav>
+         </div>
+      </div>
+    </header>
 
   </body>
 </html>

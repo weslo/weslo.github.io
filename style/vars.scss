@@ -1,0 +1,36 @@
+// Size calculations
+$nav-height: 72px;
+$nav-font-size: 30px;
+$nav-font-pad-top: ($nav-height - $nav-font-size)/2;
+$nav-logo-height: 200px;
+$nav-logo-height-mobile: 128px;
+
+$mobile-break: 40em;
+$tablet-break: 60em;
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}

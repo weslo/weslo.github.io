@@ -16,7 +16,7 @@ $nav-logo-height-mobile: 128px;
 $mobile-break: 40em;
 $tablet-break: 60em;
 
-// MIXINS //
+// Mixins
 @mixin clearfix() {
   &:before,
   &:after {
@@ -25,21 +25,6 @@ $tablet-break: 60em;
   }
   &:after {
     clear: both;
-  }
-}
-
-@mixin hoverPointer() {
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-@mixin hoverOpacity() {
-  opacity: .5;
-
-  @include transition (.2s);
-  &:hover {
-    opacity: 1;
   }
 }
 

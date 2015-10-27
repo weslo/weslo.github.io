@@ -43,6 +43,13 @@ h3 {
   }
 }
 
+header {
+  & > div {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+}
+
 .hero {
   @include clearfix();
 

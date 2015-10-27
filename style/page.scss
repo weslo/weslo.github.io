@@ -2,7 +2,7 @@
 
 html, body {
   background: $dark;
-  font-family: "surfacemedium", sans-serif;
+  font-family: $page-font;
   font-weight: normal !important;
   margin: 0;
   padding: 0;
@@ -17,16 +17,6 @@ html, body {
 * {
   box-sizing: border-box;
   font-weight: normal;
-}
-
-p {
-  text-transform: none;
-  font-size: 16pt;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "troikaregular", sans-serif;
-  text-shadow:0px 2px 0px #454545;
 }
 
 h1 {
@@ -68,7 +58,7 @@ h3 {
 .logo {
   float: left;
   color: #fff;
-  font-family: "troikaregular";
+  font-family: $header-font;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   height: $nav-height;
   line-height: $nav-height;
@@ -81,7 +71,7 @@ h3 {
 
 .nav-header {
   color: #fff;
-  font-family: "troikaregular";
+  font-family: $header-font;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   height: $nav-height;
   text-decoration: none;

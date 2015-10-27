@@ -3981,16 +3981,6 @@ html, body {
   font-weight: normal;
 }
 
-p {
-  text-transform: none;
-  font-size: 16pt;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "troikaregular", sans-serif;
-  text-shadow: 0px 2px 0px #454545;
-}
-
 h1 {
   font: normal 72px "troikaregular", sans-serif;
 }
@@ -4037,7 +4027,7 @@ h3 {
 .logo {
   float: left;
   color: #fff;
-  font-family: "troikaregular";
+  font-family: "troikaregular", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;
   line-height: 72px;
@@ -4050,7 +4040,7 @@ h3 {
 
 .nav-header {
   color: #fff;
-  font-family: "troikaregular";
+  font-family: "troikaregular", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;
   text-decoration: none;

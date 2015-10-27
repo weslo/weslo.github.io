@@ -1,0 +1,17 @@
+nav {
+  height: 40px;
+  width: 100%;
+  position: relative;
+
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 100%;
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+}

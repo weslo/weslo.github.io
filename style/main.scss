@@ -1,8 +1,12 @@
 @charset "utf-8";
 
 @import "vars";
+@import "layout/html5reset";
+@import "layout/12cols";
+@import "layout/col";
 @import "fonts";
-@import "global";
-@import "libs/fixed-responsive-nav";
-// @import "libs/fixed-responsive-nav-ie";
-@import "nav";
+@import "animate";
+@import "magnific";
+@import "slick";
+@import "res_nav";
+@import "page";

@@ -26,12 +26,6 @@ summary, hgroup {
   border: 0;
 }
 
-@-webkit-viewport { width: device-width; }
-   @-moz-viewport { width: device-width; }
-    @-ms-viewport { width: device-width; }
-     @-o-viewport { width: device-width; }
-        @viewport { width: device-width; }
-
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
@@ -137,14 +131,6 @@ header {
   .nav-collapse li {
     width: auto;
   }
-}
-
-@mixin transition($duration) {
-    -webkit-transition: $duration;
-    -moz-transition: $duration;
-    -ms-transition: $duration;
-    -o-transition: $duration;
-    transition: $duration;
 }
 
 .nav-collapse a {

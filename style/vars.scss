@@ -6,33 +6,6 @@ $dark:  #000000;
 $dark-grey:  #555555;
 $light: #ffffff;
 
-$adventure: #45b7e8;
-$with:      #CCCBCB;
-$friends:   #f9bb16;
-
-$bronze: #CD7F32;
-$silver: #B0B0B0;
-$gold: #FFD700;
-$platinum: #E0FFFF;
-$crystalline: #00FFFF;
-$dragonscale: #CC0000;
-$epic: #BF5FFF;
-$legendary: #FFA500;
-$mythic: #00FA9A;
-$kickstarter: #2BDE73;
-
-$custom-bg: #5D99CB;
-$custom-em: #FFF100;
-
-$explore-bg: #8BD4E1;
-$explore-em: #69BD45;
-
-$battle-bg: #FFCC66;
-$battle-em: #4068B1;
-
-$play-bg: #D1E7C5;
-$play-em: #CA3726;
-
 // Size calculations
 $nav-height: 72px;
 $nav-font-size: 30px;
@@ -42,6 +15,33 @@ $nav-logo-height-mobile: 128px;
 
 $mobile-break: 40em;
 $tablet-break: 60em;
+
+// MIXINS //
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin hoverPointer() {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin hoverOpacity() {
+  opacity: .5;
+
+  @include transition (.2s);
+  &:hover {
+    opacity: 1;
+  }
+}
 
 @mixin aspect-ratio($width, $height) {
   position: relative;
@@ -61,3 +61,17 @@ $tablet-break: 60em;
     bottom: 0;
   }
 }
+
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }

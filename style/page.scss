@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font: normal 72px $main-font;
+  font: normal 72px $header-font;
 
   @media screen and (max-width: $tablet-break) {
     font-size: 52px;
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font: normal 56px $main-font;
+  font: normal 56px $header-font;
 
   @media screen and (max-width: $tablet-break) {
     font-size: 40px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-  font: normal 40px $main-font;
+  font: normal 40px $header-font;
 
   @media screen and (max-width: $tablet-break) {
     font-size: 28px;

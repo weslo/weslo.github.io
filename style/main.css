@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'troikaregular';
+  src: url("../fonts/troika-webfont.eot");
+  src: url("../fonts/troika-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/troika-webfont.woff") format("woff"), url("../fonts/troika-webfont.ttf") format("truetype"), url("../fonts/troika-webfont.svg#troikaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "responsivenav";
+  src: url("../fonts/responsivenav.eot");
+  src: url("../fonts/responsivenav.eot?#iefix") format("embedded-opentype"), url("../fonts/responsivenav.ttf") format("truetype"), url("../fonts/responsivenav.woff") format("woff"), url("../fonts/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'surfacemedium';
+  src: url("../fonts/Surface_Medium-webfont.eot");
+  src: url("../fonts/Surface_Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Surface_Medium-webfont.woff") format("woff"), url("../fonts/Surface_Medium-webfont.ttf") format("truetype"), url("../fonts/Surface_Medium-webfont.svg#surfacemedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* html5reset.css - 01/11/2011 */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -234,27 +255,6 @@ input, select {
   .col {
     margin: 1% 0 1% 0%;
   }
-}
-@font-face {
-  font-family: 'troikaregular';
-  src: url("../fonts/troika-webfont.eot");
-  src: url("../fonts/troika-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/troika-webfont.woff") format("woff"), url("../fonts/troika-webfont.ttf") format("truetype"), url("../fonts/troika-webfont.svg#troikaregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "responsivenav";
-  src: url("../fonts/responsivenav.eot");
-  src: url("../fonts/responsivenav.eot?#iefix") format("embedded-opentype"), url("../fonts/responsivenav.ttf") format("truetype"), url("../fonts/responsivenav.woff") format("woff"), url("../fonts/responsivenav.svg#responsivenav") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'surfacemedium';
-  src: url("../fonts/Surface_Medium-webfont.eot");
-  src: url("../fonts/Surface_Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Surface_Medium-webfont.woff") format("woff"), url("../fonts/Surface_Medium-webfont.ttf") format("truetype"), url("../fonts/Surface_Medium-webfont.svg#surfacemedium") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 /*!
 Animate.css - http://daneden.me/animate

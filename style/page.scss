@@ -7,7 +7,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: $light;
+  color: $dark;
 
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -21,6 +21,7 @@ html, body {
 
 h1 {
   font: normal 72px $header-font;
+  text-transform: uppercase;
 
   @media screen and (max-width: $tablet-break) {
     font-size: 52px;
@@ -28,7 +29,8 @@ h1 {
 }
 
 h2 {
-  font: normal 56px $header-font;
+  font: normal 56px $page-font;
+  font-weight: 200;
 
   @media screen and (max-width: $tablet-break) {
     font-size: 40px;
@@ -52,6 +54,18 @@ h3 {
   & > div {
     max-width: 60em;
     margin: 0 auto;
+  }
+}
+
+.vertical-center {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  & > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

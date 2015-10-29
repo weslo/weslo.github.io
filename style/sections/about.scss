@@ -1,0 +1,19 @@
+#about {
+  padding-top: $nav-height;
+  text-align: center;
+  height: 100vh;
+
+  h2 {
+    color: $dark-grey;
+    font-size: 48px;
+    line-height: 0.8em;
+  }
+
+  & > div {
+    height: 100%;
+  }
+
+  .vertical-center {
+    height: 100%;
+  }
+}

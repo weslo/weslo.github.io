@@ -4035,19 +4035,28 @@ header > div {
 
 .logo {
   float: left;
-  color: #fff;
   font-family: "Fjalla One", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;
-  line-height: 72px;
-  font-size: 30px;
   padding-left: 1em;
+  padding-top: 4px;
   text-decoration: none;
   pointer-events: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logo h1 {
+  color: #ffffff;
+  font-size: 24pt;
+}
+.logo h2 {
+  color: #CCCCCC;
+  font-size: 14pt;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .nav-header {
-  color: #fff;
   font-family: "Fjalla One", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;

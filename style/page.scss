@@ -74,8 +74,6 @@ h3 {
 }
 
 section {
-  @include viewport-under-nav ();
-
   .section-heading {
     background-color: $dark;
     color: $light;

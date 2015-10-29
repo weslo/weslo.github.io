@@ -69,6 +69,10 @@ h3 {
   }
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 footer {
   @include clearfix();
   background: $dark;

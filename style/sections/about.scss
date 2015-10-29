@@ -1,7 +1,10 @@
 #about {
-  padding-top: $nav-height;
   text-align: center;
   height: 100vh;
+
+  img {
+    height: 400px;
+  }
 
   h2 {
     color: $dark-grey;

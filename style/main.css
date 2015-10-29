@@ -4023,6 +4023,10 @@ h3 {
   transform: translateY(-50%);
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 footer {
   background: #000000;
   color: #ffffff;
@@ -4077,9 +4081,11 @@ header > div {
 }
 
 #about {
-  padding-top: 72px;
   text-align: center;
   height: 100vh;
+}
+#about img {
+  height: 400px;
 }
 #about h2 {
   color: #555555;

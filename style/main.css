@@ -4027,6 +4027,10 @@ h3 {
   border-radius: 50%;
 }
 
+.col {
+  height: 100%;
+}
+
 section .section-heading {
   background-color: #000000;
   color: #ffffff;
@@ -4103,8 +4107,31 @@ header > div {
 #about > div {
   height: 100%;
 }
-#about .vertical-center {
+
+#projects {
+  background-color: #000000;
+}
+#projects article {
+  height: 100vh;
+}
+#projects article > div {
   height: 100%;
+}
+#projects #adventure-guild img {
+  width: 100%;
+}
+#projects #adventure-guild > div::after {
+  content: "";
+  background-image: url("../imgs/projects/adventure-guild/camping.png");
+  background-color: black;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,200);
 @-webkit-viewport {
   width: device-width;
 }
@@ -15,23 +16,9 @@
   width: device-width;
 }
 @font-face {
-  font-family: 'troikaregular';
-  src: url("../fonts/troika-webfont.eot");
-  src: url("../fonts/troika-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/troika-webfont.woff") format("woff"), url("../fonts/troika-webfont.ttf") format("truetype"), url("../fonts/troika-webfont.svg#troikaregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "responsivenav";
   src: url("../fonts/responsivenav.eot");
   src: url("../fonts/responsivenav.eot?#iefix") format("embedded-opentype"), url("../fonts/responsivenav.ttf") format("truetype"), url("../fonts/responsivenav.woff") format("woff"), url("../fonts/responsivenav.svg#responsivenav") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'surfacemedium';
-  src: url("../fonts/Surface_Medium-webfont.eot");
-  src: url("../fonts/Surface_Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Surface_Medium-webfont.woff") format("woff"), url("../fonts/Surface_Medium-webfont.ttf") format("truetype"), url("../fonts/Surface_Medium-webfont.svg#surfacemedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3782,6 +3769,10 @@ summary, hgroup {
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
+header {
+  background-color: #000000;
+}
+
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -3883,7 +3874,6 @@ header {
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid #555555;
   text-decoration: none;
-  background: #000000;
   padding: 0.7em 1em;
   color: grey;
   width: 100%;
@@ -3964,8 +3954,8 @@ header {
 }
 
 html, body {
-  background: #000000;
-  font-family: "surfacemedium", sans-serif;
+  background: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: normal !important;
   margin: 0;
   padding: 0;
@@ -3982,7 +3972,7 @@ html, body {
 }
 
 h1 {
-  font: normal 72px "troikaregular", sans-serif;
+  font: normal 72px "Fjalla One", sans-serif;
 }
 @media screen and (max-width: 60em) {
   h1 {
@@ -3991,7 +3981,7 @@ h1 {
 }
 
 h2 {
-  font: normal 56px "troikaregular", sans-serif;
+  font: normal 56px "Fjalla One", sans-serif;
 }
 @media screen and (max-width: 60em) {
   h2 {
@@ -4000,7 +3990,7 @@ h2 {
 }
 
 h3 {
-  font: normal 40px "troikaregular", sans-serif;
+  font: normal 40px "Fjalla One", sans-serif;
 }
 @media screen and (max-width: 60em) {
   h3 {
@@ -4032,7 +4022,7 @@ header > div {
 .logo {
   float: left;
   color: #fff;
-  font-family: "troikaregular", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;
   line-height: 72px;
@@ -4045,7 +4035,7 @@ header > div {
 
 .nav-header {
   color: #fff;
-  font-family: "troikaregular", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   -webkit-tap-highlight-color: transparent;
   height: 72px;
   text-decoration: none;

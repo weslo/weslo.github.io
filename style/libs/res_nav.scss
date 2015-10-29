@@ -31,6 +31,10 @@ summary, hgroup {
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
 
+header {
+  background-color: $dark;
+}
+
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -137,7 +141,6 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid $dark-grey;
   text-decoration: none;
-  background: $dark;
   padding: 0.7em 1em;
   color: grey;
   width: 100%;

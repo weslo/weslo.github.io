@@ -1,15 +1,6 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'troikaregular';
-    src: url('../fonts/troika-webfont.eot');
-    src: url('../fonts/troika-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/troika-webfont.woff') format('woff'),
-         url('../fonts/troika-webfont.ttf') format('truetype'),
-         url('../fonts/troika-webfont.svg#troikaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,200);
 
 @font-face {
   font-family: "responsivenav";
@@ -20,15 +11,4 @@
     url("../fonts/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-    font-family: 'surfacemedium';
-    src: url('../fonts/Surface_Medium-webfont.eot');
-    src: url('../fonts/Surface_Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Surface_Medium-webfont.woff') format('woff'),
-         url('../fonts/Surface_Medium-webfont.ttf') format('truetype'),
-         url('../fonts/Surface_Medium-webfont.svg#surfacemedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }

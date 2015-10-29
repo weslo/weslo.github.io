@@ -1,0 +1,29 @@
+header {
+  background-color: $dark;
+  & > div {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  font-family: $header-font;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  height: $nav-height;
+  line-height: $nav-height;
+  font-size: $nav-font-size;
+  padding-left: 1em;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.nav-header {
+  color: #fff;
+  font-family: $header-font;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  height: $nav-height;
+  text-decoration: none;
+  pointer-events: auto;
+}

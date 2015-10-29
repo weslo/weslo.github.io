@@ -3994,11 +3994,6 @@ h3 {
   }
 }
 
-header > div {
-  max-width: 60em;
-  margin: 0 auto;
-}
-
 .hero {
   margin: 0 auto;
   position: relative;
@@ -4015,8 +4010,27 @@ header > div {
   margin: 0 auto;
 }
 
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 1.25em 0 1em 0;
+  max-width: 60em;
+  margin: auto;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+
 header {
   background-color: #000000;
+}
+header > div {
+  max-width: 60em;
+  margin: 0 auto;
 }
 
 .logo {
@@ -4039,21 +4053,6 @@ header {
   height: 72px;
   text-decoration: none;
   pointer-events: auto;
-}
-
-footer {
-  background: #000000;
-  color: #ffffff;
-  padding: 1.25em 0 1em 0;
-  max-width: 60em;
-  margin: auto;
-}
-footer:before, footer:after {
-  content: "";
-  display: table;
-}
-footer:after {
-  clear: both;
 }
 
 /*# sourceMappingURL=main.css.map */

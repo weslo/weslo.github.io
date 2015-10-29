@@ -73,6 +73,17 @@ h3 {
   border-radius: 50%;
 }
 
+section {
+  @include viewport-under-nav ();
+
+  .section-heading {
+    background-color: $dark;
+    color: $light;
+    text-align: center;
+    height: $heading-height;
+  }
+}
+
 footer {
   @include clearfix();
   background: $dark;

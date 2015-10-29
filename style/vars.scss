@@ -18,6 +18,9 @@ $nav-logo-height-mobile: 128px;
 $mobile-break: 40em;
 $tablet-break: 60em;
 
+$viewport-height: 100vh;
+$heading-height: 100px;
+
 // Mixins
 @mixin clearfix() {
   &:before,
@@ -55,6 +58,12 @@ $tablet-break: 60em;
     -ms-transition: $duration;
     -o-transition: $duration;
     transition: $duration;
+}
+
+@mixin viewport-under-nav () {
+  height: -webkit-calc(#{$viewport-height} - #{$nav-height});
+  height: -moz-calc(#{$viewport-height} - #{$nav-height});
+  height: calc(#{$viewport-height} - #{$nav-height});
 }
 
 @-webkit-viewport { width: device-width; }

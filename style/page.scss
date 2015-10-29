@@ -62,6 +62,10 @@ header {
   }
 }
 
+header {
+  background-color: $dark;
+}
+
 .logo {
   float: left;
   color: #fff;
@@ -72,7 +76,6 @@ header {
   font-size: $nav-font-size;
   padding-left: 1em;
   text-decoration: none;
-  background: $dark;
   pointer-events: auto;
 }
 
@@ -82,7 +85,6 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   height: $nav-height;
   text-decoration: none;
-  background: $dark;
   pointer-events: auto;
 }
 

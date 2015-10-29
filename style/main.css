@@ -3769,10 +3769,6 @@ summary, hgroup {
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
-header {
-  background-color: #000000;
-}
-
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -4019,6 +4015,10 @@ header > div {
   margin: 0 auto;
 }
 
+header {
+  background-color: #000000;
+}
+
 .logo {
   float: left;
   color: #fff;
@@ -4029,7 +4029,6 @@ header > div {
   font-size: 30px;
   padding-left: 1em;
   text-decoration: none;
-  background: #000000;
   pointer-events: auto;
 }
 
@@ -4039,7 +4038,6 @@ header > div {
   -webkit-tap-highlight-color: transparent;
   height: 72px;
   text-decoration: none;
-  background: #000000;
   pointer-events: auto;
 }
 

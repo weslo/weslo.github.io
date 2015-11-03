@@ -19,6 +19,19 @@ html, body {
   font-weight: normal;
 }
 
+h1,h2,h3 {
+
+  a {
+    text-decoration: none;
+    color: $light-grey;
+
+    @include transition (.2s);
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
 h1 {
   font: normal 72px $header-font;
   text-transform: uppercase;

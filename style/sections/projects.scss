@@ -1,3 +1,17 @@
+@mixin projectBackground ($path) {
+  & > div:before {
+    content: "";
+    background-image: url($path);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+}
+
 #projects {
 
   background-color: $dark;
@@ -8,25 +22,21 @@
     & > div {
       height: 100%;
     }
+
+    .project-logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    .project-developer {
+      text-align: center;
+    }
   }
 
   #adventure-guild {
+    @include projectBackground("../imgs/projects/adventure-guild/camping.png");
 
-    img {
-      width: 100%;
-    }
-
-    & > div::after {
-      content: "";
-      background-image: url("../imgs/projects/adventure-guild/camping.png");
-      background-size: cover;
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
+    color: $light;
   }
 }

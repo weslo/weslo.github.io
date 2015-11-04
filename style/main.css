@@ -3967,7 +3967,7 @@ html, body {
   font-weight: normal;
 }
 
-h1 a, h2 a, h3 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
   color: #CCCCCC;
   -webkit-transition: 0.2s;
@@ -3976,7 +3976,7 @@ h1 a, h2 a, h3 a {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-h1 a:hover, h2 a:hover, h3 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #ffffff;
 }
 
@@ -4006,6 +4006,24 @@ h3 {
 @media screen and (max-width: 60em) {
   h3 {
     font-size: 28px;
+  }
+}
+
+h4 {
+  font: normal 32px "Fjalla One", sans-serif;
+}
+@media screen and (max-width: 60em) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font: normal 20px "Fjalla One", sans-serif;
+}
+@media screen and (max-width: 60em) {
+  h5 {
+    font-size: 16px;
   }
 }
 
@@ -4127,6 +4145,7 @@ header > div {
 }
 #projects article {
   height: 100vh;
+  text-align: center;
 }
 #projects article > div {
   height: 100%;
@@ -4134,8 +4153,11 @@ header > div {
 #projects article .project-logo img {
   width: 100%;
 }
-#projects article .project-developer {
-  text-align: center;
+#projects article .project-responsibilities {
+  text-transform: uppercase;
+}
+#projects article .project-duration {
+  color: #CCCCCC;
 }
 #projects #adventure-guild {
   color: #ffffff;

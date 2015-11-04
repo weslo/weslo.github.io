@@ -19,7 +19,7 @@ html, body {
   font-weight: normal;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
 
   a {
     text-decoration: none;
@@ -55,6 +55,22 @@ h3 {
 
   @media screen and (max-width: $tablet-break) {
     font-size: 28px;
+  }
+}
+
+h4 {
+  font: normal 32px $header-font;
+
+  @media screen and (max-width: $tablet-break) {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font: normal 20px $header-font;
+
+  @media screen and (max-width: $tablet-break) {
+    font-size: 16px;
   }
 }
 

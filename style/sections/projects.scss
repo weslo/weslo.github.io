@@ -18,6 +18,7 @@
 
   article {
     height: 100vh;
+    text-align: center;
 
     & > div {
       height: 100%;
@@ -29,8 +30,12 @@
       }
     }
 
-    .project-developer {
-      text-align: center;
+    .project-responsibilities {
+      text-transform: uppercase;
+    }
+
+    .project-duration {
+      color: $light-grey;
     }
   }
 

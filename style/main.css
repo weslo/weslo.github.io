@@ -4102,6 +4102,7 @@ header > div {
   height: 72px;
   text-decoration: none;
   pointer-events: auto;
+  text-transform: uppercase;
 }
 
 #about {

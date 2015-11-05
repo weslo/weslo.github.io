@@ -4151,7 +4151,7 @@ header > div {
 #projects article > div, #experience article > div {
   height: 100%;
 }
-#projects article .project-logo img, #projects article .experience-logo img, #experience article .project-logo img, #experience article .experience-logo img {
+#projects article .project-logo img, #projects article .experience-logo img, #projects article .experience-projects img, #experience article .project-logo img, #experience article .experience-logo img, #experience article .experience-projects img {
   width: 100%;
 }
 #projects article .project-responsibilities, #projects article .experience-responsibilities, #experience article .project-responsibilities, #experience article .experience-responsibilities {
@@ -4159,6 +4159,9 @@ header > div {
 }
 #projects article .project-duration, #projects article .experience-duration, #experience article .project-duration, #experience article .experience-duration {
   color: #CCCCCC;
+}
+#projects article .experience-projects > div, #experience article .experience-projects > div {
+  height: 250px;
 }
 #projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
   content: "";

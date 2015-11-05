@@ -25,7 +25,7 @@
       height: 100%;
     }
 
-    .project-logo, .experience-logo {
+    .project-logo, .experience-logo, .experience-projects {
       img {
         width: 100%;
       }
@@ -37,6 +37,12 @@
 
     .project-duration, .experience-duration {
       color: $light-grey;
+    }
+
+    .experience-projects {
+      & > div {
+        height: 250px;
+      }
     }
   }
 

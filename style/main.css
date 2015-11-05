@@ -4144,7 +4144,9 @@ header > div {
   color: #ffffff;
 }
 #projects article, #experience article {
-  height: 100vh;
+  height: -webkit-calc(100vh - 72px);
+  height: -moz-calc(100vh - 72px);
+  height: calc(100vh - 72px);
   text-align: center;
 }
 #projects article > div, #experience article > div {

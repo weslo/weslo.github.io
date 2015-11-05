@@ -18,7 +18,7 @@
   color: $light;
 
   article {
-    height: 100vh;
+    @include viewport-under-nav ();
     text-align: center;
 
     & > div {

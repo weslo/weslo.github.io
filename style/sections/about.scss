@@ -16,4 +16,12 @@
   & > div {
     height: 100%;
   }
+
+  .social-media {
+    a {
+      margin: 20px;
+      color: $dark;
+      @include hoverOpacity ();
+    }
+  }
 }

@@ -4138,6 +4138,19 @@ header > div {
 #about > div {
   height: 100%;
 }
+#about .social-media a {
+  margin: 20px;
+  color: #000000;
+  opacity: .7;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#about .social-media a:hover {
+  opacity: 1;
+}
 
 #projects, #experience {
   background-color: #000000;

@@ -52,6 +52,10 @@
     @include projectBackground("../imgs/projects/exoterra/banner.png");
   }
 
+  #hearplay {
+    @include projectBackground("../imgs/projects/hearplay/banner.png");
+  }
+
   #yes-and-games {
     @include projectBackground("../imgs/experience/yes-and-games/banner.jpg");
   }

@@ -4160,7 +4160,7 @@ header > div {
 #projects article .project-duration, #projects article .experience-duration, #experience article .project-duration, #experience article .experience-duration {
   color: #CCCCCC;
 }
-#projects article .experience-projects > div, #experience article .experience-projects > div {
+#projects article .experience-projects, #experience article .experience-projects {
   height: 250px;
 }
 #projects #adventure-guild > div:before, #experience #adventure-guild > div:before {

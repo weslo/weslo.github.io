@@ -4140,27 +4140,27 @@ header > div {
   height: 100%;
 }
 
-#projects {
+#projects, #experience {
   background-color: #000000;
   color: #ffffff;
 }
-#projects article {
+#projects article, #experience article {
   height: 100vh;
   text-align: center;
 }
-#projects article > div {
+#projects article > div, #experience article > div {
   height: 100%;
 }
-#projects article .project-logo img {
+#projects article .project-logo img, #projects article .experience-logo img, #experience article .project-logo img, #experience article .experience-logo img {
   width: 100%;
 }
-#projects article .project-responsibilities {
+#projects article .project-responsibilities, #projects article .experience-responsibilities, #experience article .project-responsibilities, #experience article .experience-responsibilities {
   text-transform: uppercase;
 }
-#projects article .project-duration {
+#projects article .project-duration, #projects article .experience-duration, #experience article .project-duration, #experience article .experience-duration {
   color: #CCCCCC;
 }
-#projects #adventure-guild > div:before {
+#projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
   content: "";
   background-image: url("../imgs/projects/adventure-guild/camping.png");
   background-size: cover;
@@ -4171,9 +4171,20 @@ header > div {
   right: 0;
   opacity: 0.3;
 }
-#projects #exoterra > div:before {
+#projects #exoterra > div:before, #experience #exoterra > div:before {
   content: "";
   background-image: url("../imgs/projects/exoterra/banner.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+#projects #yes-and-games > div:before, #experience #yes-and-games > div:before {
+  content: "";
+  background-image: url("../imgs/experience/yes-and-games/banner.jpg");
   background-size: cover;
   position: absolute;
   top: 0;

@@ -12,7 +12,7 @@
   }
 }
 
-#projects {
+#projects, #experience {
 
   background-color: $dark;
   color: $light;
@@ -25,17 +25,17 @@
       height: 100%;
     }
 
-    .project-logo {
+    .project-logo, .experience-logo {
       img {
         width: 100%;
       }
     }
 
-    .project-responsibilities {
+    .project-responsibilities, .experience-responsibilities {
       text-transform: uppercase;
     }
 
-    .project-duration {
+    .project-duration, .experience-duration {
       color: $light-grey;
     }
   }
@@ -46,5 +46,9 @@
 
   #exoterra {
     @include projectBackground("../imgs/projects/exoterra/banner.png");
+  }
+
+  #yes-and-games {
+    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg");
   }
 }

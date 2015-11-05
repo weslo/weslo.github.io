@@ -15,6 +15,7 @@
 #projects {
 
   background-color: $dark;
+  color: $light;
 
   article {
     height: 100vh;
@@ -41,7 +42,9 @@
 
   #adventure-guild {
     @include projectBackground("../imgs/projects/adventure-guild/camping.png");
+  }
 
-    color: $light;
+  #exoterra {
+    @include projectBackground("../imgs/projects/exoterra/banner.png");
   }
 }

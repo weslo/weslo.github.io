@@ -4142,6 +4142,7 @@ header > div {
 
 #projects {
   background-color: #000000;
+  color: #ffffff;
 }
 #projects article {
   height: 100vh;
@@ -4159,12 +4160,20 @@ header > div {
 #projects article .project-duration {
   color: #CCCCCC;
 }
-#projects #adventure-guild {
-  color: #ffffff;
-}
 #projects #adventure-guild > div:before {
   content: "";
   background-image: url("../imgs/projects/adventure-guild/camping.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+#projects #exoterra > div:before {
+  content: "";
+  background-image: url("../imgs/projects/exoterra/banner.png");
   background-size: cover;
   position: absolute;
   top: 0;

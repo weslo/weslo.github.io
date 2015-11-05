@@ -1,4 +1,4 @@
-@mixin projectBackground ($path) {
+@mixin projectBackground ($path, $opacity) {
   & > div:before {
     content: "";
     background-image: url($path);
@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.3;
+    opacity: $opacity;
   }
 }
 
@@ -42,21 +42,30 @@
     .experience-projects {
       height: 250px;
     }
+
+    .project-content, .experience-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   #adventure-guild {
-    @include projectBackground("../imgs/projects/adventure-guild/camping.png");
+    @include projectBackground("../imgs/projects/adventure-guild/camping.png", 0.3);
   }
 
   #exoterra {
-    @include projectBackground("../imgs/projects/exoterra/banner.png");
+    @include projectBackground("../imgs/projects/exoterra/banner.png", 0.3);
   }
 
   #hearplay {
-    @include projectBackground("../imgs/projects/hearplay/banner.png");
+    @include projectBackground("../imgs/projects/hearplay/banner.png", 0.3);
   }
 
   #yes-and-games {
-    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg");
+    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.2);
+  }
+
+  #music-social {
+    @include projectBackground("../imgs/experience/music-social/bg.png", 0.8);
   }
 }

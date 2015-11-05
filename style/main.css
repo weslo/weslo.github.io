@@ -4164,6 +4164,10 @@ header > div {
 #projects article .experience-projects, #experience article .experience-projects {
   height: 250px;
 }
+#projects article .project-content, #projects article .experience-content, #experience article .project-content, #experience article .experience-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
   content: "";
   background-image: url("../imgs/projects/adventure-guild/camping.png");
@@ -4206,7 +4210,18 @@ header > div {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.2;
+}
+#projects #music-social > div:before, #experience #music-social > div:before {
+  content: "";
+  background-image: url("../imgs/experience/music-social/bg.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=main.css.map */

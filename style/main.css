@@ -4164,6 +4164,17 @@ header > div {
 #projects article .experience-projects, #experience article .experience-projects {
   height: 250px;
 }
+#projects article .experience-projects a, #experience article .experience-projects a {
+  opacity: .7;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#projects article .experience-projects a:hover, #experience article .experience-projects a:hover {
+  opacity: 1;
+}
 #projects article .project-content, #projects article .experience-content, #experience article .project-content, #experience article .experience-content {
   padding-left: 20px;
   padding-right: 20px;

@@ -60,6 +60,15 @@ $heading-height: 100px;
     transition: $duration;
 }
 
+@mixin hoverOpacity() {
+  opacity: .7;
+
+  @include transition (.2s);
+  &:hover {
+    opacity: 1;
+  }
+}
+
 @mixin viewport-under-nav () {
   height: -webkit-calc(#{$viewport-height} - #{$nav-height});
   height: -moz-calc(#{$viewport-height} - #{$nav-height});

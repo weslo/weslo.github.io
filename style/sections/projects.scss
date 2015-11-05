@@ -41,6 +41,10 @@
 
     .experience-projects {
       height: 250px;
+
+      a {
+        @include hoverOpacity ();
+      }
     }
 
     .project-content, .experience-content {

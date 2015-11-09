@@ -54,19 +54,19 @@
   }
 
   #adventure-guild {
-    @include projectBackground("../imgs/projects/adventure-guild/camping.png", 0.3);
+    @include projectBackground("../imgs/projects/adventure-guild/camping.png", 0.5);
   }
 
   #exoterra {
-    @include projectBackground("../imgs/projects/exoterra/banner.png", 0.3);
+    @include projectBackground("../imgs/projects/exoterra/banner.png", 0.5);
   }
 
   #hearplay {
-    @include projectBackground("../imgs/projects/hearplay/banner.png", 0.3);
+    @include projectBackground("../imgs/projects/hearplay/banner.png", 0.4);
   }
 
   #yes-and-games {
-    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.2);
+    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.3);
   }
 
   #music-social {

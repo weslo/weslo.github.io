@@ -4201,7 +4201,7 @@ header > div {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 #projects #exoterra > div:before, #experience #exoterra > div:before {
   content: "";
@@ -4212,7 +4212,7 @@ header > div {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 #projects #hearplay > div:before, #experience #hearplay > div:before {
   content: "";
@@ -4223,7 +4223,7 @@ header > div {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 #projects #yes-and-games > div:before, #experience #yes-and-games > div:before {
   content: "";
@@ -4234,7 +4234,7 @@ header > div {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 #projects #music-social > div:before, #experience #music-social > div:before {
   content: "";

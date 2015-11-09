@@ -4026,6 +4026,10 @@ h5 {
   }
 }
 
+p {
+  line-height: 1.2em;
+}
+
 .hero {
   margin: 0 auto;
   position: relative;

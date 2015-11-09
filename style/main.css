@@ -3948,6 +3948,32 @@ header {
   content: "\78";
 }
 
+.progress-bar {
+  height: 40px;
+  /* Can be anything */
+  position: relative;
+  background: #555;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.progress-bar span {
+  content: "";
+  display: block;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background-color: #2bc253;
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
 html, body {
   background: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
@@ -4250,6 +4276,28 @@ header > div {
   left: 0;
   right: 0;
   opacity: 0.8;
+}
+
+#skills .skill {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#skills .skill h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24pt;
+}
+#skills .skill h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14pt;
+  letter-spacing: 5px;
+}
+#skills .skill img {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

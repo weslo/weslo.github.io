@@ -1,5 +1,10 @@
 #skills {
 
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
   .skill {
 
     margin-top: 20px;
@@ -9,12 +14,12 @@
     text-transform: uppercase;
     text-align: center;
 
-    h2 {
+    h3 {
       font-family: $header-font;
       font-size: 24pt;
     }
 
-    h3 {
+    h4 {
       font-family: $page-font;
       font-size: 14pt;
       letter-spacing: 5px;

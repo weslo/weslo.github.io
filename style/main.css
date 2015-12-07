@@ -4278,6 +4278,10 @@ header > div {
   opacity: 0.8;
 }
 
+#skills h2 {
+  text-align: center;
+  margin-top: 20px;
+}
 #skills .skill {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -4285,11 +4289,11 @@ header > div {
   text-transform: uppercase;
   text-align: center;
 }
-#skills .skill h2 {
+#skills .skill h3 {
   font-family: "Fjalla One", sans-serif;
   font-size: 24pt;
 }
-#skills .skill h3 {
+#skills .skill h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14pt;
   letter-spacing: 5px;

@@ -1,0 +1,20 @@
+#contact {
+
+  text-align: center;
+  line-height: 100%;
+
+  .email {
+    font-family: $header-font;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .social-media {
+    a {
+      margin: 10px;
+      color: $light;
+      @include hoverOpacity ();
+    }
+  }
+}

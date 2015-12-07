@@ -4304,4 +4304,33 @@ header > div {
   display: block;
 }
 
+#about img {
+  height: 400px;
+  border: 3px solid black;
+}
+#about h2 {
+  color: #555555;
+  font-size: 48px;
+  line-height: 0.8em;
+}
+#about #about-info {
+  height: 100vh;
+}
+#about #about-info > div {
+  height: 100%;
+}
+#about #about-info ul {
+  margin-left: 40px;
+}
+#about #about-info ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#about #about-info .bold {
+  font-weight: bold;
+}
+#about #about-info .light {
+  color: #555555;
+}
+
 /*# sourceMappingURL=main.css.map */

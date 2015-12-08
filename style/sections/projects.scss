@@ -51,6 +51,18 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+
+    .project-links {
+      
+      margin-top: 10px;
+
+      a {
+        color: $light;
+        text-decoration: none;
+        margin: 10px;
+        @include hoverOpacity ();
+      }
+    }
   }
 
   #adventure-guild {

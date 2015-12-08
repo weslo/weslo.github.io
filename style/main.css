@@ -4225,6 +4225,23 @@ header > div {
   padding-left: 20px;
   padding-right: 20px;
 }
+#projects article .project-links, #experience article .project-links {
+  margin-top: 10px;
+}
+#projects article .project-links a, #experience article .project-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+  opacity: .7;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#projects article .project-links a:hover, #experience article .project-links a:hover {
+  opacity: 1;
+}
 #projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
   content: "";
   background-image: url("../imgs/projects/adventure-guild/camping.png");

@@ -4270,60 +4270,70 @@ header > div {
 #projects article .project-links a:hover, #experience article .project-links a:hover {
   opacity: 1;
 }
-#projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
-  content: "";
-  background-image: url("../imgs/projects/adventure-guild/camping.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
+@media screen and (min-width: 60em) {
+  #projects #adventure-guild > div:before, #experience #adventure-guild > div:before {
+    content: "";
+    background-image: url("../imgs/projects/adventure-guild/camping.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
 }
-#projects #exoterra > div:before, #experience #exoterra > div:before {
-  content: "";
-  background-image: url("../imgs/projects/exoterra/banner.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
+@media screen and (min-width: 60em) {
+  #projects #exoterra > div:before, #experience #exoterra > div:before {
+    content: "";
+    background-image: url("../imgs/projects/exoterra/banner.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
 }
-#projects #hearplay > div:before, #experience #hearplay > div:before {
-  content: "";
-  background-image: url("../imgs/projects/hearplay/banner.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.4;
+@media screen and (min-width: 60em) {
+  #projects #hearplay > div:before, #experience #hearplay > div:before {
+    content: "";
+    background-image: url("../imgs/projects/hearplay/banner.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+  }
 }
-#projects #yes-and-games > div:before, #experience #yes-and-games > div:before {
-  content: "";
-  background-image: url("../imgs/experience/yes-and-games/banner.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
+@media screen and (min-width: 60em) {
+  #projects #yes-and-games > div:before, #experience #yes-and-games > div:before {
+    content: "";
+    background-image: url("../imgs/experience/yes-and-games/banner.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+  }
 }
-#projects #music-social > div:before, #experience #music-social > div:before {
-  content: "";
-  background-image: url("../imgs/experience/music-social/bg.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.8;
+@media screen and (min-width: 60em) {
+  #projects #music-social > div:before, #experience #music-social > div:before {
+    content: "";
+    background-image: url("../imgs/experience/music-social/bg.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+  }
 }
 
 #skills h2 {

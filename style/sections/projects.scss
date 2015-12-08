@@ -13,9 +13,8 @@
 }
 
 #projects, #experience {
-
-  background-color: $dark;
-  color: $light;
+    background-color: $dark;
+    color: $light;
 
   article {
     @include viewport-under-nav ();
@@ -53,7 +52,7 @@
     }
 
     .project-links {
-      
+
       margin-top: 10px;
 
       a {
@@ -66,22 +65,32 @@
   }
 
   #adventure-guild {
-    @include projectBackground("../imgs/projects/adventure-guild/camping.png", 0.5);
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/projects/adventure-guild/camping.png", 0.5);
+    }
   }
 
   #exoterra {
-    @include projectBackground("../imgs/projects/exoterra/banner.png", 0.5);
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/projects/exoterra/banner.png", 0.5);
+    }
   }
 
   #hearplay {
-    @include projectBackground("../imgs/projects/hearplay/banner.png", 0.4);
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/projects/hearplay/banner.png", 0.4);
+    }
   }
 
   #yes-and-games {
-    @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.3);
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.3);
+    }
   }
 
   #music-social {
-    @include projectBackground("../imgs/experience/music-social/bg.png", 0.8);
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/experience/music-social/bg.png", 0.8);
+    }
   }
 }

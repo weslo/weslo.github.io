@@ -75,6 +75,18 @@ $heading-height: 120px;
   height: calc(#{$viewport-height} - #{$nav-height});
 }
 
+@mixin vertical-center () {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  & > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 @-webkit-viewport { width: device-width; }
 @-moz-viewport    { width: device-width; }
 @-ms-viewport     { width: device-width; }

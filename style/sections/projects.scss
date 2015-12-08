@@ -20,6 +20,13 @@
     @include viewport-under-nav ();
     text-align: center;
 
+    @media screen and (max-width: $tablet-break) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      height: auto;
+      border-bottom: 1px solid white;
+    }
+
     & > div {
       height: 100%;
     }
@@ -39,7 +46,10 @@
     }
 
     .experience-projects {
-      height: 250px;
+
+      @media screen and (min-width: $tablet-break) {
+        height: 250px;
+      }
 
       a {
         @include hoverOpacity ();

@@ -4021,7 +4021,7 @@ h2 {
 }
 @media screen and (max-width: 60em) {
   h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -4399,7 +4399,6 @@ header > div {
 }
 #about h2 {
   color: #555555;
-  font-size: 48px;
   line-height: 0.8em;
 }
 #about .about-image {
@@ -4429,6 +4428,15 @@ header > div {
 #contact {
   text-align: center;
   line-height: 100%;
+  background-color: #000000;
+}
+@media screen and (max-width: 60em) {
+  #contact {
+    padding-bottom: 20px;
+  }
+}
+#contact .section-heading {
+  border-bottom: none;
 }
 #contact a {
   color: #ffffff;
@@ -4449,8 +4457,19 @@ header > div {
   font-size: 24px;
   margin-left: 10px;
 }
+@media screen and (max-width: 60em) {
+  #contact .email {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
 #contact .social-media a {
   margin: 10px;
+}
+@media screen and (max-width: 60em) {
+  #contact .social-media {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

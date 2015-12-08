@@ -2,9 +2,20 @@
   text-align: center;
   height: 100vh;
 
+  @media screen and (max-width: $tablet-break) {
+    margin-top: $nav-height;
+    height: auto;
+  }
+
   img {
     height: 400px;
     border: 3px solid black;
+
+    @media screen and (max-width: $tablet-break) {
+      height: 200px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
 
   h2 {
@@ -26,6 +37,11 @@
       text-transform: uppercase;
       margin: 14px;
       @include hoverOpacity ();
+    }
+
+    @media screen and (max-width: $tablet-break) {
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
 }

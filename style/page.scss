@@ -91,14 +91,16 @@ p {
 }
 
 .vertical-center {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  @media screen and (min-width: $tablet-break) {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
-  & > div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    & > div {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -107,7 +109,9 @@ p {
 }
 
 .col {
-  height: 100%;
+  @media screen and (min-width: $tablet-break) {
+    height: 100%;
+  }
 }
 
 section {

@@ -4174,6 +4174,7 @@ header > div {
   font-family: "Fjalla One", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 14px;
   opacity: .7;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;

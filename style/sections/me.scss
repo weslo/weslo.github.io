@@ -24,6 +24,7 @@
       font-family: $header-font;
       text-decoration: none;
       text-transform: uppercase;
+      margin: 14px;
       @include hoverOpacity ();
     }
   }

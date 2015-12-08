@@ -3,6 +3,12 @@
   text-align: center;
   line-height: 100%;
 
+  a {
+    color: $light;
+    text-decoration: none;
+    @include hoverOpacity ();
+  }
+
   .email {
     font-family: $header-font;
     text-transform: uppercase;
@@ -13,8 +19,6 @@
   .social-media {
     a {
       margin: 10px;
-      color: $light;
-      @include hoverOpacity ();
     }
   }
 }

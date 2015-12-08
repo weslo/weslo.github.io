@@ -4340,6 +4340,19 @@ header > div {
   text-align: center;
   line-height: 100%;
 }
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: .7;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#contact a:hover {
+  opacity: 1;
+}
 #contact .email {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
@@ -4348,16 +4361,6 @@ header > div {
 }
 #contact .social-media a {
   margin: 10px;
-  color: #ffffff;
-  opacity: .7;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-#contact .social-media a:hover {
-  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

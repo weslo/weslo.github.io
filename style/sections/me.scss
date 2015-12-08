@@ -37,6 +37,10 @@
       text-transform: uppercase;
       margin: 14px;
       @include hoverOpacity ();
+
+      @media screen and (max-width: $tablet-break) {
+        display: block;
+      }
     }
 
     @media screen and (max-width: $tablet-break) {

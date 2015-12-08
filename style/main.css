@@ -4168,9 +4168,12 @@ header > div {
 #me > div {
   height: 100%;
 }
-#me .social-media a {
-  margin: 20px;
-  color: #000000;
+#me .contact a {
+  color: #555555;
+  font-size: 24px;
+  font-family: "Fjalla One", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
   opacity: .7;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -4178,7 +4181,7 @@ header > div {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-#me .social-media a:hover {
+#me .contact a:hover {
   opacity: 1;
 }
 

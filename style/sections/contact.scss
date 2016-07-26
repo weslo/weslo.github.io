@@ -20,6 +20,10 @@
 
   .email-contact {
     text-align: left;
+
+    @media screen and (max-width: $tablet-break) {
+      text-align: center;
+    }
   }
 
   .email {

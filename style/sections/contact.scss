@@ -18,6 +18,10 @@
     @include hoverOpacity ();
   }
 
+  .email-contact {
+    text-align: left;
+  }
+
   .email {
     font-family: $header-font;
     text-transform: uppercase;

@@ -4453,6 +4453,9 @@ header > div {
 #contact a:hover {
   opacity: 1;
 }
+#contact .email-contact {
+  text-align: left;
+}
 #contact .email {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;

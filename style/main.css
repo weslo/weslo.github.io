@@ -4460,7 +4460,7 @@ header > div {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
-  margin-left: 10px;
+  margin-left: 4px;
 }
 @media screen and (max-width: 60em) {
   #contact .email {

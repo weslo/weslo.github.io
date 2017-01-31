@@ -19,16 +19,13 @@ html, body {
   font-weight: normal;
 }
 
-h1,h2,h3,h4,h5,h6 {
+a, a:visited {
+  text-decoration: none;
+  color: $light-grey;
 
-  a {
-    text-decoration: none;
-    color: $light-grey;
-
-    @include transition (.2s);
-    &:hover {
-      color: $light;
-    }
+  @include transition (.2s);
+  &:hover {
+    color: $light;
   }
 }
 

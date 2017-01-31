@@ -4310,6 +4310,19 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
+  #projects #lazer-maze > div:before, #experience #lazer-maze > div:before {
+    content: "";
+    background-image: url("../imgs/projects/lazer-maze/banner.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 60em) {
   #projects #exoterra > div:before, #experience #exoterra > div:before {
     content: "";
     background-image: url("../imgs/projects/exoterra/banner.png");

@@ -80,6 +80,12 @@
     }
   }
 
+  #lazer-maze {
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/projects/lazer-maze/banner.png", 0.5);
+    }
+  }
+
   #exoterra {
     @media screen and (min-width: $tablet-break) {
       @include projectBackground("../imgs/projects/exoterra/banner.png", 0.5);

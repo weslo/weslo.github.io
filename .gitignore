@@ -1,3 +1,4 @@
 *.map
 /node_modules/*
 /.sass-cache/*
+.atom-build.yml

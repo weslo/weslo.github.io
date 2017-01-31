@@ -12,6 +12,19 @@
   }
 }
 
+@mixin colorBackground ($color) {
+  & > div:before {
+    content: "";
+    background-color: $color;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
 #projects, #experience, #personal {
     background-color: $dark;
     color: $light;
@@ -101,6 +114,12 @@
   #yes-and-games {
     @media screen and (min-width: $tablet-break) {
       @include projectBackground("../imgs/experience/yes-and-games/banner.jpg", 0.3);
+    }
+  }
+
+  #workinman {
+    @media screen and (min-width: $tablet-break) {
+      @include colorBackground(#e59916);
     }
   }
 

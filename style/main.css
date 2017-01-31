@@ -4362,6 +4362,18 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
+  #projects #workinman > div:before, #experience #workinman > div:before, #personal #workinman > div:before {
+    content: "";
+    background-color: #e59916;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 60em) {
   #projects #music-social > div:before, #experience #music-social > div:before, #personal #music-social > div:before {
     content: "";
     background-image: url("../imgs/experience/music-social/bg.png");

@@ -1,4 +1,7 @@
 #about {
+  @media screen and (min-width: $tablet-break) {
+    @include projectBackground("../imgs/me-banner.jpg", 0.8);
+  }
 
   img {
     height: 400px;

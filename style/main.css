@@ -4413,6 +4413,19 @@ header > div {
   display: block;
 }
 
+@media screen and (min-width: 60em) {
+  #about > div:before {
+    content: "";
+    background-image: url("../imgs/me-banner.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+  }
+}
 #about img {
   height: 400px;
   border: 3px solid black;

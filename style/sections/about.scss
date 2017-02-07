@@ -1,7 +1,6 @@
 #about {
-  @media screen and (min-width: $tablet-break) {
-    @include projectBackground("../imgs/me-banner.jpg", 0.8);
-  }
+  background-color: $dark;
+  color: $light;
 
   img {
     height: 400px;
@@ -15,7 +14,7 @@
   }
 
   h2 {
-    color: $dark-grey;
+    color: $light-grey;
     line-height: 0.8em;
   }
 
@@ -24,6 +23,9 @@
   }
 
   #about-info {
+    @media screen and (min-width: $tablet-break) {
+      @include projectBackground("../imgs/me-banner.jpg", 0.5);
+    }
     height: 100vh;
     text-align: left;
 
@@ -46,7 +48,7 @@
     }
 
     .light {
-      color: $dark-grey;
+      color: $light-grey;
     }
   }
 }

@@ -4413,18 +4413,9 @@ header > div {
   display: block;
 }
 
-@media screen and (min-width: 60em) {
-  #about > div:before {
-    content: "";
-    background-image: url("../imgs/me-banner.jpg");
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.8;
-  }
+#about {
+  background-color: #000000;
+  color: #ffffff;
 }
 #about img {
   height: 400px;
@@ -4438,7 +4429,7 @@ header > div {
   }
 }
 #about h2 {
-  color: #555555;
+  color: #CCCCCC;
   line-height: 0.8em;
 }
 #about .about-image {
@@ -4447,6 +4438,19 @@ header > div {
 #about #about-info {
   height: 100vh;
   text-align: left;
+}
+@media screen and (min-width: 60em) {
+  #about #about-info > div:before {
+    content: "";
+    background-image: url("../imgs/me-banner.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
 }
 #about #about-info > div {
   height: 100%;
@@ -4462,7 +4466,7 @@ header > div {
   font-weight: bold;
 }
 #about #about-info .light {
-  color: #555555;
+  color: #CCCCCC;
 }
 
 #contact {

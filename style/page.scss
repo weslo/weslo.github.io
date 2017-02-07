@@ -19,7 +19,7 @@ html, body {
   font-weight: normal;
 }
 
-a, a:visited {
+a, a:link, a:hover {
   text-decoration: none;
   color: $light-grey;
 

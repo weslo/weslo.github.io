@@ -11,6 +11,8 @@
 
         .blog-entry {
             background-color: $dark;
+            width: 90%;
+            margin: 0 auto;
             height: 240px;
             position: relative;
             background-position: center;
@@ -26,6 +28,10 @@
                 .blog-title {
                     padding: 20px;
                     font-size: 18pt;
+
+                    @media screen and (max-width: $tablet-break) {
+                        font-size: 24pt;
+                    }
                 }
 
                 .blog-links {
@@ -39,15 +45,20 @@
                     }
                 }
 
-                @include transition(1s);
-                opacity: 0;
+
+                @media screen and (min-width: $tablet-break) {
+                    @include transition(1s);
+                    opacity: 0;
+                }
             }
 
             &:hover {
 
                 .blog-entry-container {
-                    @include transition(.3s);
-                    opacity: 1;
+                    @media screen and (min-width: $tablet-break) {
+                        @include transition(.3s);
+                        opacity: 1;
+                    }
                 }
             }
         }

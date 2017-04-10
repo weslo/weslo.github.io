@@ -1,0 +1,33 @@
+#featured-blogs {
+    background-color: $light;
+
+    article {
+
+        padding-top: 20px;
+
+        .blog-row {
+            margin-top: 34px;
+        }
+
+        .blog-entry {
+            background-color: $dark;
+            height: 240px;
+            position: relative;
+
+            .blog-links {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                @include transition(1s);
+                opacity: 0;
+            }
+
+            &:hover {
+                .blog-links {
+                    @include transition(.3s);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

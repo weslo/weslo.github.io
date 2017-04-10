@@ -4229,42 +4229,42 @@ header > div {
   }
 }
 
-#projects, #experience, #personal {
+#featured-blogs, #projects, #experience, #personal {
   background-color: #000000;
   color: #ffffff;
 }
-#projects article, #experience article, #personal article {
+#featured-blogs article, #projects article, #experience article, #personal article {
   height: -webkit-calc(100vh - 72px);
   height: -moz-calc(100vh - 72px);
   height: calc(100vh - 72px);
   text-align: center;
 }
 @media screen and (max-width: 60em) {
-  #projects article, #experience article, #personal article {
+  #featured-blogs article, #projects article, #experience article, #personal article {
     padding-top: 40px;
     padding-bottom: 40px;
     height: auto;
     border-bottom: 1px solid white;
   }
 }
-#projects article > div, #experience article > div, #personal article > div {
+#featured-blogs article > div, #projects article > div, #experience article > div, #personal article > div {
   height: 100%;
 }
-#projects article .project-logo img, #projects article .experience-logo img, #projects article .experience-projects img, #experience article .project-logo img, #experience article .experience-logo img, #experience article .experience-projects img, #personal article .project-logo img, #personal article .experience-logo img, #personal article .experience-projects img {
+#featured-blogs article .project-logo img, #featured-blogs article .experience-logo img, #featured-blogs article .experience-projects img, #projects article .project-logo img, #projects article .experience-logo img, #projects article .experience-projects img, #experience article .project-logo img, #experience article .experience-logo img, #experience article .experience-projects img, #personal article .project-logo img, #personal article .experience-logo img, #personal article .experience-projects img {
   width: 100%;
 }
-#projects article .project-responsibilities, #projects article .experience-responsibilities, #experience article .project-responsibilities, #experience article .experience-responsibilities, #personal article .project-responsibilities, #personal article .experience-responsibilities {
+#featured-blogs article .project-responsibilities, #featured-blogs article .experience-responsibilities, #projects article .project-responsibilities, #projects article .experience-responsibilities, #experience article .project-responsibilities, #experience article .experience-responsibilities, #personal article .project-responsibilities, #personal article .experience-responsibilities {
   text-transform: uppercase;
 }
-#projects article .project-duration, #projects article .experience-duration, #experience article .project-duration, #experience article .experience-duration, #personal article .project-duration, #personal article .experience-duration {
+#featured-blogs article .project-duration, #featured-blogs article .experience-duration, #projects article .project-duration, #projects article .experience-duration, #experience article .project-duration, #experience article .experience-duration, #personal article .project-duration, #personal article .experience-duration {
   color: #CCCCCC;
 }
 @media screen and (min-width: 60em) {
-  #projects article .experience-projects, #experience article .experience-projects, #personal article .experience-projects {
+  #featured-blogs article .experience-projects, #projects article .experience-projects, #experience article .experience-projects, #personal article .experience-projects {
     height: 250px;
   }
 }
-#projects article .experience-projects a, #experience article .experience-projects a, #personal article .experience-projects a {
+#featured-blogs article .experience-projects a, #projects article .experience-projects a, #experience article .experience-projects a, #personal article .experience-projects a {
   opacity: .7;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -4272,17 +4272,17 @@ header > div {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-#projects article .experience-projects a:hover, #experience article .experience-projects a:hover, #personal article .experience-projects a:hover {
+#featured-blogs article .experience-projects a:hover, #projects article .experience-projects a:hover, #experience article .experience-projects a:hover, #personal article .experience-projects a:hover {
   opacity: 1;
 }
-#projects article .project-content, #projects article .experience-content, #experience article .project-content, #experience article .experience-content, #personal article .project-content, #personal article .experience-content {
+#featured-blogs article .project-content, #featured-blogs article .experience-content, #projects article .project-content, #projects article .experience-content, #experience article .project-content, #experience article .experience-content, #personal article .project-content, #personal article .experience-content {
   padding-left: 20px;
   padding-right: 20px;
 }
-#projects article .project-links, #experience article .project-links, #personal article .project-links {
+#featured-blogs article .project-links, #projects article .project-links, #experience article .project-links, #personal article .project-links {
   margin-top: 10px;
 }
-#projects article .project-links a, #experience article .project-links a, #personal article .project-links a {
+#featured-blogs article .project-links a, #projects article .project-links a, #experience article .project-links a, #personal article .project-links a {
   color: #ffffff;
   text-decoration: none;
   margin: 10px;
@@ -4293,11 +4293,11 @@ header > div {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-#projects article .project-links a:hover, #experience article .project-links a:hover, #personal article .project-links a:hover {
+#featured-blogs article .project-links a:hover, #projects article .project-links a:hover, #experience article .project-links a:hover, #personal article .project-links a:hover {
   opacity: 1;
 }
 @media screen and (min-width: 60em) {
-  #projects #adventure-guild > div:before, #experience #adventure-guild > div:before, #personal #adventure-guild > div:before {
+  #featured-blogs #adventure-guild > div:before, #projects #adventure-guild > div:before, #experience #adventure-guild > div:before, #personal #adventure-guild > div:before {
     content: "";
     background-image: url("../imgs/projects/adventure-guild/banner.png");
     background-size: cover;
@@ -4310,7 +4310,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #lazer-maze > div:before, #experience #lazer-maze > div:before, #personal #lazer-maze > div:before {
+  #featured-blogs #lazer-maze > div:before, #projects #lazer-maze > div:before, #experience #lazer-maze > div:before, #personal #lazer-maze > div:before {
     content: "";
     background-image: url("../imgs/projects/lazer-maze/banner.png");
     background-size: cover;
@@ -4323,7 +4323,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #exoterra > div:before, #experience #exoterra > div:before, #personal #exoterra > div:before {
+  #featured-blogs #exoterra > div:before, #projects #exoterra > div:before, #experience #exoterra > div:before, #personal #exoterra > div:before {
     content: "";
     background-image: url("../imgs/projects/exoterra/banner.png");
     background-size: cover;
@@ -4336,7 +4336,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #hearplay > div:before, #experience #hearplay > div:before, #personal #hearplay > div:before {
+  #featured-blogs #hearplay > div:before, #projects #hearplay > div:before, #experience #hearplay > div:before, #personal #hearplay > div:before {
     content: "";
     background-image: url("../imgs/projects/hearplay/banner.png");
     background-size: cover;
@@ -4349,7 +4349,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #yes-and-games > div:before, #experience #yes-and-games > div:before, #personal #yes-and-games > div:before {
+  #featured-blogs #yes-and-games > div:before, #projects #yes-and-games > div:before, #experience #yes-and-games > div:before, #personal #yes-and-games > div:before {
     content: "";
     background-image: url("../imgs/experience/yes-and-games/banner.jpg");
     background-size: cover;
@@ -4362,7 +4362,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #workinman > div:before, #experience #workinman > div:before, #personal #workinman > div:before {
+  #featured-blogs #workinman > div:before, #projects #workinman > div:before, #experience #workinman > div:before, #personal #workinman > div:before {
     content: "";
     background-color: #e59916;
     background-size: cover;
@@ -4374,7 +4374,7 @@ header > div {
   }
 }
 @media screen and (min-width: 60em) {
-  #projects #music-social > div:before, #experience #music-social > div:before, #personal #music-social > div:before {
+  #featured-blogs #music-social > div:before, #projects #music-social > div:before, #experience #music-social > div:before, #personal #music-social > div:before {
     content: "";
     background-image: url("../imgs/experience/music-social/bg.png");
     background-size: cover;
@@ -4522,6 +4522,40 @@ header > div {
   #contact .social-media {
     margin-top: 20px;
   }
+}
+
+#featured-blogs {
+  background-color: #ffffff;
+}
+#featured-blogs article {
+  padding-top: 20px;
+}
+#featured-blogs article .blog-row {
+  margin-top: 34px;
+}
+#featured-blogs article .blog-entry {
+  background-color: #000000;
+  height: 240px;
+  position: relative;
+}
+#featured-blogs article .blog-entry .blog-links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+#featured-blogs article .blog-entry:hover .blog-links {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

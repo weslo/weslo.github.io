@@ -115,7 +115,7 @@ header {
   float: left;
 }
 
-@media screen and (min-width: $mobile-break) {
+@media screen and (min-width: $tablet-break) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -127,7 +127,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: $mobile-break) {
+@media screen and (min-width: $tablet-break) {
   .nav-collapse li {
     width: auto;
   }
@@ -152,7 +152,7 @@ header {
   color: white;
 }
 
-@media screen and (min-width: $mobile-break) {
+@media screen and (min-width: $tablet-break) {
   .nav-collapse a {
     padding: $nav-font-pad-top 0.75em;
     font-size: $nav-font-size;

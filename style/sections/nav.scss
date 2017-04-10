@@ -30,6 +30,10 @@ header {
   }
 }
 
+.nav-collapse a {
+    padding: 21px 0.5em;
+}
+
 .nav-header {
   font-family: $header-font;
   -webkit-tap-highlight-color: rgba(0,0,0,0);

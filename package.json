@@ -4,7 +4,8 @@
   "description": "Game design and development portfolio of Wes Rockholz.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "$(npm bin)/node-sass style/main.scss bin/style.css --watch | $(npm bin)/webpack src/index.js bin/app.js -d --watch"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,11 @@
   "keywords": [],
   "author": "Wesley Rockholz",
   "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "mithril": "^1.1.4"
+  }
 }

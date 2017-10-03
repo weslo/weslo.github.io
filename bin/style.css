@@ -1,2 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Raleway:200,400");
 body {
-  background-color: blue; }
+  background-color: #222222;
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFFFFF; }

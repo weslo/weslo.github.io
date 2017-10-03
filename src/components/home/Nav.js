@@ -6,7 +6,7 @@ class Nav extends Component {
     view() {
         return m('.nav', [
             m('.logo', [
-                m('h2', "Games by"),
+                m('h3', "Games by"),
                 m('h1', "Weslo")
             ]),
             m('.nav-links', [

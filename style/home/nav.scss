@@ -1,0 +1,47 @@
+$nav-height: 80px;
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: $nav-height;
+    border-bottom: $border-inactive;
+    color: $color-content-white;
+    @include box-shadow-inactive();
+
+    .logo {
+        float: left;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        float: right;
+        margin-top: 24px;
+        margin-right: 10px;
+
+        ul {
+
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 24pt;
+                margin-left: 10pt;
+
+                &:hover {
+                    cursor: pointer;
+
+                    @include transition($transition-duration);
+                    color: $color-content-white;
+                }
+
+                @include transition($transition-duration);
+                color: $color-content-grey;
+            }
+        }
+    }
+}

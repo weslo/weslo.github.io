@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+$content-max-width: 60em;
+
+@mixin col() {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.col-2 {
+    @include col();
+    width: 50%;
+}
+
+.col-3 {
+    @include col();
+    width: 33.33%;
+}
+
+.row {
+    max-width: $content-max-width;
+    margin: 0 auto;
+}

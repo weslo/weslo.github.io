@@ -1,0 +1,24 @@
+$margin-top-projects: calc(#{$nav-height} + 40px);
+
+.projects {
+    margin-top: $margin-top-projects;
+    min-height: calc(100vh - #{$margin-top-projects});
+
+    .project-group-header {
+
+        border-bottom: $border-inactive;
+        max-width: 240px;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+
+        img {
+            width: 30px;
+            margin-right: 8px;
+            display: inline;
+        }
+
+        h4 {
+            display: inline;
+        }
+    }
+}

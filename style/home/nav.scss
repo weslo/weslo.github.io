@@ -9,6 +9,7 @@ $nav-height: 80px;
     height: $nav-height;
     border-bottom: $border-inactive;
     color: $color-content-white;
+    background-color: $color-background-grey;
     @include box-shadow-inactive();
 
     .logo {

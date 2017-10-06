@@ -5,7 +5,10 @@ class SocialLink extends Component {
 
     view(vnode) {
         return m('li.social-link', [
-            m('a[href="./"]', [
+            m('a', {
+                href: vnode.attrs.url,
+                target: "_blank"
+            }, [
                 m('i', { class: "fa fa-fw fa-2x " + vnode.attrs.icon }),
             ])
         ])

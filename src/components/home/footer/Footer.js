@@ -23,16 +23,20 @@ class Footer extends Component {
                 m('.social', [
                     m('ul', [
                         m(SocialLink, {
-                            icon: "fa-linkedin-square"
+                            icon: "fa-linkedin-square",
+                            url: "https://www.linkedin.com/in/wrockholz/"
                         }),
                         m(SocialLink, {
-                            icon: "fa-facebook-square"
+                            icon: "fa-facebook-square",
+                            url: "https://www.facebook.com/wesley.rockholz"
                         }),
                         m(SocialLink, {
-                            icon: "fa-twitter-square"
+                            icon: "fa-twitter-square",
+                            url: "https://twitter.com/wrockholz"
                         }),
                         m(SocialLink, {
-                            icon: "fa-github-square"
+                            icon: "fa-github-square",
+                            url: "https://github.com/Weslo/"
                         })
                     ])
                 ])

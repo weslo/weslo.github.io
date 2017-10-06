@@ -59,6 +59,9 @@ table {
   @media (max-width: 720px) {
     .col-2 {
       min-width: 100%; } }
+  @media (max-width: 480px) {
+    .col-2 {
+      min-width: 100%; } }
 
 .col-3 {
   width: 33.33%;
@@ -71,6 +74,9 @@ table {
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
   @media (max-width: 720px) {
+    .col-3 {
+      width: 50%; } }
+  @media (max-width: 480px) {
     .col-3 {
       min-width: 100%; } }
 

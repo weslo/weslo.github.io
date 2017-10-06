@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 $content-max-width: 60em;
-$mobile-breakpoint: 720px;
+$tablet-breakpoint: 720px;
+$mobile-breakpoint: 480px;
 
 @mixin col() {
     display: inline-block;
@@ -17,11 +18,17 @@ $mobile-breakpoint: 720px;
 
 .col-2 {
     width: 50%;
+    @media(max-width: $tablet-breakpoint) {
+        min-width: 100%;
+    }
     @include col();
 }
 
 .col-3 {
     width: 33.33%;
+    @media(max-width: $tablet-breakpoint) {
+        width: 50%;
+    }
     @include col();
 }
 

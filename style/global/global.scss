@@ -2,7 +2,6 @@
 @import 'fonts';
 @import 'colors';
 @import 'columns';
-@import 'animations';
 
 @mixin vertical-center() {
     position: relative;
@@ -107,4 +106,5 @@ img.circle {
     border-radius: 10%;
 }
 
+@import 'animations';
 @import 'modals';

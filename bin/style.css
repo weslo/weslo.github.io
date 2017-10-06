@@ -2622,6 +2622,7 @@ img.circle {
       width: 240px;
       height: 40px;
       margin-bottom: 4px;
+      background-size: cover;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;

@@ -5,7 +5,6 @@ class Home extends Component {
 
     constructor() {
         super();
-        this.openProject = null;
         this.projects = {
             "workinman": {
                 title: "Workinman Interactive",
@@ -18,23 +17,15 @@ class Home extends Component {
         };
     }
 
-    oninit(vnode) {
-        if(vnode.attrs.project in this.projects) {
-            this.openProject = this.projects[vnode.attrs.project];
-        }
-        else {
-            m.route.set("/");
-        }
-    }
-
     view(vnode) {
         return m('.home', [
             m(require('./Nav')),
             m(require('./projects/Projects')),
             m(require('./About')),
             m(require('./footer/Footer')),
-            this.openProject == null ? null :
-                m(require('./projects/ProjectModal'), this.openProject)
+            vnode.attrs.project != 'undefined' && vnode.attrs.project in this.projects ? m(require('./projects/ProjectModal'), this.projects[vnode.attrs.project])
+                : null
+
         ]);
     }
 }

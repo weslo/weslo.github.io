@@ -1,0 +1,19 @@
+.modal-blind {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .modal {
+        background-color: $color-background-grey;
+        max-width: $content-max-width;
+        max-height: 80vh;
+        margin: 0 auto;
+        width: 30em;
+        height: 40em;
+        @include vertical-center();
+    }
+}

@@ -9,6 +9,10 @@ class ProjectModal extends Modal {
             m('p', vnode.attrs.description)
         ]);
     }
+
+    close() {
+        m.route.set("/");
+    }
 }
 
 module.exports = ProjectModal;

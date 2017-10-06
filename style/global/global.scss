@@ -3,6 +3,12 @@
 @import 'colors';
 @import 'columns';
 
+@mixin vertical-center() {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 $transition-duration: .2s;
 @mixin transition($duration) {
     -webkit-transition: $duration;
@@ -99,3 +105,5 @@ a {
 img.circle {
     border-radius: 10%;
 }
+
+@import 'modals';

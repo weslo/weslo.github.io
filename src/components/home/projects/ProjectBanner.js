@@ -5,7 +5,10 @@ class ProjectBanner extends Component {
 
     view(vnode) {
         return m('.project', {
-            style: "background-image: url(" + vnode.attrs.bannerImage + ")"
+            style: "background-image: url(" + vnode.attrs.bannerImage + ")",
+            onclick: function() {
+                m.route.set("/yes-and-games")
+            }
         }, [
             m('.overlay', [
                 m('.text-container', [

@@ -7,6 +7,8 @@ class Component {
 
     oninit(vnode) { }
 
+    onupdate(vnode) { }
+
     view(vnode) { return m('div', "Hello, world!"); }
 }
 

@@ -2493,7 +2493,7 @@ a {
     color: #FFFFFF; }
 
 img.circle {
-  border-radius: 50%; }
+  border-radius: 10%; }
 
 .home .nav {
   position: fixed;

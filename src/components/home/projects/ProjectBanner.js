@@ -16,7 +16,7 @@ class ProjectBanner extends Component {
                         m('h5', vnode.attrs.title),
                         m('i.fa.fa-info-circle')
                     ]),
-                    m('p', vnode.attrs.description)
+                    m('p', vnode.attrs.brief)
                 ]),
             ])
         ])

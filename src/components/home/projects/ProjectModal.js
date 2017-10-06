@@ -5,8 +5,16 @@ class ProjectModal extends Modal {
 
     renderContent(vnode) {
         return m('.project-modal', [
-            m('h1', vnode.attrs.title),
-            m('p', vnode.attrs.description)
+            m('.header', {
+                style: "background-image: url(" + vnode.attrs.bannerImage + ")",
+            }, [
+                m('.overlay', [
+                    m('h1', vnode.attrs.title)
+                ])
+            ]),
+            m('content', [
+                m('p', vnode.attrs.description)
+            ])
         ]);
     }
 

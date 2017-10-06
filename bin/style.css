@@ -2532,7 +2532,9 @@ img.circle {
     height: 40em;
     position: relative;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    border-radius: 10%;
+    border: 1px solid #7A7A7A; }
 
 .home .nav {
   position: fixed;
@@ -2680,3 +2682,17 @@ img.circle {
   padding: 20px; }
   .home #about .about-text .about-header {
     margin-bottom: 12px; }
+
+.project-modal .header {
+  height: 80px;
+  background-size: contain; }
+  .project-modal .header .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(left, black 0%, transparent 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, black 0%, transparent 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, black 0%, transparent 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }

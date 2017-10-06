@@ -2579,7 +2579,7 @@ img.circle {
         transition: 0.2s;
         color: #FFFFFF; }
 
-.home .footer {
+.home #contact {
   height: 30px;
   padding: 20px;
   border-top: 1px solid #7A7A7A;
@@ -2587,38 +2587,38 @@ img.circle {
   -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75); }
-  .home .footer .contact {
+  .home #contact .contact {
     float: left; }
-    .home .footer .contact .contact-link {
+    .home #contact .contact .contact-link {
       display: inline-block;
       margin-right: 10pt; }
-      .home .footer .contact .contact-link i {
+      .home #contact .contact .contact-link i {
         margin-right: 4px; }
-      .home .footer .contact .contact-link h3 {
+      .home #contact .contact .contact-link h3 {
         display: inline; }
-  .home .footer .social {
+  .home #contact .social {
     float: right; }
-    .home .footer .social ul li {
+    .home #contact .social ul li {
       float: right;
       display: inline; }
 
-.home .projects {
+.home #games {
   margin-top: calc(80px + 40px); }
-  .home .projects .project-group {
+  .home #games .project-group {
     width: 240px;
     margin: 0 auto; }
-    .home .projects .project-group .project-group-header {
+    .home #games .project-group .project-group-header {
       border-bottom: 1px solid #7A7A7A;
       max-width: 240px;
       padding-bottom: 4px;
       margin-bottom: 8px; }
-      .home .projects .project-group .project-group-header img {
+      .home #games .project-group .project-group-header img {
         width: 30px;
         margin-right: 8px;
         display: inline; }
-      .home .projects .project-group .project-group-header h4 {
+      .home #games .project-group .project-group-header h4 {
         display: inline; }
-    .home .projects .project-group .project {
+    .home #games .project-group .project {
       width: 240px;
       height: 40px;
       margin-bottom: 4px;
@@ -2628,7 +2628,7 @@ img.circle {
       -o-transition: 0.2s;
       transition: 0.2s;
       outline: 1px solid transparent; }
-      .home .projects .project-group .project .overlay {
+      .home #games .project-group .project .overlay {
         position: relative;
         width: 100%;
         height: 100%;
@@ -2644,19 +2644,19 @@ img.circle {
         -o-transition: 0.2s;
         transition: 0.2s;
         opacity: 0; }
-        .home .projects .project-group .project .overlay .text-container {
+        .home #games .project-group .project .overlay .text-container {
           position: absolute;
           bottom: 0;
           padding: 4px; }
-          .home .projects .project-group .project .overlay .text-container span {
+          .home #games .project-group .project .overlay .text-container span {
             line-height: 1.4em; }
-            .home .projects .project-group .project .overlay .text-container span h5 {
+            .home #games .project-group .project .overlay .text-container span h5 {
               display: inline; }
-            .home .projects .project-group .project .overlay .text-container span i {
+            .home #games .project-group .project .overlay .text-container span i {
               margin-left: 8px; }
-          .home .projects .project-group .project .overlay .text-container p {
+          .home #games .project-group .project .overlay .text-container p {
             font-size: 8pt; }
-      .home .projects .project-group .project:hover {
+      .home #games .project-group .project:hover {
         cursor: pointer;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
@@ -2664,7 +2664,7 @@ img.circle {
         -o-transition: 0.2s;
         transition: 0.2s;
         outline: 1px solid #FFFFFF; }
-        .home .projects .project-group .project:hover .overlay {
+        .home #games .project-group .project:hover .overlay {
           -webkit-transition: 0.2s;
           -moz-transition: 0.2s;
           -ms-transition: 0.2s;
@@ -2672,10 +2672,10 @@ img.circle {
           transition: 0.2s;
           opacity: 1; }
 
-.home .about img {
+.home #about img {
   width: 100%; }
 
-.home .about .about-text {
+.home #about .about-text {
   padding: 20px; }
-  .home .about .about-text .about-header {
+  .home #about .about-text .about-header {
     margin-bottom: 12px; }

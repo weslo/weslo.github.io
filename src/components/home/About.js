@@ -4,7 +4,7 @@ const Component = require('../core/Component');
 class About extends Component {
 
     view() {
-        return m('section.about', [
+        return m('section#about', [
             m('.row', [
                 m('h2', "About Me"),
                 m('.col-3', [

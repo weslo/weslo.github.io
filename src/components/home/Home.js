@@ -19,13 +19,12 @@ class Home extends Component {
 
     view(vnode) {
         return m('.home', [
-            m(require('./Nav')),
+            m(require('./nav/Nav')),
             m(require('./projects/Projects')),
             m(require('./About')),
             m(require('./footer/Footer')),
             vnode.attrs.project != 'undefined' && vnode.attrs.project in this.projects ? m(require('./projects/ProjectModal'), this.projects[vnode.attrs.project])
                 : null
-
         ]);
     }
 }

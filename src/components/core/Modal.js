@@ -3,6 +3,9 @@ const Component = require('./Component');
 
 class Modal extends Component {
 
+    oninit() {
+    }
+
     view(vnode) {
         return m('.modal-blind', { onclick: () => { this.close() } }, [
             m('.modal', [

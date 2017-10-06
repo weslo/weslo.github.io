@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../node_modules/animate.css/animate.min.css);
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2431,6 +2432,12 @@ table {
   max-width: 60em;
   margin: 0 auto; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 body {
   background-color: #222222;
   font-family: 'Fjalla One', sans-serif;
@@ -2502,7 +2509,8 @@ img.circle {
   bottom: 0;
   right: 0;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fade-in 0.2s; }
   .modal-blind .modal {
     background-color: #222222;
     max-width: 60em;

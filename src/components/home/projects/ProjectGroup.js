@@ -9,13 +9,11 @@ class ProjectGroup extends Component {
         return m('.project-group', [
             m(ProjectGroupHeader, {
                 title: vnode.attrs.title,
-                image: vnode.attrs.bannerImage
+                image: vnode.attrs.icon
             }),
-            m(ProjectBanner),
-            m(ProjectBanner),
-            m(ProjectBanner),
-            m(ProjectBanner),
-            m(ProjectBanner),
+            m('div', vnode.attrs.projects.map(function(project) {
+                return m(ProjectBanner, project);
+            }))
         ]);
     }
 }

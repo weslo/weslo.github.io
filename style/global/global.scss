@@ -24,7 +24,7 @@ $transition-duration: .2s;
     box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
 }
 
-$border-off: 1px solid #FFFFFF00;
+$border-off: 1px solid rgba(0, 0, 0, 0);
 $border-inactive: 1px solid $color-content-grey;
 $border-active: 1px solid $color-content-white;
 
@@ -55,4 +55,10 @@ h3 {
 h4 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 14pt;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 8pt;
 }

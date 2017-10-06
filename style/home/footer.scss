@@ -2,8 +2,10 @@ $footer-height: 30px;
 
 .footer {
     height: $footer-height;
-    border-top: $border-inactive;
     padding: 20px;
+    border-top: $border-inactive;
+    background-color: $color-background-grey;
+    @include box-shadow-inactive();
 
     .contact {
         float: left;

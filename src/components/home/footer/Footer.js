@@ -12,11 +12,14 @@ class Footer extends Component {
                     m('ul', [
                         m(ContactLink, {
                             icon: "fa-envelope-o",
-                            text: "Email Me"
+                            text: "Email Me",
+                            url: "mailto:wesley.rockholz@gmail.com",
+                            target: ""
                         }),
                         m(ContactLink, {
                             icon: "fa-file-pdf-o",
-                            text: "Resume"
+                            text: "Resume",
+                            url: "resume.pdf"
                         })
                     ])
                 ]),

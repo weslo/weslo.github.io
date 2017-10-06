@@ -5,7 +5,10 @@ class ContactLink extends Component {
 
     view(vnode) {
         return m('li.contact-link', [
-            m('a[href="./"]', [
+            m('a', {
+                href: vnode.attrs.url,
+                target: vnode.attrs.target === 'undefined' ? "_blank" : vnode.attrs.target
+            }, [
                 m('i', { class: "fa fa-fw fa-2x " + vnode.attrs.icon }),
                 m('h3', vnode.attrs.text)
             ])

@@ -1,0 +1,24 @@
+$footer-height: 30px;
+
+.footer {
+    height: $footer-height;
+    border-top: $border-inactive;
+    padding: 20px;
+
+    .contact {
+        float: left;
+
+        .contact-link {
+            display: inline-block;
+            margin-right: 10pt;
+
+            i {
+                margin-right: 4px;
+            }
+
+            h3 {
+                display: inline;
+            }
+        }
+    }
+}

@@ -6,7 +6,8 @@ class Home extends Component {
     view() {
         return m('.home', [
             m(require('./Nav')),
-            m(require('./projects/Projects'))
+            m(require('./projects/Projects')),
+            m(require('./footer/Footer'))
         ]);
     }
 }

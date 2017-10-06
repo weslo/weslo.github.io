@@ -2443,6 +2443,29 @@ p {
   font-weight: 400;
   font-size: 8pt; }
 
+a {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #7A7A7A; }
+  a:visited {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #7A7A7A; }
+  a:hover {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #FFFFFF; }
+
 .home .nav {
   position: fixed;
   top: 0;
@@ -2461,11 +2484,11 @@ p {
     text-align: center;
     vertical-align: middle;
     margin-top: 8px;
-    margin-left: 10px; }
+    margin-left: 20px; }
   .home .nav .nav-links {
     float: right;
     margin-top: 24px;
-    margin-right: 10px; }
+    margin-right: 20px; }
     .home .nav .nav-links ul li {
       display: inline-block;
       text-transform: uppercase;
@@ -2554,3 +2577,17 @@ p {
           -o-transition: 0.2s;
           transition: 0.2s;
           opacity: 1; }
+
+.home .footer {
+  height: 30px;
+  border-top: 1px solid #7A7A7A;
+  padding: 20px; }
+  .home .footer .contact {
+    float: left; }
+    .home .footer .contact .contact-link {
+      display: inline-block;
+      margin-right: 10pt; }
+      .home .footer .contact .contact-link i {
+        margin-right: 4px; }
+      .home .footer .contact .contact-link h3 {
+        display: inline; }

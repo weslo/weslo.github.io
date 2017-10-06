@@ -62,3 +62,22 @@ p {
     font-weight: 400;
     font-size: 8pt;
 }
+
+a {
+    text-decoration: none;
+
+    &:visited {
+
+        @include transition($transition-duration);
+        color: $color-content-grey;
+    }
+
+    &:hover {
+
+        @include transition($transition-duration);
+        color:$color-content-white;
+    }
+
+    @include transition($transition-duration);
+    color: $color-content-grey;
+}

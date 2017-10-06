@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 $content-max-width: 60em;
+$mobile-breakpoint: 720px;
 
 @mixin col() {
     display: inline-block;
@@ -8,16 +9,20 @@ $content-max-width: 60em;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+
+    @media(max-width: $mobile-breakpoint) {
+        min-width: 100%;
+    }
 }
 
 .col-2 {
-    @include col();
     width: 50%;
+    @include col();
 }
 
 .col-3 {
-    @include col();
     width: 33.33%;
+    @include col();
 }
 
 .row {

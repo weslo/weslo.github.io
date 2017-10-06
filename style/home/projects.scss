@@ -1,24 +1,29 @@
 $margin-top-projects: calc(#{$nav-height} + 40px);
+$width-project-banner: 240px;
 
 .projects {
     margin-top: $margin-top-projects;
     min-height: calc(100vh - #{$margin-top-projects});
 
-    .project-group-header {
+    .project-group {
+        width: $width-project-banner;
+        margin: 0 auto;
 
-        border-bottom: $border-inactive;
-        max-width: 240px;
-        padding-bottom: 4px;
-        margin-bottom: 8px;
+        .project-group-header {
+            border-bottom: $border-inactive;
+            max-width: $width-project-banner;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
 
-        img {
-            width: 30px;
-            margin-right: 8px;
-            display: inline;
-        }
+            img {
+                width: 30px;
+                margin-right: 8px;
+                display: inline;
+            }
 
-        h4 {
-            display: inline;
+            h4 {
+                display: inline;
+            }
         }
     }
 }

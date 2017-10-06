@@ -1,6 +1,6 @@
 const m = require('mithril');
 const Component = require('../../core/Component');
-const ProjectGroupHeader = require('./ProjectGroupHeader');
+const ProjectGroup = require('./ProjectGroup');
 
 class Projects extends Component {
 
@@ -8,29 +8,22 @@ class Projects extends Component {
         return m('#projects.projects', [
             m('.row', [
                 m('.col-3', [
-                    m(ProjectGroupHeader, {
+                    m(ProjectGroup, {
                         title: "Workinman Interactive",
-                        image: "imgs/project-group-icons/workinman.png"
-                    }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
+                        bannerImage: "imgs/project-group-icons/workinman.png"
+                    })
                 ]),
                 m('.col-3', [
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
+                    m(ProjectGroup, {
+                        title: "Yes And Games",
+                        bannerImage: "imgs/project-group-icons/yes-and-games.png"
+                    })
                 ]),
                 m('.col-3', [
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
-                    m('img', { src: "imgs/project-banners/project-frame.png" }),
+                    m(ProjectGroup, {
+                        title: "Other Work",
+                        bannerImage: "imgs/project-group-icons/roc-game-dev.png"
+                    })
                 ])
             ])
         ]);

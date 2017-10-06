@@ -5,8 +5,9 @@ const ProjectGroup = require('./ProjectGroup');
 class Projects extends Component {
 
     view() {
-        return m('#projects.projects', [
+        return m('section.projects', [
             m('.row', [
+                m('h1', "Games"),
                 m('.col-3', [
                     m(ProjectGroup, {
                         title: "Workinman Interactive",

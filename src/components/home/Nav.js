@@ -13,6 +13,7 @@ class Nav extends Component {
                 m('.nav-links', [
                     m('ul', [
                         m('li', "Games"),
+                        m('li', "About"),
                         m('li', "Contact")
                     ])
                 ])

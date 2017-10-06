@@ -28,16 +28,27 @@ $border-off: 1px solid rgba(0, 0, 0, 0);
 $border-inactive: 1px solid $color-content-grey;
 $border-active: 1px solid $color-content-white;
 
+$section-margin: 40px;
+
 body {
     background-color: $color-background-grey;
     font-family: 'Fjalla One', sans-serif;
     color: $color-content-white;
 }
 
+section {
+    margin-top: $section-margin;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
 h1 {
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     font-size: 32pt;
+    color: $color-content-grey;
 }
 
 h2 {

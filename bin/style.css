@@ -2410,6 +2410,23 @@ table {
     .col-3 {
       min-width: 100%; } }
 
+.col-3-2 {
+  width: 66.66%;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+  @media (max-width: 720px) {
+    .col-3-2 {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .col-3-2 {
+      min-width: 100%; } }
+
 .row {
   max-width: 60em;
   margin: 0 auto; }
@@ -2419,10 +2436,16 @@ body {
   font-family: 'Fjalla One', sans-serif;
   color: #FFFFFF; }
 
+section {
+  margin-top: 40px; }
+  section h1 {
+    margin-bottom: 20px; }
+
 h1 {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
-  font-size: 32pt; }
+  font-size: 32pt;
+  color: #7A7A7A; }
 
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -2483,17 +2506,17 @@ a {
     float: left;
     text-align: center;
     vertical-align: middle;
-    margin-top: 8px;
-    margin-left: 20px; }
+    margin-top: 8px; }
+    .home .nav .logo h1 {
+      color: #FFFFFF; }
   .home .nav .nav-links {
     float: right;
-    margin-top: 24px;
-    margin-right: 20px; }
+    margin-top: 24px; }
     .home .nav .nav-links ul li {
       display: inline-block;
       text-transform: uppercase;
       font-size: 24pt;
-      margin-left: 10pt;
+      margin-left: 14pt;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;
@@ -2533,8 +2556,7 @@ a {
       display: inline; }
 
 .home .projects {
-  margin-top: calc(80px + 40px);
-  min-height: calc(100vh - calc(80px + 40px)); }
+  margin-top: calc(80px + 40px); }
   .home .projects .project-group {
     width: 240px;
     margin: 0 auto; }

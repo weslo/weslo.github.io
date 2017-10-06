@@ -32,6 +32,14 @@ $mobile-breakpoint: 480px;
     @include col();
 }
 
+.col-3-2 {
+    width: 66.66%;
+    @media(max-width: $tablet-breakpoint) {
+        width: 100%;
+    }
+    @include col();
+}
+
 .row {
     max-width: $content-max-width;
     margin: 0 auto;

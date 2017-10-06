@@ -1,9 +1,8 @@
-$margin-top-projects: calc(#{$nav-height} + 40px);
+$margin-top-projects: calc(#{$nav-height} + #{$section-margin});
 $width-project-banner: 240px;
 
 .projects {
     margin-top: $margin-top-projects;
-    min-height: calc(100vh - #{$margin-top-projects});
 
     .project-group {
         width: $width-project-banner;

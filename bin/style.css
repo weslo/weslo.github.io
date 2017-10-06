@@ -168,3 +168,20 @@ h4 {
         display: inline; }
       .home .projects .project-group .project-group-header h4 {
         display: inline; }
+    .home .projects .project-group .project {
+      height: 40px;
+      margin-bottom: 4px;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      outline: 1px solid #FFFFFF00; }
+      .home .projects .project-group .project:hover {
+        cursor: pointer;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        outline: 1px solid #FFFFFF; }

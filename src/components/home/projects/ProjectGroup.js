@@ -1,6 +1,7 @@
 const m = require('mithril');
 const Component = require('../../core/Component');
 const ProjectGroupHeader = require('./ProjectGroupHeader');
+const ProjectBanner = require('./ProjectBanner');
 
 class ProjectGroup extends Component {
 
@@ -10,11 +11,11 @@ class ProjectGroup extends Component {
                 title: vnode.attrs.title,
                 image: vnode.attrs.bannerImage
             }),
-            m('img', { src: "imgs/project-banners/project-frame.png" }),
-            m('img', { src: "imgs/project-banners/project-frame.png" }),
-            m('img', { src: "imgs/project-banners/project-frame.png" }),
-            m('img', { src: "imgs/project-banners/project-frame.png" }),
-            m('img', { src: "imgs/project-banners/project-frame.png" }),
+            m(ProjectBanner),
+            m(ProjectBanner),
+            m(ProjectBanner),
+            m(ProjectBanner),
+            m(ProjectBanner),
         ]);
     }
 }

@@ -25,5 +25,20 @@ $width-project-banner: 240px;
                 display: inline;
             }
         }
+
+        .project {
+            height: 40px;
+            margin-bottom: 4px;
+
+            &:hover {
+                cursor: pointer;
+
+                @include transition($transition-duration);
+                outline: $border-active;
+            }
+
+            @include transition($transition-duration);
+            outline: $border-off;
+        }
     }
 }

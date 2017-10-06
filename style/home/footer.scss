@@ -21,4 +21,16 @@ $footer-height: 30px;
             }
         }
     }
+
+    .social {
+        float: right;
+
+        ul {
+
+            li {
+                float: right;
+                display: inline;
+            }
+        }
+    }
 }

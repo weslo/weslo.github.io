@@ -1,16 +1,15 @@
 const m = require('mithril');
 const Component = require('../../core/Component');
 
-class ContactLink extends Component {
+class SocialLink extends Component {
 
     view(vnode) {
-        return m('li.contact-link', [
+        return m('li.social-link', [
             m('a[href="./"]', [
                 m('i', { class: "fa fa-fw fa-2x " + vnode.attrs.icon }),
-                m('h3', vnode.attrs.text)
             ])
         ])
     }
 }
 
-module.exports = ContactLink;
+module.exports = SocialLink;

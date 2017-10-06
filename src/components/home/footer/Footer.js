@@ -1,6 +1,7 @@
 const m = require('mithril');
 const Component = require('../../core/Component');
 const ContactLink = require('./ContactLink');
+const SocialLink = require('./SocialLink');
 
 class Footer extends Component {
 
@@ -21,6 +22,18 @@ class Footer extends Component {
                 ]),
                 m('.social', [
                     m('ul', [
+                        m(SocialLink, {
+                            icon: "fa-linkedin-square"
+                        }),
+                        m(SocialLink, {
+                            icon: "fa-facebook-square"
+                        }),
+                        m(SocialLink, {
+                            icon: "fa-twitter-square"
+                        }),
+                        m(SocialLink, {
+                            icon: "fa-github-square"
+                        })
                     ])
                 ])
             ])

@@ -2591,3 +2591,8 @@ a {
         margin-right: 4px; }
       .home .footer .contact .contact-link h3 {
         display: inline; }
+  .home .footer .social {
+    float: right; }
+    .home .footer .social ul li {
+      float: right;
+      display: inline; }

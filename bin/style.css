@@ -2438,8 +2438,10 @@ body {
 
 section {
   margin-top: 40px; }
-  section h1 {
-    margin-bottom: 20px; }
+  section h2 {
+    margin-bottom: 40px;
+    color: #7A7A7A;
+    border-bottom: 1px solid #7A7A7A; }
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
@@ -2449,11 +2451,12 @@ h1 {
 
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400; }
+  font-weight: 200;
+  font-size: 24pt; }
 
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 16pt; }
 
@@ -2464,7 +2467,7 @@ h4 {
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 8pt; }
+  line-height: 1.2em; }
 
 a {
   text-decoration: none;
@@ -2489,6 +2492,9 @@ a {
     transition: 0.2s;
     color: #FFFFFF; }
 
+img.circle {
+  border-radius: 50%; }
+
 .home .nav {
   position: fixed;
   top: 0;
@@ -2509,6 +2515,8 @@ a {
     margin-top: 8px; }
     .home .nav .logo h1 {
       color: #FFFFFF; }
+    .home .nav .logo h3 {
+      font-weight: 200; }
   .home .nav .nav-links {
     float: right;
     margin-top: 24px; }
@@ -2607,6 +2615,8 @@ a {
               display: inline; }
             .home .projects .project-group .project .overlay .text-container span i {
               margin-left: 8px; }
+          .home .projects .project-group .project .overlay .text-container p {
+            font-size: 8pt; }
       .home .projects .project-group .project:hover {
         cursor: pointer;
         -webkit-transition: 0.2s;
@@ -2622,3 +2632,11 @@ a {
           -o-transition: 0.2s;
           transition: 0.2s;
           opacity: 1; }
+
+.home .about img {
+  width: 100%; }
+
+.home .about .about-text {
+  padding: 20px; }
+  .home .about .about-text .about-header {
+    margin-bottom: 12px; }

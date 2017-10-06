@@ -1,2 +1,14 @@
 .about {
+
+    img {
+        width: 100%;
+    }
+
+    .about-text {
+        padding: 20px;
+
+        .about-header {
+            margin-bottom: 12px;
+        }
+    }
 }

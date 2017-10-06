@@ -6,7 +6,7 @@ const SocialLink = require('./SocialLink');
 class Footer extends Component {
 
     view() {
-        return m('.footer', [
+        return m('section.footer', [
             m('.row', [
                 m('.contact', [
                     m('ul', [

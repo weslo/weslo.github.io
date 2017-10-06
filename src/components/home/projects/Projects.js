@@ -7,7 +7,7 @@ class Projects extends Component {
     view() {
         return m('section.projects', [
             m('.row', [
-                m('h1', "Games"),
+                m('h2', "Games"),
                 m('.col-3', [
                     m(ProjectGroup, {
                         title: "Workinman Interactive",

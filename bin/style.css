@@ -2686,8 +2686,9 @@ img.circle {
 .project-modal {
   height: 100%; }
   .project-modal .header {
-    height: 120px;
-    background-size: contain;
+    height: 100px;
+    background-size: cover;
+    background-position: right;
     border-radius: 49px 49px 0px 0px;
     border-bottom: 1px solid #7A7A7A; }
     .project-modal .header .overlay {

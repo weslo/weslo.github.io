@@ -10,35 +10,35 @@ class Home extends Component {
                 group: "workinman",
                 title: "Workinman Interactive",
                 brief: "More information about Workinman",
-                bannerImage: "imgs/project-banners/project-frame.png",
+                bannerImage: "imgs/project-banners/workinman.png",
                 description: "Workinman Interactive is a service-based game studio in Rochester, NY."
             },
             "otto-the-automaton": {
                 group: "workinman",
                 title: "Otto the Automaton",
                 brief: "Internal build automation software",
-                bannerImage: "imgs/project-banners/project-frame.png",
+                bannerImage: "imgs/project-banners/otto-the-automaton.png",
                 description: "Otto the Automaton is a suite of build automation software built by and used internally at Workinman Interactive."
             },
             "smart-cycle": {
                 group: "workinman",
                 title: "Fisher-Price Smart Cycle",
                 brief: "Games and bluetooth for connected bike",
-                bannerImage: "imgs/project-banners/project-frame.png",
+                bannerImage: "imgs/project-banners/smart-cycle.png",
                 description: ""
             },
             "pj-masks": {
                 group: "workinman",
                 title: "PJ Masks Starlight Sprint",
                 brief: "Procedurally generated infinirunner",
-                bannerImage: "imgs/project-banners/project-frame.png",
+                bannerImage: "imgs/project-banners/starlight-sprint.png",
                 description: ""
             },
             "block-party-3": {
                 group: "workinman",
                 title: "Block Party 3",
                 brief: "Procedurally generated infinirunner",
-                bannerImage: "imgs/project-banners/project-frame.png",
+                bannerImage: "imgs/project-banners/block-party-3.png",
                 description: ""
             },
             "yes-and-games": {

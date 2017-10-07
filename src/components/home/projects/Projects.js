@@ -37,6 +37,7 @@ class Projects extends Component {
         var inGroup = [];
         Object.keys(projects).forEach(function(id) {
             if(projects[id].group == group) {
+                projects[id].id = id;
                 inGroup.push(projects[id]);
             }
         });

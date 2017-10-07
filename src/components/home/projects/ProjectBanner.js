@@ -7,7 +7,7 @@ class ProjectBanner extends Component {
         return m('.project', {
             style: "background-image: url(" + vnode.attrs.bannerImage + ")",
             onclick: function() {
-                m.route.set("/yes-and-games")
+                m.route.set("/" + vnode.attrs.id)
             }
         }, [
             m('.overlay', [

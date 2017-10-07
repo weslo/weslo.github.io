@@ -1,3 +1,6 @@
+$modal-border-radius: 50px 50px 50px 50px;
+$modal-border-radius-top: 49px 49px 0px 0px;
+
 .modal-blind {
     position: fixed;
     top: 0;
@@ -15,7 +18,7 @@
         width: 30em;
         height: 40em;
         @include vertical-center();
-        border-radius: 10%;
+        border-radius: $modal-border-radius;
         border: $border-inactive;
     }
 }

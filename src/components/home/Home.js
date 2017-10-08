@@ -227,19 +227,80 @@ class Home extends Component {
                 group: "other",
                 title: "Hearplay",
                 brief: "MMORPG for music listeners",
-                bannerImage: "imgs/project-banners/hearplay.png"
+                bannerImage: "imgs/project-banners/hearplay.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.hearplay', [
+                                m('.description', [
+                                    m('p', "Hearplay is a mixed MMORPG and music streaming service that gamifies music listening and sharing. Players place their stations on a pixelated map of the world. They can load their stations up with songs, then view and interact with other users' stations while streaming music to their headphones."),
+                                    m('p', "I worked as a game designer and project manager between product owners and a contracted development team to produce Hearplay. I worked on editor and design tools, prepared design documents, and facilitated communications between the various teams working on the project."),
+                                    m('p', "Hearplay was built in JS using Pixi.js as a rendering engine and CakePHP as a server framework. The game is still in development.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "http://hearplay.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "a-small-robot-story": {
                 group: "other",
                 title: "A Small Robot Story",
                 brief: "A small robot on a big journey",
-                bannerImage: "imgs/project-banners/a-small-robot-story.png"
+                bannerImage: "imgs/project-banners/a-small-robot-story.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.a-small-robot-story', [
+                                m('.description', [
+                                    m('p', "A Small Robot Story is an adventure-platformer that is available for PC. You play as Rae, a small robot who activates and has no programming, so you need to set out and find out what's up!"),
+                                    m('p', "Robert Mostyn built A Small Robot Story and obtained Steam Greenlight access for the game over the past few years. I'm assisting him in completing, polishing, and shipping the game on Steam. We're adding a fourth world, Steam features like achievements and trading cards, and working with local artist Jason Vector to add some amazing art and cutscenes."),
+                                    m('p', "A Small Robot Story was built in Construct2.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://steamcommunity.com/sharedfiles/filedetails/?id=736468647",
+                                        target: "_blank"
+                                    }, "Steam")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "subway-spraypainter": {
                 group: "other",
                 title: "Subway Spraypainter",
                 brief: "Paint Rochester's underground subway",
-                bannerImage: "imgs/project-banners/subway-spraypainter.png"
+                bannerImage: "imgs/project-banners/subway-spraypainter.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.subway-spraypainter', [
+                                m('.description', [
+                                    m('p', "Subway Spraypainter is a retro arcade game built for the 2017 Roc Game Dev jam. Spray paint the walls of Rochester's abandoned subway tunnels without getting caught by the police!"),
+                                    m('p', "In summer 2017, the Roc Game Dev meetup organized a Rochester-themed game jam to be exhibited at the first Roc Game Fest. I helped build the showcase site, and built Subway Spraypainter as my submission. Workinman Lead Artist and Imaginary Monsters founder Peter Lazarski produced the art and Roc Game Dev founder Robert Mostyn wrote the music. We hired a professional actor (me) to voice act the police officer."),
+                                    m('p', "Subway Spraypainter was built in Unity/C#, and the showcase was built by hand in JS using the rendering framework Mithril.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "http://rocgamedev.com/jam/games/subway-spraypainter/",
+                                        target: "_blank"
+                                    }, "Play"),
+                                    m('a', {
+                                        href: "http://rocgamedev.com/jam/",
+                                        target: "_blank"
+                                    }, "Showcase")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             }
         };
     }

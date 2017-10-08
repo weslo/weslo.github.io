@@ -2718,6 +2718,7 @@ img.circle {
       .project-modal .content .links a {
         border-radius: 5px;
         padding: 8px;
+        margin: 4px;
         background-color: #000000;
         font-size: 24pt;
         text-transform: uppercase;

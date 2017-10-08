@@ -1,4 +1,5 @@
 $footer-height: 30px;
+$footer-height-mobile: 80px;
 
 #contact {
     height: $footer-height;
@@ -7,8 +8,18 @@ $footer-height: 30px;
     background-color: $color-background-grey;
     @include box-shadow-inactive();
 
+    @media(max-width: $mobile-breakpoint) {
+        height: $footer-height-mobile;
+    }
+
     .contact {
         float: left;
+
+        @media(max-width: $mobile-breakpoint) {
+            float: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
         .contact-link {
             display: inline-block;
@@ -25,13 +36,20 @@ $footer-height: 30px;
     }
 
     .social {
-        float: right;
+
+        @media(max-width: $mobile-breakpoint) {
+            text-align: center;
+        }
 
         ul {
 
             li {
                 float: right;
                 display: inline;
+
+                @media(max-width: $mobile-breakpoint) {
+                    float: none;
+                }
             }
         }
     }

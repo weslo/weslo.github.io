@@ -1,4 +1,5 @@
 $nav-height: 80px;
+$nav-height-mobile-extension: 40px;
 
 .nav {
     position: fixed;
@@ -12,6 +13,10 @@ $nav-height: 80px;
     background-color: $color-background-grey;
     @include box-shadow-inactive();
 
+    @media(max-width: $mobile-breakpoint) {
+        height: #{$nav-height + $nav-height-mobile-extension};
+    }
+
     .logo {
         float: left;
         text-align: center;
@@ -22,6 +27,10 @@ $nav-height: 80px;
         -ms-user-select: none; /* IE10+/Edge */
         user-select: none; /* Standard */
         cursor: default;
+
+        @media(max-width: $mobile-breakpoint) {
+            float: none;
+        }
 
         h1 {
             color: $color-content-white;
@@ -36,6 +45,12 @@ $nav-height: 80px;
         float: right;
         margin-top: 24px;
 
+        @media(max-width: $mobile-breakpoint) {
+            text-align: center;
+            margin-top: 12px;
+            float: none;
+        }
+
         ul {
 
             li {
@@ -43,6 +58,12 @@ $nav-height: 80px;
                 text-transform: uppercase;
                 font-size: 24pt;
                 margin-left: 14pt;
+
+                @media(max-width: $mobile-breakpoint) {
+                    margin-left: 7pt;
+                    margin-right: 7pt;
+                    font-size: 18pt;
+                }
 
                 &:hover {
                     cursor: pointer;

@@ -1,7 +1,19 @@
 #about {
 
-    img {
-        width: 100%;
+    .portrait {
+        text-align: center;
+
+        img {
+            width: 100%;
+
+            @media(max-width: $tablet-breakpoint) {
+                max-width: 40%;
+            }
+
+            @media(max-width: $tablet-breakpoint) {
+                max-width: 80%;
+            }
+        }
     }
 
     .about-text {

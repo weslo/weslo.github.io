@@ -7,7 +7,7 @@ class About extends Component {
         return m('section#about', [
             m('.row', [
                 m('h2', "About Me"),
-                m('.col-3', [
+                m('.col-3.col-tablet-1.portrait', [
                     m('img.circle', { src: "imgs/portrait.jpg" })
                 ]),
                 m('.col-3-2.about-text', [

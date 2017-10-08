@@ -40,6 +40,12 @@ $mobile-breakpoint: 480px;
     @include col();
 }
 
+.col-tablet-1 {
+    @media(max-width: $tablet-breakpoint) {
+        min-width: 100%;
+    }
+}
+
 .row {
     max-width: $content-max-width;
     margin: 0 auto;

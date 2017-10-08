@@ -2427,6 +2427,10 @@ table {
     .col-3-2 {
       min-width: 100%; } }
 
+@media (max-width: 720px) {
+  .col-tablet-1 {
+    min-width: 100%; } }
+
 .row {
   max-width: 60em;
   margin: 0 auto; }
@@ -2552,6 +2556,9 @@ img.circle {
   -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75); }
+  @media (max-width: 480px) {
+    .home .nav {
+      height: 120px; } }
   .home .nav .logo {
     float: left;
     text-align: center;
@@ -2566,6 +2573,9 @@ img.circle {
     user-select: none;
     /* Standard */
     cursor: default; }
+    @media (max-width: 480px) {
+      .home .nav .logo {
+        float: none; } }
     .home .nav .logo h1 {
       color: #FFFFFF; }
     .home .nav .logo h3 {
@@ -2573,6 +2583,11 @@ img.circle {
   .home .nav .nav-links {
     float: right;
     margin-top: 24px; }
+    @media (max-width: 480px) {
+      .home .nav .nav-links {
+        text-align: center;
+        margin-top: 12px;
+        float: none; } }
     .home .nav .nav-links ul li {
       display: inline-block;
       text-transform: uppercase;
@@ -2584,6 +2599,11 @@ img.circle {
       -o-transition: 0.2s;
       transition: 0.2s;
       color: #7A7A7A; }
+      @media (max-width: 480px) {
+        .home .nav .nav-links ul li {
+          margin-left: 7pt;
+          margin-right: 7pt;
+          font-size: 18pt; } }
       .home .nav .nav-links ul li:hover {
         cursor: pointer;
         -webkit-transition: 0.2s;
@@ -2618,9 +2638,15 @@ img.circle {
 
 .home #games {
   margin-top: calc(80px + 40px); }
+  @media (max-width: 480px) {
+    .home #games {
+      margin-top: calc(calc(80px + 40px) + 40px); } }
   .home #games .project-group {
     width: 240px;
     margin: 0 auto; }
+    @media (max-width: 720px) {
+      .home #games .project-group {
+        margin-bottom: 40px; } }
     .home #games .project-group .project-group-header {
       border-bottom: 1px solid #7A7A7A;
       max-width: 240px;
@@ -2687,8 +2713,16 @@ img.circle {
           transition: 0.2s;
           opacity: 1; }
 
-.home #about img {
-  width: 100%; }
+.home #about .portrait {
+  text-align: center; }
+  .home #about .portrait img {
+    width: 100%; }
+    @media (max-width: 720px) {
+      .home #about .portrait img {
+        max-width: 40%; } }
+    @media (max-width: 720px) {
+      .home #about .portrait img {
+        max-width: 80%; } }
 
 .home #about .about-text {
   padding: 20px; }

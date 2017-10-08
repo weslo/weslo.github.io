@@ -4,9 +4,17 @@ $width-project-banner: 240px;
 #games {
     margin-top: $margin-top-projects;
 
+    @media(max-width: $mobile-breakpoint) {
+        margin-top: calc(#{$margin-top-projects} + #{$nav-height-mobile-extension});
+    }
+
     .project-group {
         width: $width-project-banner;
         margin: 0 auto;
+
+        @media(max-width: $tablet-breakpoint) {
+            margin-bottom: $section-margin;
+        }
 
         .project-group-header {
             border-bottom: $border-inactive;

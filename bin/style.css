@@ -2700,7 +2700,8 @@ img.circle {
         position: absolute;
         bottom: 0;
         padding: 12px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        font-size: 28pt; }
   .project-modal .content {
     padding: 12px; }
     .project-modal .content p {

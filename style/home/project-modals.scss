@@ -21,6 +21,10 @@
                 padding: 12px;
                 color: $color-content-white;
                 font-size: 28pt;
+
+                @media(max-width: $mobile-breakpoint) {
+                    font-size: 16pt;
+                }
             }
         }
     }

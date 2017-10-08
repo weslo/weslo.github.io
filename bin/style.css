@@ -2471,7 +2471,11 @@ h4 {
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  font-size: 12pt; }
+  @media (max-width: 480px) {
+    p {
+      font-size: 10pt; } }
 
 a {
   text-decoration: none;
@@ -2536,6 +2540,7 @@ img.circle {
     max-height: 70vh;
     margin: 0 auto;
     width: 30em;
+    max-width: 80vw;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -2761,6 +2766,9 @@ img.circle {
         padding: 12px;
         color: #FFFFFF;
         font-size: 28pt; }
+        @media (max-width: 480px) {
+          .project-modal .header .overlay h1 {
+            font-size: 16pt; } }
   .project-modal .content {
     margin: 12px; }
     .project-modal .content p {

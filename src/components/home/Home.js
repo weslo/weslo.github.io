@@ -160,7 +160,7 @@ class Home extends Component {
                                     m('p', "Adventure Guild is a social Roguelike RPG built for mobile devices. Party up with your friends to explore the farthest reaches of the world. Tackle tactically challenging turn-based combat that forces you to work as a team."),
                                     m('p', "Adventure Guild began as a homework assignment in one of my classes in college. I built a prototype for the combat and UI flow with two friends for a production studio at RIT. We were granted funding by MAGIC at RIT to flesh out a strong beta, then ran a successful Kickstarter to support the game through launch in May 2016."),
                                     m('p', "The game client is built in Unity/C# alongside a completely ground-up Apache Java server that runs on AWS. We wrote the network serialization by hand with tight data usage in mind on mobile devices. It is a massive game, built by 6 developers, that includes tens of thousands of lines of code and almost 10 gigabytes of hand-painted characters, equipment, maps, props, and UI elements."),
-                                    m('p', "Adventure Guild is available on iOS and Android mobile devices.")
+                                    m('p', "Adventure Guild is available on iOS and Android mobile devices. It was featured on the show floor at GDC 2016, at Imagine RIT 2016, and at the Rochester Mini Maker Faire since 2015.")
                                 ]),
                                 m('.links', [
                                     m('a', {
@@ -202,7 +202,26 @@ class Home extends Component {
                 group: "other",
                 title: "Roc Game Dev",
                 brief: "Rochester's game dev meetup",
-                bannerImage: "imgs/project-banners/roc-game-dev.png"
+                bannerImage: "imgs/project-banners/roc-game-dev.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.lazer-maze', [
+                                m('.description', [
+                                    m('p', "The Roc Game Dev meetup is a collective of professional, student, and amateur game developers located in or around Rochester, NY, that meet monthly to workshop, share, and discuss game development. We meet once a month for workshops/general meetup at MAGIC at RIT and once a month for a social meetup at local bars and coffee shops around downtown Rochester."),
+                                    m('p', "I have worked as an admin for the Roc Game Dev meetup since 2015 after meeting the founder, Robert Mostyn, at the Rochester Mini Maker Faire. I help plan meetups, workshops, and jams and occassionally work on promotion materials and club organization."),
+                                    m('p', "The Roc Game Dev meetup plays a major role in Rochester's growing game development scene. We ran the first Rochester Game Fest in September 2017, where over 600 people showed up to play and celebrate games made locally in Rochester. I am incredibly proud of the work we've done with this club.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "http://rocgamedev.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "hearplay": {
                 group: "other",

@@ -1,4 +1,5 @@
 const m = require('mithril');
+const $ = require('jquery');
 const Component = require('./Component');
 
 class Modal extends Component {
@@ -11,6 +12,10 @@ class Modal extends Component {
         ]);
     }
 
+    oncreate(vnode) {
+        $('body').addClass('noscroll');
+    }
+
     onbeforeremove(vnode) {
         vnode.dom.classList.remove('anim-fade-in');
         vnode.dom.classList.add('anim-fade-out');
@@ -21,7 +26,9 @@ class Modal extends Component {
 
     renderContent(vnode) { }
 
-    close() { }
+    close() {
+        $('body').removeClass('noscroll');
+    }
 }
 
 module.exports = Modal;

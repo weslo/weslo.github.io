@@ -19,6 +19,7 @@ class ProjectModal extends Modal {
     }
 
     close() {
+        super.close();
         m.route.set("/");
     }
 }

@@ -2495,6 +2495,9 @@ a {
 img.circle {
   border-radius: 10%; }
 
+.noscroll {
+  overflow: hidden; }
+
 @keyframes fade-in {
   from {
     opacity: 0; }
@@ -2526,14 +2529,15 @@ img.circle {
   .modal-blind .modal {
     background-color: #222222;
     max-width: 60em;
-    max-height: 80vh;
+    max-height: 70vh;
     margin: 0 auto;
     width: 30em;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50px 50px 50px 50px;
-    border: 1px solid #7A7A7A; }
+    border: 1px solid #7A7A7A;
+    overflow: scroll; }
 
 .home .nav {
   position: fixed;
@@ -2703,7 +2707,7 @@ img.circle {
         color: #FFFFFF;
         font-size: 28pt; }
   .project-modal .content {
-    padding: 12px; }
+    margin: 12px; }
     .project-modal .content p {
       margin-bottom: 12px; }
     .project-modal .content .links {

@@ -106,5 +106,9 @@ img.circle {
     border-radius: 10%;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 @import 'animations';
 @import 'modals';

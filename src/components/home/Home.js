@@ -107,7 +107,7 @@ class Home extends Component {
                 content: function(vnode) {
                     return {
                         view: function(vnode) {
-                            return m('.smart-cycle', [
+                            return m('.block-party-3', [
                                 m('.description', [
                                     m('p', "Block Party 3 is the third installment of the Nickelodeon Block Party party games series. Kids play as one of a myriad of Nickelodeon character like Spongebob, Lincoln, and Raphael in a turn-based strategy game with minigame challenges."),
                                     m('p', "I worked as a support developer on Block Party 3 as my introductory project at Workinman. It was built in Haxe for HTML5.")
@@ -127,13 +127,51 @@ class Home extends Component {
                 group: "yes-and-games",
                 title: "Yes And Games",
                 brief: "Indie game studio",
-                bannerImage: "imgs/project-banners/yes-and-games.png"
+                bannerImage: "imgs/project-banners/yes-and-games.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.yes-and-games', [
+                                m('.description', [
+                                    m('p', "Yes And Games is an independent game studio based in Rochester, NY. I co-founded Yes And Games with my fellow RIT grad Nick Rabb in summer 2014, and we have shipped two games as a team since then."),
+                                    m('p', "Our mission at Yes And Games is to design and develop mobile games that run counter to the abrasively microtransaction-driven design prevalent in the mobile games industry. Founded by a pair of Rochester improvisers, we use improv principles to drive our teamwork, game design, and work culture. Yes And Games is an informal team of about 6 developers, artists, and designers. We launched Adventure Guild after a successful Kickstarter in spring 2016 followed by Lazer Maze in summer 2016.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://yesandgames.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "adventure-guild": {
                 group: "yes-and-games",
                 title: "Adventure Guild",
                 brief: "Tactical turn-based MMORPG for mobile",
-                bannerImage: "imgs/project-banners/adventure-guild.png"
+                bannerImage: "imgs/project-banners/adventure-guild.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.adventure-guild', [
+                                m('.description', [
+                                    m('p', "Adventure Guild is a social Roguelike RPG built for mobile devices. Party up with your friends to explore the farthest reaches of the world. Tackle tactically challenging turn-based combat that forces you to work as a team."),
+                                    m('p', "Adventure Guild began as a homework assignment in one of my classes in college. I built a prototype for the combat and UI flow with two friends for a production studio at RIT. We were granted funding by MAGIC at RIT to flesh out a strong beta, then ran a successful Kickstarter to support the game through launch in May 2016."),
+                                    m('p', "The game client is built in Unity/C# alongside a completely ground-up Apache Java server that runs on AWS. We wrote the network serialization by hand with tight data usage in mind on mobile devices. It is a massive game, built by 6 developers, that includes tens of thousands of lines of code and almost 10 gigabytes of hand-painted characters, equipment, maps, props, and UI elements."),
+                                    m('p', "Adventure Guild is available on iOS and Android mobile devices.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://adventureguildgame.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "lazer-maze": {
                 group: "yes-and-games",

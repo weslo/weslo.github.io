@@ -13,11 +13,12 @@ $modal-border-radius-top: 49px 49px 0px 0px;
     .modal {
         background-color: $color-background-grey;
         max-width: $content-max-width;
-        max-height: 80vh;
+        max-height: 70vh;
         margin: 0 auto;
         width: 30em;
         @include vertical-center();
         border-radius: $modal-border-radius;
         border: $border-inactive;
+        overflow: scroll;
     }
 }

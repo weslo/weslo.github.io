@@ -2556,7 +2556,16 @@ img.circle {
     float: left;
     text-align: center;
     vertical-align: middle;
-    margin-top: 8px; }
+    margin-top: 8px;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    cursor: default; }
     .home .nav .logo h1 {
       color: #FFFFFF; }
     .home .nav .logo h3 {

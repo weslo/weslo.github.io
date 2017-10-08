@@ -138,7 +138,7 @@ class Home extends Component {
                                 ]),
                                 m('.links', [
                                     m('a', {
-                                        href: "https://yesandgames.com/",
+                                        href: "http://yesandgames.com/",
                                         target: "_blank"
                                     }, "Website")
                                 ])
@@ -164,7 +164,7 @@ class Home extends Component {
                                 ]),
                                 m('.links', [
                                     m('a', {
-                                        href: "https://adventureguildgame.com/",
+                                        href: "http://adventureguildgame.com/",
                                         target: "_blank"
                                     }, "Website")
                                 ])
@@ -177,7 +177,26 @@ class Home extends Component {
                 group: "yes-and-games",
                 title: "Lazer Maze",
                 brief: "Dodge lasers that fire with each beat",
-                bannerImage: "imgs/project-banners/lazer-maze.png"
+                bannerImage: "imgs/project-banners/lazer-maze.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.lazer-maze', [
+                                m('.description', [
+                                    m('p', "Lazer Maze is a music-driven arcade action game for touch devices where players run through an infinite maze of lazers that turn on and off to the beat of the song."),
+                                    m('p', "The game was created as a design jam project that was polished and launched in about two months. It was developed by myself and Yes And Games lead artist Shin Yi Tan. We made it as an experiment in short-attention span game design, platform features practice, and an exercise in game polish. It was developed in Unity/C# and integrates features like iOS Game Center and Google Play Games leaderboards and achievements."),
+                                    m('p', "Lazer Maze is available on iOS and Android phones and tablets.")
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "http://yesandgames.com/lazermaze",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
             },
             "roc-game-dev": {
                 group: "other",

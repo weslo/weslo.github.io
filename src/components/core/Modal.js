@@ -4,8 +4,8 @@ const Component = require('./Component');
 class Modal extends Component {
 
     view(vnode) {
-        return m('.modal-blind.anim-fade-in', { onclick: () => { this.close() } }, [
-            m('.modal', [
+        return m('.modal-blind.anim-fade-in', { onclick: () => { this.close(); } }, [
+            m('.modal', { onclick: (e) => { e.stopPropagation(); } }, [
                 this.renderContent(vnode)
             ])
         ]);

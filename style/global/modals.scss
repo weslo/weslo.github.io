@@ -16,7 +16,6 @@ $modal-border-radius-top: 49px 49px 0px 0px;
         max-height: 80vh;
         margin: 0 auto;
         width: 30em;
-        height: 40em;
         @include vertical-center();
         border-radius: $modal-border-radius;
         border: $border-inactive;

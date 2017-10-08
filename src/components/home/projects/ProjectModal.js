@@ -13,7 +13,7 @@ class ProjectModal extends Modal {
                 ])
             ]),
             m('.content', [
-                m('p', vnode.attrs.description)
+                m(vnode.attrs.content)
             ])
         ]);
     }

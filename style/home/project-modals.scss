@@ -18,13 +18,39 @@
             h1 {
                 position: absolute;
                 bottom: 0;
-                padding: 8px;
+                padding: 12px;
                 color: $color-content-white;
             }
         }
     }
 
     .content {
-        padding: 8px;
+        padding: 12px;
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .links {
+            width: 100%;
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 24px;
+
+            a {
+                border-radius: 5px;
+                padding: 8px;
+                background-color: $color-background-black;
+                font-size: 24pt;
+
+                &:hover {
+                    @include transition($transition-duration);
+                    border: $border-active;
+                }
+
+                @include transition($transition-duration);
+                border: $border-inactive;
+            }
+        }
     }
 }

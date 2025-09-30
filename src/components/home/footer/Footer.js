@@ -1,9 +1,9 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
-const ContactLink = require('./ContactLink');
-const SocialLink = require('./SocialLink');
+import m from "mithril";
+import Component from "../../core/Component";
+import ContactLink from "./ContactLink";
+import SocialLink from './SocialLink';
 
-class Footer extends Component {
+export default class Footer extends Component {
 
     view() {
         return m('section#contact', [
@@ -47,5 +47,3 @@ class Footer extends Component {
         ]);
     }
 }
-
-module.exports = Footer;

@@ -1,6 +1,6 @@
-const m = require('mithril');
+import m from "mithril";
 
-class Component {
+export default class Component {
     constructor(vnode) { }
 
     view(vnode) { return m('div', "Hello, world!"); }
@@ -15,5 +15,3 @@ class Component {
 
     onremote(vnode) { }
 }
-
-module.exports = Component;

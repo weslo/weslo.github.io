@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Modal = require('../../core/Modal');
+import m from "mithril";
+import Modal from "../../core/Modal";
 
-class ProjectModal extends Modal {
+export default class ProjectModal extends Modal {
 
     renderContent(vnode) {
         return m('.project-modal', [
@@ -23,5 +23,3 @@ class ProjectModal extends Modal {
         m.route.set("/");
     }
 }
-
-module.exports = ProjectModal;

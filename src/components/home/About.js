@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Component = require('../core/Component');
+import m from "mithril";
+import Component from "../core/Component.js";
 
-class About extends Component {
+export default class About extends Component {
 
     view() {
         return m('section#about', [
@@ -20,5 +20,3 @@ class About extends Component {
         ]);
     }
 }
-
-module.exports = About;

@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
+import m from "mithril";
+import Component from "../../core/Component";
 
-class ProjectBanner extends Component {
+export default class ProjectBanner extends Component {
 
     view(vnode) {
         return m('.project', {
@@ -22,5 +22,3 @@ class ProjectBanner extends Component {
         ])
     }
 }
-
-module.exports = ProjectBanner;

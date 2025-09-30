@@ -1,8 +1,8 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
-const ProjectGroup = require('./ProjectGroup');
+import m from "mithril";
+import Component from "../../core/Component";
+import ProjectGroup from "./ProjectGroup";
 
-class Projects extends Component {
+export default class Projects extends Component {
 
     view(vnode) {
         return m('section#games', [
@@ -44,5 +44,3 @@ class Projects extends Component {
         return inGroup;
     }
 }
-
-module.exports = Projects;

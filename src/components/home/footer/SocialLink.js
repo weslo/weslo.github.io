@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
+import m from "mithril";
+import Component from "../../core/Component";
 
-class SocialLink extends Component {
+export default class SocialLink extends Component {
 
     view(vnode) {
         return m('li.social-link', [
@@ -14,5 +14,3 @@ class SocialLink extends Component {
         ])
     }
 }
-
-module.exports = SocialLink;

@@ -1,7 +1,13 @@
-const m = require('mithril');
-const Component = require('../core/Component');
+import m from "mithril";
+import Component from '../core/Component.js';
 
-class Home extends Component {
+import Nav from "./nav/Nav.js";
+import Projects from "./projects/Projects.js";
+import About from "./About.js";
+import Footer from "./footer/Footer.js";
+import ProjectModal from "./projects/ProjectModal.js";
+
+export default class Home extends Component {
 
     constructor() {
         super();
@@ -306,17 +312,14 @@ class Home extends Component {
     }
 
     view(vnode) {
-        return m('.home', [
-            m(require('./nav/Nav')),
-            m(require('./projects/Projects'), {
-                projects: this.projects
-            }),
-            m(require('./About')),
-            m(require('./footer/Footer')),
-            vnode.attrs.project != 'undefined' && vnode.attrs.project in this.projects ? m(require('./projects/ProjectModal'), this.projects[vnode.attrs.project])
-                : null
-        ]);
-    }
+    return m(".home", [
+      m(Nav),
+      m(Projects, { projects: this.projects }),
+      m(About),
+      m(Footer),
+      vnode.attrs.project !== "undefined" && vnode.attrs.project in this.projects
+        ? m(ProjectModal, { project: vnode.attrs.project })
+        : null
+    ]);
+  }
 }
-
-module.exports = Home;

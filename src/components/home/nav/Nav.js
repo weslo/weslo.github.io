@@ -1,8 +1,8 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
-const NavLink = require('./NavLink');
+import m from "mithril";
+import Component from "../../core/Component";
+import NavLink from "./NavLink";
 
-class Nav extends Component {
+export default class Nav extends Component {
 
     view() {
         return m('.nav', [
@@ -31,5 +31,3 @@ class Nav extends Component {
         ]);
     }
 }
-
-module.exports = Nav;

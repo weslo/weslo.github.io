@@ -1,8 +1,8 @@
-const m = require('mithril');
-const $ = require('jquery');
-const Component = require('./Component');
+import m from "mithril";
+import $ from "jquery";
+import Component from "./Component";
 
-class Modal extends Component {
+export default class Modal extends Component {
 
     view(vnode) {
         return m('.modal-blind.anim-fade-in', { onclick: () => { this.close(); } }, [
@@ -30,5 +30,3 @@ class Modal extends Component {
         $('body').removeClass('noscroll');
     }
 }
-
-module.exports = Modal;

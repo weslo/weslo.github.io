@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
+import m from "mithril";
+import Component from "../../core/Component";
 
-class ContactLink extends Component {
+export default class ContactLink extends Component {
 
     view(vnode) {
         return m('li.contact-link', [
@@ -15,5 +15,3 @@ class ContactLink extends Component {
         ])
     }
 }
-
-module.exports = ContactLink;

@@ -1,8 +1,8 @@
-const m = require('mithril');
-const $ = require('jquery');
-const Component = require('../../core/Component');
+import m from "mithril";
+import Component from "../../core/Component";
+import $ from "jquery";
 
-class NavLink extends Component {
+export default class NavLink extends Component {
 
     view(vnode) {
         return m('li', {
@@ -15,5 +15,3 @@ class NavLink extends Component {
         }, vnode.attrs.title);
     }
 }
-
-module.exports = NavLink;

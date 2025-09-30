@@ -1,7 +1,7 @@
-const m = require('mithril');
-const Component = require('../../core/Component');
+import m from "mithril";
+import Component from "../../core/Component";
 
-class ProjectGroupHeader extends Component {
+export default class ProjectGroupHeader extends Component {
 
     view(vnode) {
         return m('.project-group-header', [
@@ -12,5 +12,3 @@ class ProjectGroupHeader extends Component {
         ])
     }
 }
-
-module.exports = ProjectGroupHeader;

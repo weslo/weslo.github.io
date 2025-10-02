@@ -312,14 +312,14 @@ export default class Home extends Component {
     }
 
     view(vnode) {
-    return m(".home", [
-      m(Nav),
-      m(Projects, { projects: this.projects }),
-      m(About),
-      m(Footer),
-      vnode.attrs.project !== "undefined" && vnode.attrs.project in this.projects
-        ? m(ProjectModal, { project: vnode.attrs.project })
-        : null
-    ]);
-  }
+        return m(".home", [
+        m(Nav),
+        m(Projects, { projects: this.projects }),
+        m(About),
+        m(Footer),
+        vnode.attrs.project !== "undefined" && vnode.attrs.project in this.projects
+            ? m(ProjectModal, { project: this.projects[vnode.attrs.project] })
+            : null
+        ]);
+    }
 }

@@ -6,14 +6,14 @@ export default class ProjectModal extends Modal {
     renderContent(vnode) {
         return m('.project-modal', [
             m('.header', {
-                style: "background-image: url(" + vnode.attrs.bannerImage + ")",
+                style: "background-image: url(" + vnode.attrs.project.bannerImage + ")",
             }, [
                 m('.overlay', [
-                    m('h1', vnode.attrs.title)
+                    m('h1', vnode.attrs.project.title)
                 ])
             ]),
             m('.content', [
-                m(vnode.attrs.content)
+                m(vnode.attrs.project.content)
             ])
         ]);
     }

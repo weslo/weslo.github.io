@@ -12,6 +12,84 @@ export default class Home extends Component {
     constructor() {
         super();
         this.projects = {
+            "dreamhaven": {
+                group: "dreamhaven",
+                title: "Dreamhaven",
+                brief: "AAA games publisher in southern California",
+                bannerImage: "imgs/project-banners/dreamhaven_banner.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.dreamhaven', [
+                                m('.description', [
+                                    m('p', "Dreamhaven is a new game company in southern California built on shared values and relentless passion for making meaningful player experiences."),
+                                    m('p', "Dreamhaven is home to multiple game development studios and a central support team. This includes global operations, publishing, and partnership functions that can also help  independent developers build and launch their games."),
+                                    m('p', "I joined Dreamhaven's second game studio, Secret Door, in May 2020 to begin work on their first game as the first game developer on the team."),
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://dreamhaven.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
+            },
+            "secret-door": {
+                group: "dreamhaven",
+                title: "Secret Door",
+                brief: "Innovative game studio building social games",
+                bannerImage: "imgs/project-banners/secret_door_banner.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.secret-door', [
+                                m('.description', [
+                                    m('p', "Secret Door is a new game development studio started by board, tabletop, and video game nerds inspired by the power of togetherness."),
+                                    m('p', "Our initial focus is to create collaborative, social experiences that are deeply connective, steer into uncharted territory, and build a sustainable home for our teams."),
+                                    m('p', "I joined Secret Door in May 2020 as the first game developer on the team. I led the charge in building the foundation for our first game Sunderfolk and saw it across the finish line, spending substantial time on gameplay, UI/UX, backend technology, leadership, and more."),
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://secretdoorgames.com/",
+                                        target: "_blank"
+                                    }, "Website")
+                                ])
+                            ]);
+                        }
+                    };
+                }
+            },
+            "sunderfolk": {
+                group: "dreamhaven",
+                title: "Sunderfolk",
+                brief: "Rediscover game night",
+                bannerImage: "imgs/project-banners/sunderfolk_banner.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.secret-door', [
+                                m('.description', [
+                                    m('p', "Rediscover game night in this tactical RPG where clever teamwork and shared strategy shape every turn and build lasting memories. One copy is all you need. Friends join using their phones, which become their character sheet, guidebook, and controller."),
+                                    m('p', "I was the first developer on Sunderfolk, and helped build its foundations all the way through to designing and developing shipping elements of the gameplay, UI/UX, backend tech, and more."),
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://store.steampowered.com/app/2414270/Sunderfolk/",
+                                        target: "_blank"
+                                    }, "Steam"),
+                                    m('a', {
+                                        href: "https://sunderfolk.com/",
+                                        target: "_blank"
+                                    }, "Website"),
+                                ])
+                            ]);
+                        }
+                    };
+                }
+            },
             "workinman": {
                 group: "workinman",
                 title: "Workinman Interactive",

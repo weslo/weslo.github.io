@@ -8,6 +8,22 @@ export default class Projects extends Component {
         return m('section#games', [
             m('.row', [
                 m('h2', "Games"),
+            ]),
+            m('.row', [
+                m('.col-3', [
+                    m(ProjectGroup, {
+                        title: "Dreamhaven",
+                        icon: "imgs/project-group-icons/dreamhaven_icon.png",
+                        projects: this.getProjectsInGroup(vnode.attrs.projects, "dreamhaven")
+                    })
+                ]),
+                m('.col-3', [
+                    m(ProjectGroup, {
+                        title: "Blizzard Entertainment",
+                        icon: "imgs/project-group-icons/blizzard_icon.png",
+                        projects: []
+                    })
+                ]),
                 m('.col-3', [
                     m(ProjectGroup, {
                         title: "Workinman Interactive",
@@ -15,6 +31,8 @@ export default class Projects extends Component {
                         projects: this.getProjectsInGroup(vnode.attrs.projects, "workinman")
                     })
                 ]),
+            ]),
+            m('.row', [
                 m('.col-3', [
                     m(ProjectGroup, {
                         title: "Yes And Games",

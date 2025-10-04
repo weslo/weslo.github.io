@@ -21,7 +21,7 @@ export default class Projects extends Component {
                     m(ProjectGroup, {
                         title: "Blizzard Entertainment",
                         icon: "imgs/project-group-icons/blizzard_icon.png",
-                        projects: []
+                        projects: this.getProjectsInGroup(vnode.attrs.projects, "blizzard")
                     })
                 ]),
                 m('.col-3', [

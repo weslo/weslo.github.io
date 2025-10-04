@@ -70,7 +70,7 @@ export default class Home extends Component {
                 content: function(vnode) {
                     return {
                         view: function(vnode) {
-                            return m('.secret-door', [
+                            return m('.sunderfolk', [
                                 m('.description', [
                                     m('p', "Rediscover game night in this tactical RPG where clever teamwork and shared strategy shape every turn and build lasting memories. One copy is all you need. Friends join using their phones, which become their character sheet, guidebook, and controller."),
                                     m('p', "I was the first developer on Sunderfolk, and helped build its foundations all the way through to designing and developing shipping elements of the gameplay, UI/UX, backend tech, and more."),
@@ -82,6 +82,54 @@ export default class Home extends Component {
                                     }, "Steam"),
                                     m('a', {
                                         href: "https://sunderfolk.com/",
+                                        target: "_blank"
+                                    }, "Website"),
+                                ])
+                            ]);
+                        }
+                    };
+                }
+            },
+            "blizzard-incubation": {
+                group: "blizzard",
+                title: "Blizzard Incubation",
+                brief: "Incubating innovative products",
+                bannerImage: "imgs/project-banners/blizzard_banner.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.blizzard-incubation', [
+                                m('.description', [
+                                    m('p', "I worked in Blizzard Entertainment's Incubation department on more than three titles and assisted in early iteration on their in-house game engine. I wore many hats, including tools engineering, client-side and UI/UX engineering, content engineering, and game and UI/UX design."),
+                                    m('p', "I'm not able to publicly share details for most of my work for Blizzard in their incubation department. Please contact me privately if you want to learn more about my work here."),
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://blizzard.com/",
+                                        target: "_blank"
+                                    }, "Website"),
+                                ])
+                            ]);
+                        }
+                    };
+                }
+            },
+            "rumble": {
+                group: "blizzard",
+                title: "Warcraft Rumble",
+                brief: "Warcraft mobile action strategy",
+                bannerImage: "imgs/project-banners/rumble_banner.png",
+                content: function(vnode) {
+                    return {
+                        view: function(vnode) {
+                            return m('.blizzard-incubation', [
+                                m('.description', [
+                                    m('p', "Warcraft Rumble is a mobile action strategy game set within the Warcraft universe where collectible Minis come to life to battle in frantic melee skirmishes. Play in multiple modes, including the single player campaign, going head-to-head in epic PvP battles, and more. Experience the true meaning of joyful chaos!"),
+                                    m('p', "I worked on Warcraft Rumble as a client and content tools engineer. I wore many hats in the frontend realm, and worked on tools for designers and artists to build levels, tools for engineers to optimize graphics and build output, and optimizations for the Unity engine and editor that were critical to shipping the game."),
+                                ]),
+                                m('.links', [
+                                    m('a', {
+                                        href: "https://warcraftrumble.blizzard.com/",
                                         target: "_blank"
                                     }, "Website"),
                                 ])

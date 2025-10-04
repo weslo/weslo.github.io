@@ -5,9 +5,10 @@ export default class ProjectGroupHeader extends Component {
 
     view(vnode) {
         return m('.project-group-header', [
-            m('span', [
-                m('img.circle', { src: vnode.attrs.image }),
-                m('h4', vnode.attrs.title)
+            m('img.circle', { src: vnode.attrs.image }),
+            m('div', [
+                m('h4', vnode.attrs.title),
+                m('h5', vnode.attrs.subtitle),
             ])
         ])
     }

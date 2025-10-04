@@ -13,16 +13,21 @@ $width-project-banner: 240px;
             border-bottom: $border-inactive;
             max-width: $width-project-banner;
             padding-bottom: 4px;
-            margin-bottom: 8px;
+            margin-bottom: 8px;display: flex;
+            align-items: center;
 
             img {
-                width: 30px;
+                width: 40px;
                 margin-right: 8px;
                 display: inline;
             }
 
             h4 {
                 display: inline;
+            }
+
+            h5 {
+                color: $color-content-grey;
             }
         }
 

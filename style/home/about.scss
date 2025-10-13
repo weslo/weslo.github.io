@@ -1,9 +1,30 @@
 #about {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    @media (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .portrait {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         text-align: center;
 
         img {
-            width: 100%;
+            align-self: center;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: inline-block;
+            flex-shrink: 0; 
+            border: 2px solid #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 
             @media(max-width: $tablet-breakpoint) {
                 max-width: 40%;
@@ -17,6 +38,7 @@
 
     .about-text {
         padding: 20px;
+        text-align: left;
 
         span.highlight {
             color: $color-content-white;

@@ -8,7 +8,7 @@ export default class About extends Component {
             m('.row', [
                 m('h2', "About Me"),
                 m('.col-3.col-tablet-1.portrait', [
-                    m('img.circle', { src: "imgs/portrait.jpg" })
+                    m('img', { src: "imgs/portrait.jpg" })
                 ]),
                 m('.col-3-2.about-text', [
                     m('.about-header', [

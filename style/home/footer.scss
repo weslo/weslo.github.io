@@ -22,8 +22,10 @@ $footer-height-mobile: 80px;
         }
 
         .contact-link {
-            display: inline-block;
+            position: relative;
+            display: inline-flex;
             margin-right: 10pt;
+            cursor: pointer;
 
             i {
                 margin-right: 4px;
@@ -31,6 +33,59 @@ $footer-height-mobile: 80px;
 
             h3 {
                 display: inline;
+            }
+
+            .tooltip {
+                position: absolute;
+                left: 50%;
+                bottom: calc(100% + 8px);
+                transform: translateX(-50%);
+                background: #333;
+                color: #fff;
+                padding: 1rem;
+                border-radius: 6px;
+                font-size: 1rem;
+                white-space: nowrap;
+                pointer-events: none;
+                opacity: 0;
+                animation: fade-in-out 1.5s ease forwards;
+                border: 1px solid #5ad16f;
+                box-shadow: 0 0 6px rgba(90, 209, 111, 0.3);
+                z-index: 10;
+                align-items: center;
+                justify-content: center;
+                display: inline-flex;
+                gap: 6px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-width: 6px;
+                    border-style: solid;
+                    border-color: #333 transparent transparent transparent;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-width: 7px;
+                    border-style: solid;
+                    border-color: #5ad16f transparent transparent transparent;
+                    z-index: -1;
+                }
+            }
+
+            @keyframes fade-in-out {
+                0% { opacity: 0; transform: translate(-50%, 5px); }
+                20% { opacity: 1; transform: translate(-50%, 0); }
+                80% { opacity: 1; transform: translate(-50%, 0); }
+                100% { opacity: 0; transform: translate(-50%, 5px); }
             }
         }
     }

@@ -12,9 +12,8 @@ export default class Footer extends Component {
                     m('ul', [
                         m(ContactLink, {
                             icon: "fa-envelope-o",
-                            text: "Email Me",
-                            url: "mailto:wesley.rockholz@gmail.com",
-                            target: ""
+                            text: "wesley.rockholz@gmail.com",
+                            copy: "wesley.rockholz@gmail.com",
                         }),
                         m(ContactLink, {
                             icon: "fa-file-pdf-o",

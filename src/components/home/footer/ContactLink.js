@@ -23,7 +23,7 @@ export default class ContactLink extends Component {
             }
         };
 
-        return m('li.contact-link', [
+        return m('li.contact-link', { class: vnode.state.copied ? "copied" : null }, [
             m('a', {
                 href: vnode.attrs.url,
                 target: "target" in vnode.attrs ? vnode.attrs.target : "_blank",

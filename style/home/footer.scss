@@ -35,6 +35,26 @@ $footer-height-mobile: 80px;
                 display: inline;
             }
 
+            &.copied::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0%;
+                height: 100%;
+                background: linear-gradient(90deg, #2f6e3a, #2f6e3a);
+                mix-blend-mode: color-dodge;
+                animation: fill-green 1.5s ease forwards;
+                pointer-events: none;
+                border-radius: 6px;
+                @keyframes fill-green {
+                    0%   { width: 0%; opacity: 1; }
+                    30%  { width: 100%; opacity: 1; }
+                    70% { left: 0; width: 100%; opacity: 1; }
+                    100% { left: 100%; width: 0%; opacity: 1; }
+                }
+            }
+
             .tooltip {
                 position: absolute;
                 left: 50%;

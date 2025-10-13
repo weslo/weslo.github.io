@@ -22,6 +22,7 @@ $nav-height-mobile-extension: 40px;
         text-align: center;
         vertical-align: middle;
         margin-top: 8px;
+        margin-left: 1rem;
         -webkit-user-select: none; /* Safari */
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE10+/Edge */
@@ -30,6 +31,7 @@ $nav-height-mobile-extension: 40px;
 
         @media(max-width: $mobile-breakpoint) {
             float: none;
+            margin-left: 0;
         }
 
         h1 {
@@ -44,10 +46,12 @@ $nav-height-mobile-extension: 40px;
     .nav-links {
         float: right;
         margin-top: 24px;
+        margin-right: 1rem;
 
         @media(max-width: $mobile-breakpoint) {
             text-align: center;
             margin-top: 12px;
+            margin-right: 0;
             float: none;
         }
 

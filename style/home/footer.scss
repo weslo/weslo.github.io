@@ -4,6 +4,7 @@ $footer-height-mobile: 80px;
 #contact {
     height: $footer-height;
     padding: 20px;
+    margin: 0;
     border-top: $border-inactive;
     background-color: $color-background-grey;
     @include box-shadow-inactive();

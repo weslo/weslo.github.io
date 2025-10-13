@@ -14,7 +14,26 @@ export default class About extends Component {
                     m('.about-header', [
                         m('h3', "Hi, I'm Weslo.")
                     ]),
-                    m('p', "I'm a game and tools engineer at Rochester-based Workinman Interactive, and co-founder of indie game studio Yes And Games. I also help run the game dev meetup in Rochester, NY. Making games is my life's work, and one of my passions. In my spare time, I'm a guitarist, backpacker, and dungeon master. Thanks for stopping by! I hope you enjoy my work. Feel free to reach out to me any way you prefer if you want to get in touch.")
+                    m('p', [
+                        "I'm a ",
+                        m('span.highlight', "generalist game designer and developer"),
+                        " in Southern California. I currently work for Secret Door, a Dreamhaven studio building innovating social games. While I'm not actively seeking full-time work, I'm always open to new opportunities.",
+                    ]),
+                    m('p', "Please hit me up if you're looking for someone with:"),
+                    m('ul', [
+                        m('li', [
+                            m('span.highlight', "10+ years of industry experience"),
+                            " in game and UI/UX design, full-stack engineering, and leadership",
+                        ]),
+                        m('li', [
+                            m('span.highlight', "10+ shipped commercial products"),
+                            " across the industry, from mobile to kids' games to AAA to indie",
+                        ]),
+                        m('li', [
+                            m('span.highlight', "A rebellious spirit"),
+                            " and a passion for small teams, rapid iteration cycles, and keeping costs low"
+                        ])
+                    ]),
                 ])
             ])
         ]);

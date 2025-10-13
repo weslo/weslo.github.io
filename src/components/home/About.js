@@ -1,6 +1,8 @@
 import m from "mithril";
 import Component from "../core/Component.js";
 
+import portraitUrl from "../../../assets/imgs/portrait.jpg"
+
 export default class About extends Component {
 
     view() {
@@ -8,7 +10,7 @@ export default class About extends Component {
             m('.row', [
                 m('h2', "About Me"),
                 m('.col-3.col-tablet-1.portrait', [
-                    m('img', { src: "imgs/portrait.jpg" })
+                    m('img', { src: portraitUrl })
                 ]),
                 m('.col-3-2.about-text', [
                     m('.about-header', [

@@ -30,9 +30,10 @@ export default class ContactLink extends Component {
                 onclick: handleClick,
             }, [
                 m('i', { class: "fa fa-fw fa-2x " + vnode.attrs.icon }),
-                m('h3', vnode.attrs.text)
+                m('h3.default-text', vnode.attrs.text),
+                m('h3.small-text', vnode.attrs.smallText ?? vnode.attrs.text)
             ]),
-            vnode.state.copied && m(".tooltip", [
+            vnode.state.copied && m('.tooltip', [
                 m('i', { class: "fa fa-clipboard" }),
                 "Copied!",
             ])

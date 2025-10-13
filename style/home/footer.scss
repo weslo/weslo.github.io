@@ -8,17 +8,30 @@ $footer-height-mobile: 80px;
     background-color: $color-background-grey;
     @include box-shadow-inactive();
 
-    @media(max-width: $mobile-breakpoint) {
-        height: $footer-height-mobile;
+    @media(max-width: $tablet-breakpoint) {
+        height: auto;
     }
 
     .contact {
         float: left;
 
-        @media(max-width: $mobile-breakpoint) {
-            float: none;
+        @media(max-width: $tablet-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            margin-bottom: 20px;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: none;
+
+            ul li {
+                float: none !important;        /* kill the float */
+                display: block !important;     /* block so they stack */
+                margin-bottom: 10pt;
+                font-size: 0.6rem;
+            }
         }
 
         .contact-link {
@@ -26,6 +39,19 @@ $footer-height-mobile: 80px;
             display: inline-flex;
             margin-right: 10pt;
             cursor: pointer;
+
+            h3.small-text {
+                display: none;
+            }
+
+            @media(max-width: $mobile-breakpoint) {
+                h3.default-text {
+                    display: none;
+                }
+                h3.small-text {
+                    display: inline;
+                }
+            }
 
             i {
                 margin-right: 4px;
@@ -112,19 +138,20 @@ $footer-height-mobile: 80px;
 
     .social {
 
-        @media(max-width: $mobile-breakpoint) {
-            text-align: center;
-        }
-
         ul {
 
             li {
                 float: right;
                 display: inline;
+            }
+        }
 
-                @media(max-width: $mobile-breakpoint) {
-                    float: none;
-                }
+        @media(max-width: $tablet-breakpoint) {
+            display:block;
+            text-align: center;
+
+            ul li {
+                float: none !important;        /* kill the float */
             }
         }
     }

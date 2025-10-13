@@ -14,6 +14,7 @@ export default class Footer extends Component {
                             icon: "fa-envelope-o",
                             text: "wesley.rockholz@gmail.com",
                             copy: "wesley.rockholz@gmail.com",
+                            smallText: "Email Me",
                         }),
                         m(ContactLink, {
                             icon: "fa-file-pdf-o",

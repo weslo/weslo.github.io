@@ -17,7 +17,7 @@ export default class About extends Component {
                     m('p', [
                         "I'm a ",
                         m('span.highlight', "generalist game designer and developer"),
-                        " in Southern California. I currently work for Secret Door, a Dreamhaven studio building innovating social games. While I'm not actively seeking full-time work, I'm always open to new opportunities.",
+                        " in Southern California. I currently work for Secret Door, a Dreamhaven studio building innovative social games. While I'm not actively seeking full-time work, I'm always open to new opportunities.",
                     ]),
                     m('p', "Please hit me up if you're looking for someone with:"),
                     m('ul', [

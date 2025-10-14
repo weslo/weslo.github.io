@@ -7,9 +7,7 @@ $mobile-breakpoint: 480px;
 @mixin col() {
     display: inline-block;
     vertical-align: top;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    box-sizing: border-box;
 
     @media(max-width: $mobile-breakpoint) {
         min-width: 100%;
@@ -18,26 +16,32 @@ $mobile-breakpoint: 480px;
 
 .col-2 {
     width: 50%;
+
     @media(max-width: $tablet-breakpoint) {
         min-width: 100%;
     }
-    @include col();
+
+    @include col;
 }
 
 .col-3 {
     width: 33.33%;
+
     @media(max-width: $tablet-breakpoint) {
         width: 50%;
     }
-    @include col();
+
+    @include col;
 }
 
 .col-3-2 {
     width: 66.66%;
+
     @media(max-width: $tablet-breakpoint) {
         width: 100%;
     }
-    @include col();
+    
+    @include col;
 }
 
 .col-tablet-1 {

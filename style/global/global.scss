@@ -1,40 +1,29 @@
-@import 'cssreset';
-@import 'fonts';
-@import 'colors';
-@import 'columns';
 
-@mixin vertical-center() {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+@import 'colors';
 
 $transition-duration: .2s;
+$border-off: 1px solid rgb(0 0 0 / 0%);
+$border-inactive: 1px solid $color-content-grey;
+$border-active: 1px solid $color-content-white;
+$section-margin: 40px;
+
+@import 'cssreset';
+@import 'fonts';
+@import 'columns';
+@import 'animations';
+@import 'modals';
+
 @mixin transition($duration) {
-    -webkit-transition: $duration;
-    -moz-transition: $duration;
-    -ms-transition: $duration;
-    -o-transition: $duration;
     transition: $duration;
 }
 
 @mixin box-shadow-inactive() {
-    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
 }
 
 @mixin box-shadow-active() {
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
-    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    box-shadow: 0 0 10px 0 rgb(255 255 255 / 100%);
 }
-
-$border-off: 1px solid rgba(0, 0, 0, 0);
-$border-inactive: 1px solid $color-content-grey;
-$border-active: 1px solid $color-content-white;
-
-$section-margin: 40px;
 
 body {
     background-color: $color-background-grey;
@@ -94,24 +83,22 @@ a {
     text-decoration: none;
 
     &:visited {
-
         @include transition($transition-duration);
+
         color: $color-content-grey;
     }
 
     &:hover {
-
         @include transition($transition-duration);
+
         color:$color-content-white;
     }
 
     @include transition($transition-duration);
+
     color: $color-content-grey;
 }
 
 .noscroll {
     overflow: hidden;
 }
-
-@import 'animations';
-@import 'modals';

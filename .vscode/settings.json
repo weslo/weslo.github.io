@@ -2,4 +2,8 @@
     "eslint.validate": [
         "javascript"
     ],
+    "stylelint.validate": ["css", "scss"],
+    "stylelint.enable": true,
+    "scss.validate": false,
+    "css.validate": false,
 }

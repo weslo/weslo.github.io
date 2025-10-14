@@ -11,7 +11,8 @@ $nav-height-mobile-extension: 40px;
     border-bottom: $border-inactive;
     color: $color-content-white;
     background-color: $color-background-grey;
-    @include box-shadow-inactive();
+
+    @include box-shadow-inactive;
 
     @media(max-width: $mobile-breakpoint) {
         height: #{$nav-height + $nav-height-mobile-extension};
@@ -23,10 +24,7 @@ $nav-height-mobile-extension: 40px;
         vertical-align: middle;
         margin-top: 8px;
         margin-left: 1rem;
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE10+/Edge */
-        user-select: none; /* Standard */
+        user-select: none;
         cursor: default;
 
         @media(max-width: $mobile-breakpoint) {
@@ -56,7 +54,6 @@ $nav-height-mobile-extension: 40px;
         }
 
         ul {
-
             li {
                 display: inline-block;
                 text-transform: uppercase;
@@ -73,10 +70,12 @@ $nav-height-mobile-extension: 40px;
                     cursor: pointer;
 
                     @include transition($transition-duration);
+
                     color: $color-content-white;
                 }
 
                 @include transition($transition-duration);
+
                 color: $color-content-grey;
             }
         }
@@ -84,6 +83,7 @@ $nav-height-mobile-extension: 40px;
 }
 
 $margin-top-projects: calc(#{$nav-height} + #{$section-margin});
+
 .content-under-nav-margin
 {
     margin-top: $margin-top-projects;

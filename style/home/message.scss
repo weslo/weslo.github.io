@@ -2,27 +2,26 @@
     padding-inline: 1rem;
     
     .message-card {
-        display: flex; // inline layout
+        display: flex;
         align-items: center;
-        gap: 0.75rem; // space between icon and text
-        background-color: #2c2c2c; // lighter gray than page bg
+        gap: 0.75rem;
+        background-color: #2c2c2c;
         color: #fff;
         border-radius: 10px;
-        border: 1px solid rgba(255, 80, 80, 0.4); // subtle red tone
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); // light drop shadow like navbar
+        border: 1px solid rgb(255 80 80 / 40%);
+        box-shadow: 0 2px 6px rgb(0 0 0 / 30%);
         padding: 0.75rem 1rem;
         max-width: 800px;
         margin: 1rem auto;
-
-        // Optional hover / animation polish
         transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
         &:hover {
-            border-color: rgba(255, 100, 100, 0.6);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border-color: rgb(255 100 100 / 60%);
+            box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
         }
 
         i {
-            color: #ff6b6b; // red tone that complements border
+            color: #ff6b6b;
             flex-shrink: 0;
         }
 

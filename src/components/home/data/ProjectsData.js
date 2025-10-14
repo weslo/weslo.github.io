@@ -31,9 +31,9 @@ export default {
         title: "Secret Door",
         brief: "Innovative game studio building social games",
         bannerImage: "imgs/project-banners/secret_door_banner.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.secret-door', [
                         m('.description', [
                             m('p', "Secret Door is a new game development studio started by board, tabletop, and video game nerds inspired by the power of togetherness."),
@@ -56,9 +56,9 @@ export default {
         title: "Sunderfolk",
         brief: "Rediscover game night",
         bannerImage: "imgs/project-banners/sunderfolk_banner.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.sunderfolk', [
                         m('.description', [
                             m('p', "Rediscover game night in this tactical RPG where clever teamwork and shared strategy shape every turn and build lasting memories. One copy is all you need. Friends join using their phones, which become their character sheet, guidebook, and controller."),
@@ -84,9 +84,9 @@ export default {
         title: "Blizzard Incubation",
         brief: "Incubating innovative products",
         bannerImage: "imgs/project-banners/blizzard_banner.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.blizzard-incubation', [
                         m('.description', [
                             m('p', "I worked in Blizzard Entertainment's Incubation department on more than three titles and assisted in early iteration on their in-house game engine. I wore many hats, including tools engineering, client-side and UI/UX engineering, content engineering, and game and UI/UX design."),
@@ -108,9 +108,9 @@ export default {
         title: "Warcraft Rumble",
         brief: "Warcraft mobile action strategy",
         bannerImage: "imgs/project-banners/rumble_banner.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.blizzard-incubation', [
                         m('.description', [
                             m('p', "Warcraft Rumble is a mobile action strategy game set within the Warcraft universe where collectible Minis come to life to battle in frantic melee skirmishes. Play in multiple modes, including the single player campaign, going head-to-head in epic PvP battles, and more. Experience the true meaning of joyful chaos!"),
@@ -132,9 +132,9 @@ export default {
         title: "Workinman Interactive",
         brief: "More information about Workinman",
         bannerImage: "imgs/project-banners/workinman.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.workinman', [
                         m('.description', [
                             m('p', "Workinman is a service-based game studio located in Rochester, NY. We build connected toys and cross-platform games for clients like Fisher-Price, Little Tikes, Nickelodeon, and Disney."),
@@ -156,9 +156,9 @@ export default {
         title: "Otto the Automaton",
         brief: "Internal build automation software",
         bannerImage: "imgs/project-banners/otto-the-automaton.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.otto-the-automaton', [
                         m('.description', [
                             m('p', "Otto is Workinman's in-house build automation platform. He dynamically processes and delivers builds configured by individual developers and interfaces with them via the Slack API."),
@@ -176,9 +176,9 @@ export default {
         title: "Fisher-Price Smart Cycle",
         brief: "Games and bluetooth for connected bike",
         bannerImage: "imgs/project-banners/smart-cycle.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.smart-cycle', [
                         m('.description', [
                             m('p', "The Fisher-Price Smart Cycle is a standing bike toy for kids that connects to iOS, Android and Amazon TVs and tablets, and Apple TVs, with which kids can play 3D racing games by pedaling and using the handlebars. I worked on the Smart Cycle API, BLE integration, and Workinman's mobile games for the product."),
@@ -200,9 +200,9 @@ export default {
         title: "PJ Masks: Starlight Sprint",
         brief: "Procedurally generated infinirunner",
         bannerImage: "imgs/project-banners/starlight-sprint.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.pj-masks', [
                         m('.description', [
                             m('p', "PJ Masks: Starlight Sprint is a procedurally-generated infinirunner where kids play as each of the three PJ Masks venturing into the night to thwart the plans of their evil villains. Catboy, Owlette, and Gekko each jump into the fray with their own runner mechanics and challenging obstacles."),
@@ -225,9 +225,9 @@ export default {
         title: "Block Party 3",
         brief: "Procedurally generated infinirunner",
         bannerImage: "imgs/project-banners/block-party-3.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.block-party-3', [
                         m('.description', [
                             m('p', "Block Party 3 is the third installment of the Nickelodeon Block Party party games series. Kids play as one of a myriad of Nickelodeon character like Spongebob, Lincoln, and Raphael in a turn-based strategy game with minigame challenges."),

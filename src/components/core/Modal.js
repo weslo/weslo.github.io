@@ -12,7 +12,7 @@ export default class Modal extends Component {
         ]);
     }
 
-    oncreate(vnode) {
+    oncreate() {
         $('body').addClass('noscroll');
     }
 

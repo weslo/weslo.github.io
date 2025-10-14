@@ -1,17 +1,17 @@
 import m from "mithril";
 
 export default class Component {
-    constructor(vnode) { }
+    constructor() { }
 
-    view(vnode) { return m('div', "Hello, world!"); }
+    view() { return m('div', "Hello, world!"); }
 
-    oncreate(vnode) { }
+    oncreate() { }
 
-    oninit(vnode) { }
+    oninit() { }
 
-    onupdate(vnode) { }
+    onupdate() { }
 
-    onbeforeremove(vnode) { }
+    onbeforeremove() { }
 
-    onremote(vnode) { }
+    onremote() { }
 }

@@ -6,9 +6,9 @@ export default {
         title: "Dreamhaven",
         brief: "AAA games publisher in southern California",
         bannerImage: "imgs/project-banners/dreamhaven_banner.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.dreamhaven', [
                         m('.description', [
                             m('p', "Dreamhaven is a new game company in southern California built on shared values and relentless passion for making meaningful player experiences."),
@@ -249,9 +249,9 @@ export default {
         title: "Yes And Games",
         brief: "Indie game studio",
         bannerImage: "imgs/project-banners/yes-and-games.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.yes-and-games', [
                         m('.description', [
                             m('p', "Yes And Games is an independent game studio based in Rochester, NY. I co-founded Yes And Games with my fellow RIT grad Nick Rabb in summer 2014, and we have shipped two games as a team since then."),
@@ -273,9 +273,9 @@ export default {
         title: "Adventure Guild",
         brief: "Tactical turn-based MMORPG for mobile",
         bannerImage: "imgs/project-banners/adventure-guild.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.adventure-guild', [
                         m('.description', [
                             m('p', "Adventure Guild is a social Roguelike RPG built for mobile devices. Party up with your friends to explore the farthest reaches of the world. Tackle tactically challenging turn-based combat that forces you to work as a team."),
@@ -299,9 +299,9 @@ export default {
         title: "Lazer Maze",
         brief: "Dodge lasers that fire with each beat",
         bannerImage: "imgs/project-banners/lazer-maze.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.lazer-maze', [
                         m('.description', [
                             m('p', "Lazer Maze is a music-driven arcade action game for touch devices where players run through an infinite maze of lazers that turn on and off to the beat of the song."),
@@ -324,9 +324,9 @@ export default {
         title: "Roc Game Dev",
         brief: "Rochester's game dev meetup",
         bannerImage: "imgs/project-banners/roc-game-dev.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.lazer-maze', [
                         m('.description', [
                             m('p', "The Roc Game Dev meetup is a collective of professional, student, and amateur game developers located in or around Rochester, NY, that meet monthly to workshop, share, and discuss game development. We meet once a month for workshops/general meetup at MAGIC at RIT and once a month for a social meetup at local bars and coffee shops around downtown Rochester."),
@@ -349,9 +349,9 @@ export default {
         title: "Hearplay",
         brief: "MMORPG for music listeners",
         bannerImage: "imgs/project-banners/hearplay.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.hearplay', [
                         m('.description', [
                             m('p', "Hearplay is a mixed MMORPG and music streaming service that gamifies music listening and sharing. Players place their stations on a pixelated map of the world. They can load their stations up with songs, then view and interact with other users' stations while streaming music to their headphones."),
@@ -374,9 +374,9 @@ export default {
         title: "A Small Robot Story",
         brief: "A small robot on a big journey",
         bannerImage: "imgs/project-banners/a-small-robot-story.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.a-small-robot-story', [
                         m('.description', [
                             m('p', "A Small Robot Story is an adventure-platformer that is available for PC. You play as Rae, a small robot who activates and has no programming, so you need to set out and find out what's up!"),
@@ -399,9 +399,9 @@ export default {
         title: "Subway Spraypainter",
         brief: "Paint Rochester's underground subway",
         bannerImage: "imgs/project-banners/subway-spraypainter.png",
-        content: function(vnode) {
+        content: function() {
             return {
-                view: function(vnode) {
+                view: function() {
                     return m('.subway-spraypainter', [
                         m('.description', [
                             m('p', "Subway Spraypainter is a retro arcade game built for the 2017 Roc Game Dev jam. Spray paint the walls of Rochester's abandoned subway tunnels without getting caught by the police!"),

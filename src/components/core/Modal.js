@@ -24,7 +24,7 @@ export default class Modal extends Component {
         });
     }
 
-    renderContent(vnode) { }
+    renderContent() { }
 
     close() {
         $('body').removeClass('noscroll');

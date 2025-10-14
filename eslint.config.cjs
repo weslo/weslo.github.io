@@ -33,5 +33,6 @@ module.exports = defineConfig([{
         "no-unused-vars": "warn",
         "no-console": "off",
         "prefer-const": "warn",
+        indent: ["error", 4, { SwitchCase: 1 }],
     },
 }]);

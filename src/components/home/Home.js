@@ -12,15 +12,15 @@ import ProjectModal from "./projects/ProjectModal.js";
 export default class Home extends Component {
     view(vnode) {
         return m(".home", [
-        m(Nav),
-        m('.content-under-nav-margin'),
-        m(Message),
-        m(Projects, { projects: ProjectsData }),
-        m(About),
-        m(Footer),
-        vnode.attrs.project !== "undefined" && vnode.attrs.project in ProjectsData
-            ? m(ProjectModal, { project: ProjectsData[vnode.attrs.project] })
-            : null
+            m(Nav),
+            m('.content-under-nav-margin'),
+            m(Message),
+            m(Projects, { projects: ProjectsData }),
+            m(About),
+            m(Footer),
+            vnode.attrs.project !== "undefined" && vnode.attrs.project in ProjectsData
+                ? m(ProjectModal, { project: ProjectsData[vnode.attrs.project] })
+                : null
         ]);
     }
 }

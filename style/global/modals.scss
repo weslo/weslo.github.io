@@ -18,6 +18,6 @@ $modal-border-radius-top: 49px 49px 0px 0px;
         transform: translateY(-50%);
         border-radius: $modal-border-radius;
         border: $border-inactive;
-        overflow: scroll;
+        overflow: auto;
     }
 }

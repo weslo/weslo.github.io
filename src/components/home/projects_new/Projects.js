@@ -12,7 +12,7 @@ export default class Projects extends Component {
     view() {
         return m('section#games', [
             m('.row', [
-                m('h2', "Games"),
+                m('h2', "My Work"),
             ]),
             m('.row', [
                 m('.col-3', [

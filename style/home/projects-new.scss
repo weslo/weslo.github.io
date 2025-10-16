@@ -27,6 +27,8 @@ $width-project-banner: 240px;
             font-size: .9rem;
             transform: translateY(100%);
             opacity: 0;
+            pointer-events: none;
+            user-select: none;
             transition: transform .25s ease, opacity .2s ease;
             .role { font-weight: 600; }
             .duration { opacity: .5; }
@@ -37,6 +39,8 @@ $width-project-banner: 240px;
             transform: translateY(-2px);
             background-size: 112%;
             box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+            visibility: visible;
+            pointer-events: auto;
             &::before { opacity: .3; }
 
             .project-card-banner {

@@ -2,10 +2,21 @@ import m from "mithril";
 import Modal from "../../core/Modal";
 
 export default class ProjectModal extends Modal {
+
+    scheduledTimeout = null;
+    carouselIndex = 0;
     
     oninit(vnode) {
         super.oninit?.(vnode);
-        this.idx = 0;
+        this.carouselIndex = 0;
+    }
+
+    oncreate(vnode) {
+        this.scheduleAutomaticCarouselAdvance(vnode);
+    }
+
+    onremove(vnode) {
+        clearTimeout(this.scheduledTimeout);
     }
     
     view(vnode) {
@@ -23,24 +34,16 @@ export default class ProjectModal extends Modal {
             images = [],
         } = vnode.attrs;
         
-        const navigateCarousel = (increment) => {
-            if (!images.length) {
-                return;
-            }
-            
-            this.idx = (this.idx + increment + images.length) % images.length;
-        }
-        
         const Carousel = () => m(".project-modal-carousel", {
             tabindex: 0,
             "aria-roledescription": "carousel",
             "aria-label": title || "Project images",
             onkeydown: (e) => {
-                if (e.key === "ArrowLeft") navigateCarousel(-1);
-                if (e.key === "ArrowRight") navigateCarousel(1);
+                if (e.key === "ArrowLeft") this.navigateCarousel(vnode, -1);
+                if (e.key === "ArrowRight") this.navigateCarousel(vnode, 1);
             },
         }, [
-            m(".project-modal-carousel-track", { style: `transform:translateX(-${this.idx * 100}%);` },
+            m(".project-modal-carousel-track", { style: `transform:translateX(-${this.carouselIndex * 100}%);` },
                 images.map(img =>
                     m(".project-modal-carousel-slide", [
                         m("img", { src: img.src, alt: img.alt || title || "Project image", style: img.style }),
@@ -48,17 +51,17 @@ export default class ProjectModal extends Modal {
                 )
             ),
             images.length > 1 && m("button.project-modal-carousel-arrow.left", {
-                onclick: () => navigateCarousel(-1),
+                onclick: () => this.navigateCarousel(vnode, -1),
                 "aria-label": "Previous image",
             }, "‹"),
             images.length > 1 && m("button.project-modal-carousel-arrow.right", {
-                onclick: () => navigateCarousel(1),
+                onclick: () => this.navigateCarousel(vnode, 1),
                 "aria-label": "Next image"
             }, "›"),
             images.length > 1 && m(".project-modal-carousel-dots",
                 images.map((_, i) =>
-                    m("button.dot" + (i === this.idx ? ".is-active" : ""), {
-                        onclick: () => (this.idx = i), "aria-label": `Go to slide ${i + 1}`
+                    m("button.dot" + (i === this.carouselIndex ? ".is-active" : ""), {
+                        onclick: () => (this.carouselIndex = i), "aria-label": `Go to slide ${i + 1}`
                     }))
             )
         ])
@@ -68,4 +71,22 @@ export default class ProjectModal extends Modal {
             m(".project-modal-content", [ m(vnode.attrs.content) ])
         ])
     }
+        
+    navigateCarousel(vnode, increment) {
+        if (!vnode.attrs.images.length) {
+            return;
+        }
+        
+        this.carouselIndex = (this.carouselIndex + increment + vnode.attrs.images.length) % vnode.attrs.images.length;
+        this.scheduleAutomaticCarouselAdvance(vnode);
+    }
+
+    scheduleAutomaticCarouselAdvance(vnode) {
+        clearTimeout(this.scheduledTimeout);
+        this.scheduledTimeout = window.setTimeout(() => {
+            this.navigateCarousel(vnode, 1);
+            m.redraw();
+            this.schedule();
+        }, 10000);
+    };
 }

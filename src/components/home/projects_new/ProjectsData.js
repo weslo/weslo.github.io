@@ -18,15 +18,15 @@ import imgWorkinmanSmartCycle01 from "../../../../assets/imgs/workinman/workinma
 import imgWorkinmanPjmasks01 from "../../../../assets/imgs/workinman/workinman_pjmasks_01.jpg";
 import imgWorkinmanBlockparty301 from "../../../../assets/imgs/workinman/workinman_blockparty3_01.webp";
 
-import yesandgames_keyart_01 from "../../../../assets/imgs/yesandgames/yesandgames_keyart_01.png";
-import adventureguild_keyart_01 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_01.png";
-import adventureguild_keyart_02 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_02.png";
-import adventureguild_keyart_03 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_03.png";
-import lazermaze_keyart_01 from "../../../../assets/imgs/yesandgames/lazermaze_keyart_01.png";
-import adventureguild_photo_01 from "../../../../assets/imgs/yesandgames/adventureguild_photo_01.jpg";
-import adventureguild_photo_02 from "../../../../assets/imgs/yesandgames/adventureguild_photo_02.JPG";
-import adventureguild_screenshot_01 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_01.png";
-import adventureguild_screenshot_02 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_02.png";
+import imgYesAndGamesKeyart01 from "../../../../assets/imgs/yesandgames/yesandgames_keyart_01.png";
+import imgAdventureGuildKeyArt01 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_01.png";
+import imgAdventureGuildKeyArt02 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_02.png";
+import imgAdventureGuildKeyArt03 from "../../../../assets/imgs/yesandgames/adventureguild_keyart_03.png";
+import imgLazerMazeKeyArt01 from "../../../../assets/imgs/yesandgames/lazermaze_keyart_01.png";
+import imgAdventureGuildPhoto01 from "../../../../assets/imgs/yesandgames/adventureguild_photo_01.jpg";
+import imgAdventureGuildPhoto02 from "../../../../assets/imgs/yesandgames/adventureguild_photo_02.JPG";
+import imgAdventureGuildScreenshot01 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_01.png";
+import imgAdventureGuildScreenshot02 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_02.png";
 
 export default {
 
@@ -210,47 +210,47 @@ export default {
         title: "Yes And Games",
         images: [
             {
-                src: yesandgames_keyart_01,
+                src: imgYesAndGamesKeyart01,
                 alt: "Yes And Games key art",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_photo_01,
+                src: imgAdventureGuildPhoto01,
                 alt: "Yes And Games team photo",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_photo_02,
+                src: imgAdventureGuildPhoto02,
                 alt: "Adventure Guild character customization screenshot",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_keyart_01,
+                src: imgAdventureGuildKeyArt01,
                 alt: "Adventure Guild key art",
                 style: "object-position: center right;",
             },
             {
-                src: lazermaze_keyart_01,
+                src: imgLazerMazeKeyArt01,
                 alt: "Lazer Maze key art",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_screenshot_01,
+                src: imgAdventureGuildScreenshot01,
                 alt: "Adventure Guild combat screenshot",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_screenshot_02,
+                src: imgAdventureGuildScreenshot02,
                 alt: "Adventure Guild character customization screenshot",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_keyart_03,
+                src: imgAdventureGuildKeyArt03,
                 alt: "Adventure Guild combat key art",
                 style: "object-position: center;",
             },
             {
-                src: adventureguild_keyart_02,
+                src: imgAdventureGuildKeyArt02,
                 alt: "Adventure Guild bluffs key art",
                 style: "object-position: center;",
             },

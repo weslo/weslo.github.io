@@ -1,92 +1,61 @@
 $width-project-banner: 240px;
 
 #games {
-    .project-group {
-        width: $width-project-banner;
-        margin: 0 auto;
+    .project-card {
+        width: 300px;
+        height: 200px;
+        margin: 0 auto 1rem;
+        border-radius: 14px;
+        overflow: hidden;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 1px solid rgb(255 255 255 / 8%);
+        box-shadow: 0 1px 6px rgb(0 0 0 / 35%);
+        transition: transform .25s ease, box-shadow .25s ease, background-size .25s ease;
+
+        .project-card-banner {
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            padding: .6rem .9rem;
+            padding-top: 2rem;
+            color: #fff;
+            background: linear-gradient(to top, rgb(0 0 0 / 72%), rgb(0 0 0 / 0%));
+            align-items: center;
+            gap: .35rem;
+            font-size: .9rem;
+            transform: translateY(100%);
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            transition: transform .25s ease, opacity .2s ease;
+            .role { font-weight: 600; }
+            .duration { opacity: .5; }
+        }
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-2px);
+            background-size: 112%;
+            box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+            visibility: visible;
+            pointer-events: auto;
+            &::before { opacity: .3; }
+
+            .project-card-banner {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        &:focus-visible {
+            outline: 2px solid rgb(255 255 255 / 35%);
+            outline-offset: 2px;
+        }
 
         @media(max-width: $tablet-breakpoint) {
             margin-bottom: $section-margin;
-        }
-
-        .project-group-header {
-            border-bottom: $border-inactive;
-            max-width: $width-project-banner;
-            padding-bottom: 4px;
-            margin-bottom: 8px;display: flex;
-            align-items: center;
-
-            img {
-                width: 40px;
-                margin-right: 8px;
-                display: inline;
-            }
-
-            h4 {
-                display: inline;
-            }
-
-            h5 {
-                color: $color-content-grey;
-            }
-        }
-
-        .project {
-            width: $width-project-banner;
-            height: 40px;
-            margin-bottom: 4px;
-            background-size: cover;
-
-            .overlay {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(to right, rgb(0 0 0 / 100%) 0%,rgb(0 0 0 / 0%) 100%);
-
-                .text-container {
-                    position: absolute;
-                    bottom: 0;
-                    padding: 4px;
-
-                    span {
-                        line-height: 1.4em;
-
-                        h5 {
-                            display: inline;
-                        }
-
-                        i {
-                            margin-left: 8px;
-                        }
-                    }
-
-                    p {
-                        font-size: 8pt;
-                    }
-                }
-
-                @include transition($transition-duration);
-
-                opacity: 0;
-            }
-
-            &:hover {
-                cursor: pointer;
-
-                .overlay {
-                    @include transition($transition-duration);
-
-                    opacity: 1;
-                }
-
-                @include transition($transition-duration);
-
-                outline: $border-active;
-            }
-
-            @include transition($transition-duration);
-
-            outline: $border-off;
         }
     }
 }

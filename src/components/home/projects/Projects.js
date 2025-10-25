@@ -1,69 +1,58 @@
 import m from "mithril";
 import Component from "../../core/Component";
-import ProjectGroup from "./ProjectGroup";
+import ProjectCard from "./ProjectCard";
+
+import cardImageSecretDoor from "../../../../assets/imgs/cards/secret_door.png";
+import cardImageBlizzard from "../../../../assets/imgs/cards/blizzard.png";
+import cardImageWorkinman from "../../../../assets/imgs/cards/workinman.png";
+import cardImageYesAndGames from "../../../../assets/imgs/cards/yes_and_games.png";
 
 export default class Projects extends Component {
-
-    view(vnode) {
+    view() {
         return m('section#games', [
             m('.row', [
-                m('h2', "Games"),
+                m('h2', "My Work"),
             ]),
             m('.row', [
                 m('.col-3', [
-                    m(ProjectGroup, {
-                        title: "Dreamhaven",
-                        subtitle: "5 years",
-                        icon: "imgs/project-group-icons/dreamhaven_icon.png",
-                        projects: this.getProjectsInGroup(vnode.attrs.projects, "dreamhaven")
+                    m(ProjectCard, {
+                        title: "Secret Door Games",
+                        id: "secret-door",
+                        role: "Game Developer",
+                        duration: "5 years",
+                        image: cardImageSecretDoor,
                     })
                 ]),
                 m('.col-3', [
-                    m(ProjectGroup, {
+                    m(ProjectCard, {
                         title: "Blizzard Entertainment",
-                        subtitle: "2 years",
-                        icon: "imgs/project-group-icons/blizzard_icon.png",
-                        projects: this.getProjectsInGroup(vnode.attrs.projects, "blizzard")
+                        id: "blizzard",
+                        role: "Software Engineer",
+                        duration: "2 years",
+                        image: cardImageBlizzard,
                     })
                 ]),
                 m('.col-3', [
-                    m(ProjectGroup, {
+                    m(ProjectCard, {
                         title: "Workinman Interactive",
-                        subtitle: "2 years",
-                        icon: "imgs/project-group-icons/workinman.png",
-                        projects: this.getProjectsInGroup(vnode.attrs.projects, "workinman")
+                        id: "workinman",
+                        role: "Game Developer",
+                        duration: "2 years",
+                        image: cardImageWorkinman,
                     })
                 ]),
             ]),
             m('.row', [
                 m('.col-3', [
-                    m(ProjectGroup, {
+                    m(ProjectCard, {
                         title: "Yes And Games",
-                        subtitle: "3 years",
-                        icon: "imgs/project-group-icons/yes-and-games.png",
-                        projects: this.getProjectsInGroup(vnode.attrs.projects, "yes-and-games")
-                    })
-                ]),
-                m('.col-3', [
-                    m(ProjectGroup, {
-                        title: "Other Work",
-                        subtitle: "Community, jams, etc",
-                        icon: "imgs/project-group-icons/roc-game-dev.png",
-                        projects: this.getProjectsInGroup(vnode.attrs.projects, "other")
+                        id: "yes-and-games",
+                        role: "Game Developer & Co-Founder",
+                        duration: "3 years",
+                        image: cardImageYesAndGames,
                     })
                 ])
             ])
         ]);
-    }
-
-    getProjectsInGroup(projects, group) {
-        var inGroup = [];
-        Object.keys(projects).forEach(function(id) {
-            if(projects[id].group == group) {
-                projects[id].id = id;
-                inGroup.push(projects[id]);
-            }
-        });
-        return inGroup;
     }
 }

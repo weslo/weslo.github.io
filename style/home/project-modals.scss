@@ -35,31 +35,180 @@
         p {
             margin-bottom: 12px;
         }
+    }
+}
 
-        .links {
-            width: 100%;
-            text-align: center;
-            padding-top: 32px;
-            padding-bottom: 24px;
+.project-modal-carousel {
+    position: relative;
+    height: clamp(240px, 50vh, 560px);
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    outline: none;
+}
 
-            a {
-                border-radius: 5px;
-                padding: 8px;
-                margin: 4px;
-                background-color: $color-background-black;
-                font-size: 24pt;
-                text-transform: uppercase;
+.project-modal-carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform .35s ease;
+    will-change: transform;
+}
 
-                &:hover {
-                    @include transition($transition-duration);
+.project-modal-carousel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
 
-                    border: $border-active;
-                }
+.project-modal-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 40px; height: 40px;
+    border-radius: 999px;
+    background: rgb(0 0 0 / 45%);
+    color: #fff;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    transition: background .2s ease, transform .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-                @include transition($transition-duration);
-                
-                border: $border-inactive;
+.project-modal-carousel-arrow.left {
+    left: 10px;
+}
+
+.project-modal-carousel-arrow.right {
+    right: 10px;
+}
+
+.project-modal-carousel-arrow:hover {
+    background: rgb(0 0 0 / 65%);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.project-modal-carousel-dots {
+    position: absolute;
+    left: 0; right: 0; bottom: 8px;
+    display: flex; justify-content: center; gap: 6px;
+    pointer-events: none;
+
+    .dot {
+        pointer-events: auto;
+        width: 8px; height: 8px; border-radius: 50%;
+        background: rgb(255 255 255 / 35%);
+        border: 0; cursor: pointer;
+    }
+}
+
+.dot.is-active {
+    background: rgb(255 255 255 / 90%);
+}
+
+.project-modal-content {
+    padding: 1rem 1.25rem 1.5rem;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgb(255 255 255 / 12%), transparent);
+    }
+
+    font-size: clamp(.96rem, .9rem + .2vw, 1.05rem);
+    line-height: 1.6;
+
+    p {
+        margin: 0 0 .65rem;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    .description {
+        ul:not(.fa-ul), ol {
+            list-style: disc;
+            margin: 0.5em 0 0.5em 1.5em;
+            padding: 0;
+            font: inherit;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            line-height: 1.2em;
+            font-size: 12pt;
+
+            @media (max-width: $mobile-breakpoint) {
+                font-size: 10pt;
             }
+        }
+
+        ol {
+            list-style: decimal;
+        }
+
+        li {
+            margin: 0 0 0.4em;
+            line-height: inherit;
+        }
+    }
+
+    .links {
+        margin-top: .75rem;
+        display: flex;
+        gap: .75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 80%;
+            max-width: 420px;
+            height: 1px;
+            background: linear-gradient(to right,
+            transparent,
+            rgb(255 255 255 / 15%),
+            transparent);
+            transform: translateX(-50%);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgb(255 255 255 / 50%);
+            font-weight: 500;
+            transition: border-color .15s ease, color .15s ease, opacity .15s ease;
+        }
+
+        a:hover,
+        a:focus-visible {
+            border-bottom-color: #fff;
+            opacity: .9;
         }
     }
 }

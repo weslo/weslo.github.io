@@ -137,8 +137,8 @@ export default {
                 view: function() {
                     return m('.workinman', [
                         m('.description', [
-                            m('p', "Workinman is a service-based game studio located in Rochester, NY. We build connected toys and cross-platform games for clients like Fisher-Price, Little Tikes, Nickelodeon, and Disney."),
-                            m('p', "I work in the connected toys department of Workinman as a game and tools developer. My work balances on a rope between developing one or two major games and building and maintaining our in-house automation platform. I love the challenges that come with working in such an fast-paced, agile environment. We build connected products using Unity mixed with native Java, Objective-C, and Swift, web games using Haxe/JS, and use some Python when working on our build automation server.")
+                            m('p', "Workinman is a service-based game studio located in Rochester, NY. During my tenure at Workinman, I helped with buildiing connected toys and cross-platform games for clients like Fisher-Price, Little Tikes, Nickelodeon, and Disney."),
+                            m('p', "I worked in the connected toys department of Workinman as a game and tools developer. My work balanced on a rope between developing one or two major games and building and maintaining our in-house automation platform. We built connected products using Unity mixed with native Java, Objective-C, and Swift, web games using Haxe/JS, and use some Python when working on our build automation server.")
                         ]),
                         m('.links', [
                             m('a', {

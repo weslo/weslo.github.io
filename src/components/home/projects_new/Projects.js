@@ -8,7 +8,6 @@ import cardImageWorkinman from "../../../../assets/imgs/cards/workinman.png";
 import cardImageYesAndGames from "../../../../assets/imgs/cards/yes_and_games.png";
 
 export default class Projects extends Component {
-
     view() {
         return m('section#games', [
             m('.row', [
@@ -27,7 +26,7 @@ export default class Projects extends Component {
                 m('.col-3', [
                     m(ProjectCard, {
                         title: "Blizzard Entertainment",
-                        id: "blizzard-incubation",
+                        id: "blizzard",
                         role: "Software Engineer",
                         duration: "2 years",
                         image: cardImageBlizzard,

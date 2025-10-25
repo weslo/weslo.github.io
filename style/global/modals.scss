@@ -10,10 +10,10 @@ $modal-border-radius-top: 49px 49px 0px 0px;
     transform: translateZ(0);
 
     .modal {
-        background-color: $color-background-grey;
-        max-height: 70vh;
+        background-color: $color-background-dark-grey;
+        height: 90vh;
         margin: 0 auto;
-        width: 30em;
+        width: min(60vw, 1100px);
         max-width: 80vw;
         position: relative;
         top: 50%;
@@ -21,5 +21,6 @@ $modal-border-radius-top: 49px 49px 0px 0px;
         border-radius: $modal-border-radius;
         border: $border-inactive;
         overflow: auto;
+        box-shadow: 0 16px 60px rgb(0 0 0 / 60%);
     }
 }

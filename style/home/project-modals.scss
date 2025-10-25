@@ -37,6 +37,23 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     outline: none;
+
+    /* dots + arrows share the same behavior */
+    .project-modal-carousel-dots,
+    .project-modal-carousel-arrow {             /* ← your arrow buttons' class */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 180ms ease;
+    }
+
+    /* Show when the carousel is hovered or any control gets focus */
+    &:hover .project-modal-carousel-dots,
+    &:hover .project-modal-carousel-arrow,
+    &:focus-within .project-modal-carousel-dots,
+    &:focus-within .project-modal-carousel-arrow {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 .project-modal-carousel-track {

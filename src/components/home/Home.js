@@ -10,12 +10,14 @@ import Projects from "./projects/Projects.js";
 import ProjectModal from "./projects/ProjectModal.js";
 import ProjectsData from "./projects/ProjectsData.js";
 
+const showWorkInProgressMessage = false;
+
 export default class Home extends Component {
     view(vnode) {
         return m(".home", [
             m(Nav),
             m('.content-under-nav-margin'),
-            m(Message),
+            showWorkInProgressMessage && m(Message),
             m(Projects),
             m(About),
             m(Footer),

@@ -6,6 +6,7 @@ import cardImageSecretDoor from "../../../../assets/imgs/cards/secret_door.png";
 import cardImageBlizzard from "../../../../assets/imgs/cards/blizzard.png";
 import cardImageWorkinman from "../../../../assets/imgs/cards/workinman.png";
 import cardImageYesAndGames from "../../../../assets/imgs/cards/yes_and_games.png";
+import cardImageOther from "../../../../assets/imgs/cards/other_games.png";
 
 export default class Projects extends Component {
     view() {
@@ -50,9 +51,18 @@ export default class Projects extends Component {
                         role: "Game Developer & Co-Founder",
                         duration: "3 years",
                         image: cardImageYesAndGames,
+                    }),
+                ]),
+                m('.col-3', [
+                    m(ProjectCard, {
+                        title: "Other Games",
+                        id: "other-games",
+                        role: "Other Games",
+                        duration: "Always Cooking",
+                        image: cardImageOther,
                     })
-                ])
-            ])
+                ]),
+            ]),
         ]);
     }
 }

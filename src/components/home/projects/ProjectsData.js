@@ -28,6 +28,13 @@ import imgAdventureGuildPhoto02 from "../../../../assets/imgs/yesandgames/advent
 import imgAdventureGuildScreenshot01 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_01.png";
 import imgAdventureGuildScreenshot02 from "../../../../assets/imgs/yesandgames/adventureguild_screenshot_02.png";
 
+import imgAsrs01 from "../../../../assets/imgs/asrs/asrs_01.png";
+import imgAsrs02 from "../../../../assets/imgs/asrs/asrs_02.png";
+import imgHearplay01 from "../../../../assets/imgs/hearplay/hearplay_01.png";
+import imgHearplay02 from "../../../../assets/imgs/hearplay/hearplay_02.png";
+import imgGameJam01 from "../../../../assets/imgs/gamejam/gamejam_01.png";
+import imgGameJam02 from "../../../../assets/imgs/gamejam/gamejam_02.png";
+
 export default {
 
     "secret-door": {
@@ -271,6 +278,77 @@ export default {
                                 target: "_blank"
                             }, "Adventure Guild 2016 Kickstarter"),
                         ])
+                    ]);
+                }
+            };
+        }
+    },
+
+    "other-games": {
+        title: "Other Games",
+        images: [
+            {
+                src: imgAsrs01,
+                alt: "A Small Robot Story gameplay",
+                style: "object-position: left;",
+            },
+            {
+                src: imgAsrs02,
+                alt: "A Small Robot Story narrative",
+                style: "object-position: bottom;",
+            },
+            {
+                src: imgHearplay01,
+                alt: "Hearplay trailer beginning",
+                style: "object-position: left;",
+            },
+            {
+                src: imgHearplay02,
+                alt: "Hearplay trailer ending",
+                style: "object-position: center;",
+            },
+            {
+                src: imgGameJam01,
+                alt: "Home for the Holidays start screen",
+                style: "object-position: center;",
+            },
+            {
+                src: imgGameJam02,
+                alt: "Home for the Holidays gameplay",
+                style: "object-position: right bottom;",
+            },
+        ],
+        content: function() {
+            return {
+                view: function() {
+                    return m('.other-games', [
+                        m('.description', [
+                            m('p', "I've worked on loads of other games throughout my career, small and large, through employment, contract work, side projects, and game jams. Check out some of my other works below, or ask and I'll share more!"),
+                            m('p', "Some notable games I worked on include:"),
+                            m('ul', [
+                                m('li', "A Small Robot Story: A sidescrolling pixel-platformer about a robot who activates and has no idea why. I supported Rob at Cosmonaut Collective on wrapping this game up from a tech and gameplay perspective. One of my favorite projects!"),
+                                m('li', "Hearplay: Play the music, spin the globe! Hearplay was a gamified music streaming app that never made it out of beta in the late 2010s. I worked on this project as a game designer and supported on the business and production side. All that remains is the trailer!"),
+                                m('li', "Game Jams: I'm always up for a game jam, and some of my projects are still around on my Itch profiles."),
+                            ]),
+                        ]),
+                        m('.links', [
+                            m('a', {
+                                href: "https://store.steampowered.com/app/753440/A_Small_Robot_Story/",
+                                target: "_blank"
+                            }, "A Small Robot Story"),
+                            m('a', {
+                                href: "https://www.youtube.com/watch?v=xzCogmf1wkY",
+                                target: "_blank"
+                            }, "Hearplay Trailer"),
+                            m('a', {
+                                href: "https://weslo.itch.io/home-for-the-holidays",
+                                target: "_blank"
+                            }, "Weslo on Itch"),
+                            m('a', {
+                                href: "https://yesandgames.itch.io/",
+                                target: "_blank"
+                            }, "Yes And Games on Itch"),
+                        ]),
                     ]);
                 }
             };

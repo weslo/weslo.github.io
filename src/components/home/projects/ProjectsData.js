@@ -295,7 +295,7 @@ export default {
             {
                 src: imgAsrs02,
                 alt: "A Small Robot Story narrative",
-                style: "object-position: bottom;",
+                style: "object-position: top;",
             },
             {
                 src: imgHearplay01,
@@ -310,12 +310,12 @@ export default {
             {
                 src: imgGameJam01,
                 alt: "Home for the Holidays start screen",
-                style: "object-position: center;",
+                style: "object-position: top;",
             },
             {
                 src: imgGameJam02,
                 alt: "Home for the Holidays gameplay",
-                style: "object-position: right bottom;",
+                style: "object-position: right;",
             },
         ],
         content: function() {

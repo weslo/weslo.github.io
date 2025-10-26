@@ -42,8 +42,6 @@ export default class Projects extends Component {
                         image: cardImageWorkinman,
                     })
                 ]),
-            ]),
-            m('.row', [
                 m('.col-3', [
                     m(ProjectCard, {
                         title: "Yes And Games",

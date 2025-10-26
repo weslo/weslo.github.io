@@ -34,6 +34,8 @@ export default class ProjectModal extends Modal {
             title,
             images = [],
         } = vnode.attrs;
+
+        const isMobile = window.innerWidth <= 720;
         
         const Carousel = () => m(".project-modal-carousel", {
             tabindex: 0,
@@ -66,10 +68,35 @@ export default class ProjectModal extends Modal {
                     }))
             )
         ])
+
+        const FirstImage = () => m(".project-modal-image-list",
+            images.slice(0, 1).map(img =>
+                m(".project-modal-mobile-image", [
+                    m("img", {
+                        src: img.src,
+                        alt: img.alt || title || "Project image"
+                    }),
+                ])
+            )
+        );
+
+        const RemainingImages = () => m(".project-modal-image-list",
+            images.slice(1).map(img =>
+                m(".project-modal-mobile-image", [
+                    m("img", {
+                        src: img.src,
+                        alt: img.alt || title || "Project image",
+                        loading: "lazy",
+                        decoding: "async",
+                    }),
+                ])
+            )
+        );
     
         return m(".project-modal", [
-            Carousel(),
-            m(".project-modal-content", [ m(vnode.attrs.content) ])
+            isMobile ? FirstImage() : Carousel(),
+            m(".project-modal-content", [ m(vnode.attrs.content) ]),
+            isMobile ? RemainingImages() : null,
         ])
     }
         

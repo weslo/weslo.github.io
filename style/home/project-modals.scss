@@ -225,3 +225,24 @@
         }
     }
 }
+
+@media(max-width: $tablet-breakpoint) {
+    .carousel { display: none; }
+
+    .project-modal-image-list {
+        padding-bottom: 5px;
+
+        .project-modal-mobile-image {
+            display: grid; gap: .75rem;
+            border-radius:  20px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+            background: #111;
+
+            img {
+                width: 100%; height: auto; display: block;
+            }
+        }
+    }
+}

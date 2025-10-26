@@ -1,19 +1,50 @@
 import m from "mithril";
 import Modal from "../../core/Modal";
 
+const MOBILE_QUERY = "(max-width: 720px)";
+
 export default class ProjectModal extends Modal {
 
     scheduledTimeout = null;
     carouselIndex = 0;
+    isMobile = false;
+    mediaQueryListener = null;
+    handleMediaQueryChange = null;
     
     oninit(vnode) {
         super.oninit?.(vnode);
         this.carouselIndex = 0;
+        this.isMobile = window.matchMedia(MOBILE_QUERY).matches;
     }
 
     oncreate(vnode) {
         super.oncreate(vnode);
-        this.scheduleAutomaticCarouselAdvance(vnode);
+
+        this.mediaQueryListener = window.matchMedia(MOBILE_QUERY);
+        this.handleMediaQueryChange = (e) => {
+            this.isMobile = e.matches;
+            if (this.isMobile) {
+                clearTimeout(this.scheduledTimeout);
+
+            }
+            else {
+                this.scheduleAutomaticCarouselAdvance(vnode);
+            }
+            m.redraw();
+        }
+
+        if (this.mediaQueryListener.addEventListener) {
+            this.mediaQueryListener.addEventListener("change", this.handleMediaQueryChange);
+        }
+        else
+        {
+            this.mediaQueryListener.addListener(this.handleMediaQueryChange);
+        }
+
+        if (!this.isMobile)
+        {
+            this.scheduleAutomaticCarouselAdvance(vnode);
+        }
     }
 
     onremove() {

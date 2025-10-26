@@ -14,6 +14,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        cursor: pointer;
 
         img {
             align-self: center;
@@ -25,6 +26,10 @@
             flex-shrink: 0; 
             border: 2px solid #333;
             box-shadow: 0 2px 8px rgb(0 0 0 / 30%);
+            transition: 
+                box-shadow 0.25s ease,
+                transform 0.25s ease,
+                border-color 0.25s ease;
 
             @media(max-width: $tablet-breakpoint) {
                 max-width: 40%;
@@ -32,6 +37,18 @@
 
             @media(max-width: $tablet-breakpoint) {
                 max-width: 80%;
+            }
+
+            &:hover,
+            &:focus {
+                box-shadow: 0 6px 18px rgb(0 0 0 / 50%);
+                transform: scale(1.04);
+                border-color: #555;
+            }
+
+            &:active {
+                transform: scale(0.98);
+                box-shadow: 0 2px 8px rgb(0 0 0 / 40%);
             }
         }
     }

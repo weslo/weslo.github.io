@@ -35,6 +35,11 @@ import imgHearplay02 from "../../../../assets/imgs/hearplay/hearplay_02.png";
 import imgGameJam01 from "../../../../assets/imgs/gamejam/gamejam_01.png";
 import imgGameJam02 from "../../../../assets/imgs/gamejam/gamejam_02.png";
 
+import imgAboutMe01 from "../../../../assets/imgs/about_me/aboutme_01.jpeg";
+import imgAboutMe02 from "../../../../assets/imgs/about_me/aboutme_02.png";
+import imgAboutMe03 from "../../../../assets/imgs/about_me/aboutme_03.jpeg";
+import imgAboutMe04 from "../../../../assets/imgs/about_me/aboutme_04.png";
+
 export default {
 
     "secret-door": {
@@ -348,6 +353,53 @@ export default {
                                 href: "https://yesandgames.itch.io/",
                                 target: "_blank"
                             }, "Yes And Games on Itch"),
+                        ]),
+                    ]);
+                }
+            };
+        }
+    },
+
+    "about-me": {
+        title: "About Me",
+        images: [
+            {
+                src: imgAboutMe04,
+                alt: "Summitting Mt. Fuji",
+                style: "object-position: center;",
+            },
+            {
+                src: imgAboutMe01,
+                alt: "Racing up Mt. Baldy",
+                style: "object-position: top;",
+            },
+            {
+                src: imgAboutMe02,
+                alt: "Traversing a glacier in Iceland",
+                style: "object-position: right;",
+            },
+            {
+                src: imgAboutMe03,
+                alt: "Hiking in the Enchantments",
+                style: "object-position: bottom;",
+            },
+        ],
+        content: function() {
+            return {
+                view: function() {
+                    return m('.about-me', [
+                        m('.description', [
+                            m('p', "Thanks for checking out my work! While making games is my career and one of my greatest passions, I'm also a lover of life and have many other hobbies an interests."),
+                            m('p', "I'm a competitive gamer. I have led WoW raiding guilds for over 20 years, I've hit 60 on Hardcore Classic, and you can find me at the highest ranks of competitive games including Obsidian rank in Halo: Infinite and Elite rank in Rematch. I have a very deep love for dungeon crawlers and RPGs, so you can catch me in the deepest levels of Dark and Darker, Barony, and Frosthaven."),
+                            m('p', "I'm an athlete. I work out every single day and have been on a long journey to combat chronic pain. You can find me rock climbing in Bishop, trail running up Mt. Baldy, backpacking in the wilderness, or in the weight room at the gym."),
+                            m('p', "I'm a traveler. If I had all the time in the world, I'd step foot in every nation on earth. Some of my favorites so far have been Columbia, Japan, and Iceland!"),
+                            m('p', "I love RPGs, and I'm proud to say I've started LARPing. Say hi if you're one of the Returned!"),
+                        ]),
+                        m('.links', [
+                            m('a', {
+                                href: "https://steamcommunity.com/id/wrockholz",
+                                target: "_blank"
+                            }, "Add me on Steam"),
                         ]),
                     ]);
                 }

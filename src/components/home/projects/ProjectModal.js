@@ -12,10 +12,11 @@ export default class ProjectModal extends Modal {
     }
 
     oncreate(vnode) {
+        super.oncreate(vnode);
         this.scheduleAutomaticCarouselAdvance(vnode);
     }
 
-    onremove(vnode) {
+    onremove() {
         clearTimeout(this.scheduledTimeout);
     }
     

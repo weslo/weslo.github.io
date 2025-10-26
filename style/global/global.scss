@@ -103,4 +103,6 @@ a {
 
 .noscroll {
     overflow: hidden;
+    height: 100vh;
+    touch-action: none;
 }

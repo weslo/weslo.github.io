@@ -18,8 +18,8 @@ export default class Home extends Component {
             m(Nav),
             m('.content-under-nav-margin'),
             showWorkInProgressMessage && m(Message),
-            m(Projects),
             m(About),
+            m(Projects),
             m(Footer),
             vnode.attrs.project != null && vnode.attrs.project !== ""
                 ? m(ProjectModal, ProjectsData[vnode.attrs.project])

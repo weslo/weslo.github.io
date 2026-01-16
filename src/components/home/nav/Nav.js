@@ -14,12 +14,12 @@ export default class Nav extends Component {
                 m('.nav-links', [
                     m('ul', [
                         m(NavLink, {
-                            title: "Games",
-                            id: "#games"
-                        }),
-                        m(NavLink, {
                             title: "About",
                             id: "#about"
+                        }),
+                        m(NavLink, {
+                            title: "Games",
+                            id: "#games"
                         }),
                         m(NavLink, {
                             title: "Contact",

@@ -81,13 +81,11 @@ $nav-height-mobile-extension: 40px;
     }
 }
 
-$margin-top-projects: calc(#{$nav-height} + #{$section-margin});
-
 .content-under-nav-margin
 {
-    margin-top: $margin-top-projects;
+    margin-top: $nav-height;
 
     @media(max-width: $mobile-breakpoint) {
-        margin-top: calc(#{$margin-top-projects} + #{$nav-height-mobile-extension});
+        margin-top: calc(#{$nav-height} + #{$nav-height-mobile-extension});
     }
 }

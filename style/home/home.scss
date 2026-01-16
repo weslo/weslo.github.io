@@ -5,3 +5,9 @@
 @import 'projects';
 @import 'about';
 @import 'message';
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

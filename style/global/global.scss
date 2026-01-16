@@ -17,14 +17,6 @@ $section-margin: 40px;
     transition: $duration;
 }
 
-@mixin box-shadow-inactive() {
-    box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
-}
-
-@mixin box-shadow-active() {
-    box-shadow: 0 0 10px 0 rgb(255 255 255 / 100%);
-}
-
 html { scrollbar-gutter: stable; }
 
 body {

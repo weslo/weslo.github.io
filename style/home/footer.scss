@@ -5,10 +5,10 @@ $footer-height-mobile: 80px;
     height: $footer-height;
     padding: 20px;
     margin: 0;
+    margin-top: auto;
     border-top: $border-inactive;
     background-color: $color-background-grey;
-    
-    @include box-shadow-inactive;
+    box-shadow: 0 -6px 10px -6px rgb(0 0 0 / 75%);
     
     @media(max-width: $tablet-breakpoint) {
         height: auto;

@@ -11,8 +11,7 @@ $nav-height-mobile-extension: 40px;
     border-bottom: $border-inactive;
     color: $color-content-white;
     background-color: $color-background-grey;
-
-    @include box-shadow-inactive;
+    box-shadow: 0 6px 10px -6px rgb(0 0 0 / 75%);
 
     @media(max-width: $mobile-breakpoint) {
         height: #{$nav-height + $nav-height-mobile-extension};

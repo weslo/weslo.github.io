@@ -49,6 +49,15 @@ export default class ProjectModal extends Modal {
 
     onremove() {
         clearTimeout(this.scheduledTimeout);
+        if (this.mediaQueryListener && this.handleMediaQueryChange) {
+            if (this.mediaQueryListener.removeEventListener) {
+                this.mediaQueryListener.removeEventListener("change", this.handleMediaQueryChange);
+            }
+            else {
+                this.mediaQueryListener.removeListener(this.handleMediaQueryChange);
+            }
+        }
+        super.onremove?.();
     }
     
     view(vnode) {
@@ -145,7 +154,7 @@ export default class ProjectModal extends Modal {
         this.scheduledTimeout = window.setTimeout(() => {
             this.navigateCarousel(vnode, 1);
             m.redraw();
-            this.schedule();
+            this.scheduleAutomaticCarouselAdvance(vnode);
         }, 10000);
     };
 }

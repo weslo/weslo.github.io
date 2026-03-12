@@ -50,4 +50,8 @@ export default class Modal extends Component {
     close() {
         $('body').removeClass('noscroll');
     }
+
+    onremove() {
+        this.close();
+    }
 }

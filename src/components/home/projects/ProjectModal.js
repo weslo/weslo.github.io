@@ -2,11 +2,13 @@ import m from "mithril";
 import Modal from "../../core/Modal";
 
 const MOBILE_QUERY = "(max-width: 720px)";
+const AUTOPLAY_DURATION_MS = 10000;
 
 export default class ProjectModal extends Modal {
 
     scheduledTimeout = null;
     carouselIndex = 0;
+    autoplayCycle = 0;
     isMobile = false;
     mediaQueryListener = null;
     handleMediaQueryChange = null;
@@ -14,6 +16,7 @@ export default class ProjectModal extends Modal {
     oninit(vnode) {
         super.oninit?.(vnode);
         this.carouselIndex = 0;
+        this.autoplayCycle = 0;
         this.isMobile = window.matchMedia(MOBILE_QUERY).matches;
     }
 
@@ -106,7 +109,13 @@ export default class ProjectModal extends Modal {
                     m("button.dot" + (i === this.carouselIndex ? ".is-active" : ""), {
                         onclick: () => (this.carouselIndex = i), "aria-label": `Go to slide ${i + 1}`
                     }))
-            )
+            ),
+            images.length > 1 && m(".project-modal-carousel-progress", { "aria-hidden": "true" }, [
+                m(".project-modal-carousel-progress-bar", {
+                    key: `${this.carouselIndex}-${this.autoplayCycle}`,
+                    style: `animation-duration:${AUTOPLAY_DURATION_MS}ms;`,
+                }),
+            ]),
         ])
 
         const FirstImage = () => m(".project-modal-image-list",
@@ -151,10 +160,11 @@ export default class ProjectModal extends Modal {
 
     scheduleAutomaticCarouselAdvance(vnode) {
         clearTimeout(this.scheduledTimeout);
+        this.autoplayCycle += 1;
         this.scheduledTimeout = window.setTimeout(() => {
             this.navigateCarousel(vnode, 1);
             m.redraw();
             this.scheduleAutomaticCarouselAdvance(vnode);
-        }, 10000);
+        }, AUTOPLAY_DURATION_MS);
     };
 }

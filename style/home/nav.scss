@@ -55,27 +55,37 @@ $nav-height-mobile-extension: 40px;
         ul {
             li {
                 display: inline-block;
-                text-transform: uppercase;
-                font-size: 24pt;
                 margin-left: 14pt;
 
                 @media(max-width: $mobile-breakpoint) {
                     margin-left: 7pt;
                     margin-right: 7pt;
-                    font-size: 18pt;
                 }
+            }
 
-                &:hover {
-                    cursor: pointer;
-
-                    @include transition($transition-duration);
-
-                    color: $color-content-white;
-                }
+            .nav-link {
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 24pt;
+                color: $color-content-grey;
+                border-radius: 4px;
 
                 @include transition($transition-duration);
 
-                color: $color-content-grey;
+                @media(max-width: $mobile-breakpoint) {
+                    font-size: 18pt;
+                }
+
+                &:hover,
+                &:focus-visible {
+                    color: $color-content-white;
+                }
+
+                &:focus-visible {
+                    outline: 2px solid rgb(255 255 255 / 35%);
+                    outline-offset: 4px;
+                }
             }
         }
     }

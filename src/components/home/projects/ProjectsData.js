@@ -40,6 +40,8 @@ import imgAboutMe02 from "../../../../assets/imgs/about_me/aboutme_02.png";
 import imgAboutMe03 from "../../../../assets/imgs/about_me/aboutme_03.jpeg";
 import imgAboutMe04 from "../../../../assets/imgs/about_me/aboutme_04.png";
 
+const EXTERNAL_LINK_REL = "noopener noreferrer";
+
 export default {
 
     "secret-door": {
@@ -100,19 +102,23 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://sunderfolk.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Sunderfolk Website"),
                             m('a', {
                                 href: "https://store.steampowered.com/app/2414270/Sunderfolk/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Sunderfolk on Steam"),
                             m('a', {
                                 href: "https://secretdoorgames.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Secret Door Website"),
                             m('a', {
                                 href: "https://dreamhaven.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Dreamhaven Website"),
                         ])
                     ]);
@@ -154,11 +160,13 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://blizzard.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Blizzard Website"),
                             m('a', {
                                 href: "https://warcraftrumble.blizzard.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Warcraft Rumble Website"),
                         ])
                     ]);
@@ -209,7 +217,8 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://workinman.com/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Workinman Website"),
                         ])
                     ]);
@@ -280,7 +289,8 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://www.kickstarter.com/projects/yesandgames/adventure-guild",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Adventure Guild 2016 Kickstarter"),
                         ])
                     ]);
@@ -339,19 +349,23 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://store.steampowered.com/app/753440/A_Small_Robot_Story/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "A Small Robot Story"),
                             m('a', {
                                 href: "https://www.youtube.com/watch?v=xzCogmf1wkY",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Hearplay Trailer"),
                             m('a', {
                                 href: "https://weslo.itch.io/home-for-the-holidays",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Weslo on Itch"),
                             m('a', {
                                 href: "https://yesandgames.itch.io/",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Yes And Games on Itch"),
                         ]),
                     ]);
@@ -398,7 +412,8 @@ export default {
                         m('.links', [
                             m('a', {
                                 href: "https://steamcommunity.com/id/wrockholz",
-                                target: "_blank"
+                                target: "_blank",
+                                rel: EXTERNAL_LINK_REL,
                             }, "Add me on Steam"),
                         ]),
                     ]);

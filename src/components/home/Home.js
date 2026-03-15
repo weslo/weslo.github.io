@@ -11,9 +11,32 @@ import ProjectModal from "./projects/ProjectModal.js";
 import ProjectsData from "./projects/ProjectsData.js";
 
 const showWorkInProgressMessage = false;
+const hasProject = (projectKey) => Object.prototype.hasOwnProperty.call(ProjectsData, projectKey);
+const getProject = (projectKey) => projectKey != null && hasProject(projectKey)
+    ? ProjectsData[projectKey]
+    : null;
 
 export default class Home extends Component {
+    oninit(vnode) {
+        this.redirectInvalidProject(vnode.attrs.project);
+    }
+
+    onbeforeupdate(vnode) {
+        this.redirectInvalidProject(vnode.attrs.project);
+        return true;
+    }
+
+    redirectInvalidProject(projectKey) {
+        if (projectKey == null || projectKey === "" || getProject(projectKey) != null) {
+            return;
+        }
+
+        m.route.set("/", null, { replace: true });
+    }
+
     view(vnode) {
+        const project = getProject(vnode.attrs.project);
+
         return m(".home", [
             m(Nav),
             m('.content-under-nav-margin'),
@@ -21,8 +44,8 @@ export default class Home extends Component {
             m(About),
             m(Projects),
             m(Footer),
-            vnode.attrs.project != null && vnode.attrs.project !== ""
-                ? m(ProjectModal, ProjectsData[vnode.attrs.project])
+            project != null
+                ? m(ProjectModal, project)
                 : null,
         ]);
     }

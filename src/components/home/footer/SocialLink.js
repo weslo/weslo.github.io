@@ -7,7 +7,8 @@ export default class SocialLink extends Component {
         return m('li.social-link', [
             m('a', {
                 href: vnode.attrs.url,
-                target: "_blank"
+                target: "_blank",
+                rel: "noopener noreferrer",
             }, [
                 m('i', { class: "fa fa-fw fa-2x " + vnode.attrs.icon }),
             ])

@@ -10,7 +10,8 @@ export default class About extends Component {
             m('.row', [
                 m('h2', "About Me"),
                 m('.col-3.col-tablet-1.portrait', [
-                    m('img', { src: portraitUrl, 
+                    m('img', { src: portraitUrl,
+                        alt: "Portrait of Wes Rockholz",
                         onclick: function() {
                             m.route.set("/about-me")
                         }})

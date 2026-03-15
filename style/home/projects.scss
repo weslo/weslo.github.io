@@ -9,6 +9,7 @@ $width-project-banner: 240px;
     }
 
     .project-card {
+        display: block;
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;
@@ -24,6 +25,8 @@ $width-project-banner: 240px;
         border: 1px solid rgb(255 255 255 / 8%);
         box-shadow: 0 1px 6px rgb(0 0 0 / 35%);
         transition: transform .25s ease, box-shadow .25s ease, background-size .25s ease;
+        color: inherit;
+        text-decoration: none;
 
         .project-card-banner {
             position: absolute;
